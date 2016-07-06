@@ -148,16 +148,12 @@ resulttitle_format = {
     'fg_color': '#339966',
 }
 class MkSinglesheet(object):
-    def __init__(self, iteminfo, itemdata, xlsname):
+    def __init__(self, workbook, iteminfo, itemdata):
         self.info = iteminfo
         self.data = itemdata
-        self.xlsname = xlsname
         self.layoutinfo = self.layoutinformation()
-        self.workbook = self.mkxls()
+        self.workbook = workbook
 
-    def mkxls(self):
-        workbook = xlsxwriter.Workbook(self.xlsname)
-        return workbook
 
     def layoutinformation(self):
         formnum = {}
@@ -322,15 +318,16 @@ class MkSinglesheet(object):
         self.input_testinfo(worksheet, formatinfo)
         self.additems(worksheet, formatinfo)
         self.sheetformatting(worksheet, formatinfo)
-        self.workbookclose()
 
-    def workbookclose(self):
-        self.workbook.close()
+infolist=[sheet_cpu_info, sheet_lmbench_info]
+datalist=[sheet_cpu_data, sheet_lmbench_data]
 
+def mkxls():
+    workbook = xlsxwriter.Workbook("test.xlsx")
+    for info, data in zip(infolist, datalist):
+        print info, data
+        a = MkSinglesheet(workbook, info, data)
+        a.addsheet()
+    workbook.close()
 
-class Mk_xls(object):
-
-a = MkSinglesheet(sheet_cpu_info, sheet_cpu_data, 'test.xlsx')
-a.addsheet()
-a = MkSinglesheet(sheet_lmbench_info, sheet_lmbench_data, 'test.xlsx')
-a.addsheet()
+mkxls()
