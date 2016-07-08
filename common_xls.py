@@ -13,7 +13,7 @@ reload(sys)
 sys.setdefaultencoding('utf8')
 
 #xls_dirt字典保存基础信息
-sheet_cpu_info = {
+sheet_speccpu_info = {
     'sheetname':'处理器运算',
     'testinfo' : ("处理器运算性能", "测试工具：SPEC CPU 2000",
         "性能指标： Spec2000 包括 SPECint2000、SPECfp2000、\
@@ -24,7 +24,7 @@ sheet_cpu_info = {
         ),
     "oslist": ["isoft_desktop V4.0 loongson", "Deepin15_mips_20160520", "Neokylin Desktop-7.0-loongson"],
     }
-sheet_cpu_data = [
+sheet_speccpu_data = [
     [
         ["spec2000， bigger is better", "spec2000"],
         ["ITEM", "SPECint2000", "SPECfp2000", "SPECint_rate2000",\
@@ -36,6 +36,27 @@ sheet_cpu_data = [
         [120.00, 124.00, 492.00, 340.00],
         ],
 ]
+
+sheet_syscpu_info = {
+    'sheetname': '处理器运算_B',
+    'testinfo': ("处理器运算性能", "测试工具：sysbench",
+        "性能指标: 包括10000、20000、30000",
+        "对比说明: 数值越小越好",
+        "测试参数：sysbench --test=cpu --cpu-max-prime=10000/20000/30000 run",
+         ),
+     'oslist': ["isoft_desktop V4.0 loongson", "Deepin15_mips_20160520", "Neokylin Desktop-7.0-loongson"],
+    }
+
+sheet_syscpu_data = [
+    [
+        ["execution time, less is better", "sysbench"],
+        ["ITEM", "10000", "20000", "30000"],
+        [9.919, 25.611, 44.699],
+        [9.919, 25.606, 44.722],
+        [9.011, 24.011, 34.011],
+    ],
+]
+
 
 sheet_lmbench_info = {
     'sheetname': '内核',
@@ -318,8 +339,8 @@ class MkSinglesheet(object):
         self.additems(worksheet, formatinfo)
         self.sheetformatting(worksheet, formatinfo)
 
-infolist=[sheet_cpu_info, sheet_lmbench_info]
-datalist=[sheet_cpu_data, sheet_lmbench_data]
+infolist=[sheet_speccpu_info, sheet_lmbench_info, sheet_syscpu_info]
+datalist=[sheet_speccpu_data, sheet_lmbench_data, sheet_syscpu_data]
 
 def mkxls():
     workbook = xlsxwriter.Workbook("test.xlsx")

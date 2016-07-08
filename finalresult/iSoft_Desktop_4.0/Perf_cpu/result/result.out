@@ -1,0 +1,238 @@
+2016-07-08 15:50:34,090 - Perf_cpu - INFO - {u'cpu_max_prime': u'10000,20000,30000', u'test_type': u'cpu', u'reboot': u'no', u'runtimes': u'3', u'tag': u'cpu', u'tarbal': u'sysbench-0.4.12.tar.gz'}
+2016-07-08 15:50:34,090 - Perf_cpu - INFO - /home/isoft_lp/Github/Lpbs-i/tmp/Perf_cpu/sysbench/sysbench --test=cpu --cpu-max-prime=10000 run
+2016-07-08 15:50:46,953 - Perf_cpu - INFO - sysbench 0.4.12:  multi-threaded system evaluation benchmark
+2016-07-08 15:50:46,953 - Perf_cpu - INFO - 
+2016-07-08 15:50:46,954 - Perf_cpu - INFO - Running the test with following options:
+2016-07-08 15:50:46,954 - Perf_cpu - INFO - Number of threads: 1
+2016-07-08 15:50:46,954 - Perf_cpu - INFO - 
+2016-07-08 15:50:46,954 - Perf_cpu - INFO - Doing CPU performance benchmark
+2016-07-08 15:50:46,954 - Perf_cpu - INFO - 
+2016-07-08 15:50:46,954 - Perf_cpu - INFO - Threads started!
+2016-07-08 15:50:46,954 - Perf_cpu - INFO - Done.
+2016-07-08 15:50:46,954 - Perf_cpu - INFO - 
+2016-07-08 15:50:46,954 - Perf_cpu - INFO - Maximum prime number checked in CPU test: 10000
+2016-07-08 15:50:46,954 - Perf_cpu - INFO - 
+2016-07-08 15:50:46,954 - Perf_cpu - INFO - 
+2016-07-08 15:50:46,954 - Perf_cpu - INFO - Test execution summary:
+2016-07-08 15:50:46,954 - Perf_cpu - INFO -     total time:                          12.8582s
+2016-07-08 15:50:46,955 - Perf_cpu - INFO -     total number of events:              10000
+2016-07-08 15:50:46,955 - Perf_cpu - INFO -     total time taken by event execution: 12.8572
+2016-07-08 15:50:46,955 - Perf_cpu - INFO -     per-request statistics:
+2016-07-08 15:50:46,955 - Perf_cpu - INFO -          min:                                  1.18ms
+2016-07-08 15:50:46,955 - Perf_cpu - INFO -          avg:                                  1.29ms
+2016-07-08 15:50:46,955 - Perf_cpu - INFO -          max:                                  5.19ms
+2016-07-08 15:50:46,955 - Perf_cpu - INFO -          approx.  95 percentile:               1.37ms
+2016-07-08 15:50:46,955 - Perf_cpu - INFO - 
+2016-07-08 15:50:46,955 - Perf_cpu - INFO - Threads fairness:
+2016-07-08 15:50:46,955 - Perf_cpu - INFO -     events (avg/stddev):           10000.0000/0.00
+2016-07-08 15:50:46,955 - Perf_cpu - INFO -     execution time (avg/stddev):   12.8572/0.00
+2016-07-08 15:50:59,567 - Perf_cpu - INFO - sysbench 0.4.12:  multi-threaded system evaluation benchmark
+2016-07-08 15:50:59,568 - Perf_cpu - INFO - 
+2016-07-08 15:50:59,568 - Perf_cpu - INFO - Running the test with following options:
+2016-07-08 15:50:59,568 - Perf_cpu - INFO - Number of threads: 1
+2016-07-08 15:50:59,568 - Perf_cpu - INFO - 
+2016-07-08 15:50:59,568 - Perf_cpu - INFO - Doing CPU performance benchmark
+2016-07-08 15:50:59,568 - Perf_cpu - INFO - 
+2016-07-08 15:50:59,568 - Perf_cpu - INFO - Threads started!
+2016-07-08 15:50:59,568 - Perf_cpu - INFO - Done.
+2016-07-08 15:50:59,568 - Perf_cpu - INFO - 
+2016-07-08 15:50:59,568 - Perf_cpu - INFO - Maximum prime number checked in CPU test: 10000
+2016-07-08 15:50:59,568 - Perf_cpu - INFO - 
+2016-07-08 15:50:59,569 - Perf_cpu - INFO - 
+2016-07-08 15:50:59,569 - Perf_cpu - INFO - Test execution summary:
+2016-07-08 15:50:59,569 - Perf_cpu - INFO -     total time:                          12.6076s
+2016-07-08 15:50:59,569 - Perf_cpu - INFO -     total number of events:              10000
+2016-07-08 15:50:59,569 - Perf_cpu - INFO -     total time taken by event execution: 12.6059
+2016-07-08 15:50:59,569 - Perf_cpu - INFO -     per-request statistics:
+2016-07-08 15:50:59,569 - Perf_cpu - INFO -          min:                                  1.19ms
+2016-07-08 15:50:59,569 - Perf_cpu - INFO -          avg:                                  1.26ms
+2016-07-08 15:50:59,569 - Perf_cpu - INFO -          max:                                  3.37ms
+2016-07-08 15:50:59,569 - Perf_cpu - INFO -          approx.  95 percentile:               1.50ms
+2016-07-08 15:50:59,569 - Perf_cpu - INFO - 
+2016-07-08 15:50:59,569 - Perf_cpu - INFO - Threads fairness:
+2016-07-08 15:50:59,569 - Perf_cpu - INFO -     events (avg/stddev):           10000.0000/0.00
+2016-07-08 15:50:59,569 - Perf_cpu - INFO -     execution time (avg/stddev):   12.6059/0.00
+2016-07-08 15:51:12,278 - Perf_cpu - INFO - sysbench 0.4.12:  multi-threaded system evaluation benchmark
+2016-07-08 15:51:12,278 - Perf_cpu - INFO - 
+2016-07-08 15:51:12,279 - Perf_cpu - INFO - Running the test with following options:
+2016-07-08 15:51:12,279 - Perf_cpu - INFO - Number of threads: 1
+2016-07-08 15:51:12,279 - Perf_cpu - INFO - 
+2016-07-08 15:51:12,279 - Perf_cpu - INFO - Doing CPU performance benchmark
+2016-07-08 15:51:12,279 - Perf_cpu - INFO - 
+2016-07-08 15:51:12,279 - Perf_cpu - INFO - Threads started!
+2016-07-08 15:51:12,279 - Perf_cpu - INFO - Done.
+2016-07-08 15:51:12,279 - Perf_cpu - INFO - 
+2016-07-08 15:51:12,279 - Perf_cpu - INFO - Maximum prime number checked in CPU test: 10000
+2016-07-08 15:51:12,279 - Perf_cpu - INFO - 
+2016-07-08 15:51:12,279 - Perf_cpu - INFO - 
+2016-07-08 15:51:12,279 - Perf_cpu - INFO - Test execution summary:
+2016-07-08 15:51:12,279 - Perf_cpu - INFO -     total time:                          12.7042s
+2016-07-08 15:51:12,279 - Perf_cpu - INFO -     total number of events:              10000
+2016-07-08 15:51:12,279 - Perf_cpu - INFO -     total time taken by event execution: 12.7024
+2016-07-08 15:51:12,280 - Perf_cpu - INFO -     per-request statistics:
+2016-07-08 15:51:12,280 - Perf_cpu - INFO -          min:                                  1.19ms
+2016-07-08 15:51:12,280 - Perf_cpu - INFO -          avg:                                  1.27ms
+2016-07-08 15:51:12,280 - Perf_cpu - INFO -          max:                                  2.12ms
+2016-07-08 15:51:12,280 - Perf_cpu - INFO -          approx.  95 percentile:               1.51ms
+2016-07-08 15:51:12,280 - Perf_cpu - INFO - 
+2016-07-08 15:51:12,280 - Perf_cpu - INFO - Threads fairness:
+2016-07-08 15:51:12,280 - Perf_cpu - INFO -     events (avg/stddev):           10000.0000/0.00
+2016-07-08 15:51:12,280 - Perf_cpu - INFO -     execution time (avg/stddev):   12.7024/0.00
+2016-07-08 15:51:12,281 - Perf_cpu - INFO - /home/isoft_lp/Github/Lpbs-i/tmp/Perf_cpu/sysbench/sysbench --test=cpu --cpu-max-prime=20000 run
+2016-07-08 15:51:46,369 - Perf_cpu - INFO - sysbench 0.4.12:  multi-threaded system evaluation benchmark
+2016-07-08 15:51:46,370 - Perf_cpu - INFO - 
+2016-07-08 15:51:46,370 - Perf_cpu - INFO - Running the test with following options:
+2016-07-08 15:51:46,370 - Perf_cpu - INFO - Number of threads: 1
+2016-07-08 15:51:46,370 - Perf_cpu - INFO - 
+2016-07-08 15:51:46,370 - Perf_cpu - INFO - Doing CPU performance benchmark
+2016-07-08 15:51:46,370 - Perf_cpu - INFO - 
+2016-07-08 15:51:46,370 - Perf_cpu - INFO - Threads started!
+2016-07-08 15:51:46,370 - Perf_cpu - INFO - Done.
+2016-07-08 15:51:46,370 - Perf_cpu - INFO - 
+2016-07-08 15:51:46,370 - Perf_cpu - INFO - Maximum prime number checked in CPU test: 20000
+2016-07-08 15:51:46,371 - Perf_cpu - INFO - 
+2016-07-08 15:51:46,371 - Perf_cpu - INFO - 
+2016-07-08 15:51:46,371 - Perf_cpu - INFO - Test execution summary:
+2016-07-08 15:51:46,371 - Perf_cpu - INFO -     total time:                          34.0844s
+2016-07-08 15:51:46,371 - Perf_cpu - INFO -     total number of events:              10000
+2016-07-08 15:51:46,371 - Perf_cpu - INFO -     total time taken by event execution: 34.0812
+2016-07-08 15:51:46,371 - Perf_cpu - INFO -     per-request statistics:
+2016-07-08 15:51:46,371 - Perf_cpu - INFO -          min:                                  3.08ms
+2016-07-08 15:51:46,371 - Perf_cpu - INFO -          avg:                                  3.41ms
+2016-07-08 15:51:46,371 - Perf_cpu - INFO -          max:                                  7.82ms
+2016-07-08 15:51:46,371 - Perf_cpu - INFO -          approx.  95 percentile:               3.93ms
+2016-07-08 15:51:46,371 - Perf_cpu - INFO - 
+2016-07-08 15:51:46,371 - Perf_cpu - INFO - Threads fairness:
+2016-07-08 15:51:46,371 - Perf_cpu - INFO -     events (avg/stddev):           10000.0000/0.00
+2016-07-08 15:51:46,371 - Perf_cpu - INFO -     execution time (avg/stddev):   34.0812/0.00
+2016-07-08 15:52:19,670 - Perf_cpu - INFO - sysbench 0.4.12:  multi-threaded system evaluation benchmark
+2016-07-08 15:52:19,670 - Perf_cpu - INFO - 
+2016-07-08 15:52:19,670 - Perf_cpu - INFO - Running the test with following options:
+2016-07-08 15:52:19,670 - Perf_cpu - INFO - Number of threads: 1
+2016-07-08 15:52:19,670 - Perf_cpu - INFO - 
+2016-07-08 15:52:19,670 - Perf_cpu - INFO - Doing CPU performance benchmark
+2016-07-08 15:52:19,670 - Perf_cpu - INFO - 
+2016-07-08 15:52:19,671 - Perf_cpu - INFO - Threads started!
+2016-07-08 15:52:19,671 - Perf_cpu - INFO - Done.
+2016-07-08 15:52:19,671 - Perf_cpu - INFO - 
+2016-07-08 15:52:19,671 - Perf_cpu - INFO - Maximum prime number checked in CPU test: 20000
+2016-07-08 15:52:19,671 - Perf_cpu - INFO - 
+2016-07-08 15:52:19,671 - Perf_cpu - INFO - 
+2016-07-08 15:52:19,671 - Perf_cpu - INFO - Test execution summary:
+2016-07-08 15:52:19,671 - Perf_cpu - INFO -     total time:                          33.2807s
+2016-07-08 15:52:19,671 - Perf_cpu - INFO -     total number of events:              10000
+2016-07-08 15:52:19,671 - Perf_cpu - INFO -     total time taken by event execution: 33.2788
+2016-07-08 15:52:19,671 - Perf_cpu - INFO -     per-request statistics:
+2016-07-08 15:52:19,671 - Perf_cpu - INFO -          min:                                  3.07ms
+2016-07-08 15:52:19,671 - Perf_cpu - INFO -          avg:                                  3.33ms
+2016-07-08 15:52:19,671 - Perf_cpu - INFO -          max:                                  7.98ms
+2016-07-08 15:52:19,671 - Perf_cpu - INFO -          approx.  95 percentile:               3.65ms
+2016-07-08 15:52:19,671 - Perf_cpu - INFO - 
+2016-07-08 15:52:19,671 - Perf_cpu - INFO - Threads fairness:
+2016-07-08 15:52:19,671 - Perf_cpu - INFO -     events (avg/stddev):           10000.0000/0.00
+2016-07-08 15:52:19,672 - Perf_cpu - INFO -     execution time (avg/stddev):   33.2788/0.00
+2016-07-08 15:52:52,857 - Perf_cpu - INFO - sysbench 0.4.12:  multi-threaded system evaluation benchmark
+2016-07-08 15:52:52,857 - Perf_cpu - INFO - 
+2016-07-08 15:52:52,857 - Perf_cpu - INFO - Running the test with following options:
+2016-07-08 15:52:52,858 - Perf_cpu - INFO - Number of threads: 1
+2016-07-08 15:52:52,858 - Perf_cpu - INFO - 
+2016-07-08 15:52:52,858 - Perf_cpu - INFO - Doing CPU performance benchmark
+2016-07-08 15:52:52,858 - Perf_cpu - INFO - 
+2016-07-08 15:52:52,858 - Perf_cpu - INFO - Threads started!
+2016-07-08 15:52:52,858 - Perf_cpu - INFO - Done.
+2016-07-08 15:52:52,858 - Perf_cpu - INFO - 
+2016-07-08 15:52:52,858 - Perf_cpu - INFO - Maximum prime number checked in CPU test: 20000
+2016-07-08 15:52:52,858 - Perf_cpu - INFO - 
+2016-07-08 15:52:52,858 - Perf_cpu - INFO - 
+2016-07-08 15:52:52,858 - Perf_cpu - INFO - Test execution summary:
+2016-07-08 15:52:52,858 - Perf_cpu - INFO -     total time:                          33.1698s
+2016-07-08 15:52:52,859 - Perf_cpu - INFO -     total number of events:              10000
+2016-07-08 15:52:52,859 - Perf_cpu - INFO -     total time taken by event execution: 33.1661
+2016-07-08 15:52:52,859 - Perf_cpu - INFO -     per-request statistics:
+2016-07-08 15:52:52,859 - Perf_cpu - INFO -          min:                                  3.07ms
+2016-07-08 15:52:52,859 - Perf_cpu - INFO -          avg:                                  3.32ms
+2016-07-08 15:52:52,859 - Perf_cpu - INFO -          max:                                  6.50ms
+2016-07-08 15:52:52,859 - Perf_cpu - INFO -          approx.  95 percentile:               3.85ms
+2016-07-08 15:52:52,859 - Perf_cpu - INFO - 
+2016-07-08 15:52:52,859 - Perf_cpu - INFO - Threads fairness:
+2016-07-08 15:52:52,859 - Perf_cpu - INFO -     events (avg/stddev):           10000.0000/0.00
+2016-07-08 15:52:52,859 - Perf_cpu - INFO -     execution time (avg/stddev):   33.1661/0.00
+2016-07-08 15:52:52,860 - Perf_cpu - INFO - /home/isoft_lp/Github/Lpbs-i/tmp/Perf_cpu/sysbench/sysbench --test=cpu --cpu-max-prime=30000 run
+2016-07-08 15:53:49,430 - Perf_cpu - INFO - sysbench 0.4.12:  multi-threaded system evaluation benchmark
+2016-07-08 15:53:49,430 - Perf_cpu - INFO - 
+2016-07-08 15:53:49,431 - Perf_cpu - INFO - Running the test with following options:
+2016-07-08 15:53:49,431 - Perf_cpu - INFO - Number of threads: 1
+2016-07-08 15:53:49,431 - Perf_cpu - INFO - 
+2016-07-08 15:53:49,431 - Perf_cpu - INFO - Doing CPU performance benchmark
+2016-07-08 15:53:49,431 - Perf_cpu - INFO - 
+2016-07-08 15:53:49,431 - Perf_cpu - INFO - Threads started!
+2016-07-08 15:53:49,431 - Perf_cpu - INFO - Done.
+2016-07-08 15:53:49,431 - Perf_cpu - INFO - 
+2016-07-08 15:53:49,431 - Perf_cpu - INFO - Maximum prime number checked in CPU test: 30000
+2016-07-08 15:53:49,431 - Perf_cpu - INFO - 
+2016-07-08 15:53:49,431 - Perf_cpu - INFO - 
+2016-07-08 15:53:49,431 - Perf_cpu - INFO - Test execution summary:
+2016-07-08 15:53:49,432 - Perf_cpu - INFO -     total time:                          56.5655s
+2016-07-08 15:53:49,432 - Perf_cpu - INFO -     total number of events:              10000
+2016-07-08 15:53:49,432 - Perf_cpu - INFO -     total time taken by event execution: 56.5623
+2016-07-08 15:53:49,432 - Perf_cpu - INFO -     per-request statistics:
+2016-07-08 15:53:49,432 - Perf_cpu - INFO -          min:                                  5.37ms
+2016-07-08 15:53:49,432 - Perf_cpu - INFO -          avg:                                  5.66ms
+2016-07-08 15:53:49,432 - Perf_cpu - INFO -          max:                                 11.19ms
+2016-07-08 15:53:49,432 - Perf_cpu - INFO -          approx.  95 percentile:               6.48ms
+2016-07-08 15:53:49,432 - Perf_cpu - INFO - 
+2016-07-08 15:53:49,432 - Perf_cpu - INFO - Threads fairness:
+2016-07-08 15:53:49,432 - Perf_cpu - INFO -     events (avg/stddev):           10000.0000/0.00
+2016-07-08 15:53:49,432 - Perf_cpu - INFO -     execution time (avg/stddev):   56.5623/0.00
+2016-07-08 15:54:47,608 - Perf_cpu - INFO - sysbench 0.4.12:  multi-threaded system evaluation benchmark
+2016-07-08 15:54:47,609 - Perf_cpu - INFO - 
+2016-07-08 15:54:47,609 - Perf_cpu - INFO - Running the test with following options:
+2016-07-08 15:54:47,609 - Perf_cpu - INFO - Number of threads: 1
+2016-07-08 15:54:47,609 - Perf_cpu - INFO - 
+2016-07-08 15:54:47,609 - Perf_cpu - INFO - Doing CPU performance benchmark
+2016-07-08 15:54:47,609 - Perf_cpu - INFO - 
+2016-07-08 15:54:47,609 - Perf_cpu - INFO - Threads started!
+2016-07-08 15:54:47,609 - Perf_cpu - INFO - Done.
+2016-07-08 15:54:47,609 - Perf_cpu - INFO - 
+2016-07-08 15:54:47,609 - Perf_cpu - INFO - Maximum prime number checked in CPU test: 30000
+2016-07-08 15:54:47,609 - Perf_cpu - INFO - 
+2016-07-08 15:54:47,610 - Perf_cpu - INFO - 
+2016-07-08 15:54:47,610 - Perf_cpu - INFO - Test execution summary:
+2016-07-08 15:54:47,610 - Perf_cpu - INFO -     total time:                          58.1611s
+2016-07-08 15:54:47,610 - Perf_cpu - INFO -     total number of events:              10000
+2016-07-08 15:54:47,610 - Perf_cpu - INFO -     total time taken by event execution: 58.1568
+2016-07-08 15:54:47,610 - Perf_cpu - INFO -     per-request statistics:
+2016-07-08 15:54:47,610 - Perf_cpu - INFO -          min:                                  5.36ms
+2016-07-08 15:54:47,610 - Perf_cpu - INFO -          avg:                                  5.82ms
+2016-07-08 15:54:47,610 - Perf_cpu - INFO -          max:                                 12.30ms
+2016-07-08 15:54:47,610 - Perf_cpu - INFO -          approx.  95 percentile:               6.70ms
+2016-07-08 15:54:47,610 - Perf_cpu - INFO - 
+2016-07-08 15:54:47,611 - Perf_cpu - INFO - Threads fairness:
+2016-07-08 15:54:47,611 - Perf_cpu - INFO -     events (avg/stddev):           10000.0000/0.00
+2016-07-08 15:54:47,611 - Perf_cpu - INFO -     execution time (avg/stddev):   58.1568/0.00
+2016-07-08 15:55:46,220 - Perf_cpu - INFO - sysbench 0.4.12:  multi-threaded system evaluation benchmark
+2016-07-08 15:55:46,220 - Perf_cpu - INFO - 
+2016-07-08 15:55:46,221 - Perf_cpu - INFO - Running the test with following options:
+2016-07-08 15:55:46,221 - Perf_cpu - INFO - Number of threads: 1
+2016-07-08 15:55:46,221 - Perf_cpu - INFO - 
+2016-07-08 15:55:46,221 - Perf_cpu - INFO - Doing CPU performance benchmark
+2016-07-08 15:55:46,221 - Perf_cpu - INFO - 
+2016-07-08 15:55:46,221 - Perf_cpu - INFO - Threads started!
+2016-07-08 15:55:46,221 - Perf_cpu - INFO - Done.
+2016-07-08 15:55:46,221 - Perf_cpu - INFO - 
+2016-07-08 15:55:46,221 - Perf_cpu - INFO - Maximum prime number checked in CPU test: 30000
+2016-07-08 15:55:46,221 - Perf_cpu - INFO - 
+2016-07-08 15:55:46,221 - Perf_cpu - INFO - 
+2016-07-08 15:55:46,222 - Perf_cpu - INFO - Test execution summary:
+2016-07-08 15:55:46,222 - Perf_cpu - INFO -     total time:                          58.5795s
+2016-07-08 15:55:46,222 - Perf_cpu - INFO -     total number of events:              10000
+2016-07-08 15:55:46,222 - Perf_cpu - INFO -     total time taken by event execution: 58.5755
+2016-07-08 15:55:46,222 - Perf_cpu - INFO -     per-request statistics:
+2016-07-08 15:55:46,222 - Perf_cpu - INFO -          min:                                  5.36ms
+2016-07-08 15:55:46,222 - Perf_cpu - INFO -          avg:                                  5.86ms
+2016-07-08 15:55:46,222 - Perf_cpu - INFO -          max:                                  8.89ms
+2016-07-08 15:55:46,222 - Perf_cpu - INFO -          approx.  95 percentile:               6.67ms
+2016-07-08 15:55:46,222 - Perf_cpu - INFO - 
+2016-07-08 15:55:46,223 - Perf_cpu - INFO - Threads fairness:
+2016-07-08 15:55:46,223 - Perf_cpu - INFO -     events (avg/stddev):           10000.0000/0.00
+2016-07-08 15:55:46,223 - Perf_cpu - INFO -     execution time (avg/stddev):   58.5755/0.00
