@@ -27,7 +27,7 @@ class ResultSorting(object):
         return result
  
 # useage
-a=ResultSorting()
-d = a.datasearch("execution time \(avg\/stddev\):(.*?)\/0.00", "finalresult/iSoft_Desktop_4.0/Perf_cpu/result/result.out", 3)
-print d
+#a=ResultSorting()
+#d = a.datasearch("execution time \(avg\/stddev\):(.*?)\/0.00", "finalresult/iSoft_Desktop_4.0/Perf_cpu/result/result.out", 3)
+#print d
 

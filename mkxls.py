@@ -24,18 +24,6 @@ sheet_speccpu_info = {
         ),
     "oslist": ["isoft_desktop V4.0 loongson", "Deepin15_mips_20160520", "Neokylin Desktop-7.0-loongson"],
     }
-sheet_speccpu_data = [
-    [
-        ["spec2000， bigger is better", "spec2000"],
-        ["ITEM", "SPECint2000", "SPECfp2000", "SPECint_rate2000",\
-        "SPECfp_rate2000"],
-        [611.00, 775.00, 776.00, 777.00],
-        [608.00, 776.00, 777.00, 778.00],
-        [610.00, 777.00, 778.00, 779.00],
-        [120.00, 124.00, 492.00, 340.00],
-        [120.00, 124.00, 492.00, 340.00],
-        ],
-]
 
 sheet_syscpu_info = {
     'sheetname': '处理器运算_B',
@@ -47,17 +35,11 @@ sheet_syscpu_info = {
      'oslist': ["isoft_desktop V4.0 loongson", "Deepin15_mips_20160520", "Neokylin Desktop-7.0-loongson"],
     }
 
-sheet_syscpu_data = [
-    [
-        ["execution time, less is better", "sysbench"],
-        ["ITEM", "10000", "20000", "30000"],
-        [9.919, 25.611, 44.699],
-        [9.919, 25.606, 44.722],
-        [9.011, 24.011, 34.011],
-    ],
-]
-
-
+sheet_sysmem_info = {
+    'sheetname': "内存操作",
+    'testinfo': ("内存操作性能", "测试工具: sysbench", "性能指标：包括4/8线程内存操作速度和带宽", "对比说明：测试结果为３次求平均值","测试参数:sysbench --test=memory --num-threads=4/8 --memory-block-size=8192 --memory-total-size=4G run"),
+    'oslist':["testos"]
+}
 sheet_lmbench_info = {
     'sheetname': '内核',
     'testinfo': ("内核性能测试","测试工具：lmbench", 
@@ -69,34 +51,6 @@ sheet_lmbench_info = {
     'oslist': ["isoft_desktop V4.0 loongson", "Deepin15_mips_20160520", "Neokylin Desktop-7.0-loongson"],
     }
 
-sheet_lmbench_data =[
-    [
-        ["Processor, Processes - times in microseconds - smaller is better", \
-        "Processor"],
-        ["ITEM", "null call", "null I/O", "stat", "open clos", "slct TCP",\
-         "sig inst", "sig hndl", "fork proc(k)", "exec porc(k)", "sh proc(k)"],
-        [0.44, 0.70, 8.18, 12.26, 12.38, 0.80, 4.06, 0.42, 1.36, 4.46],
-        [0.33, 0.67, 3.74, 7.24, 12.64, 1.04, 4.27, 0.39, 1.31, 5.24],
-        [0.44, 0.68, 8.14, 13.10, 9.97, 0.82, 4.50, 0.43, 1.38, 4.29],
-    ],
-    [
-        ["Context switching - times in microseconds - smaller is better",\
-        "Context switching"],
-        ["ITEM", "2p/0k", "2p/16k", "2p/64k", "8p/16k", "8p/64k", "16p/16k",\
-        "16p/64k"],
-        [2.62, 3.04, 6.76, 5.44, 7.64, 6.13, 7.03],
-        [2.38, 2.51, 11.72, 6.80, 12.08, 8.00, 12.10],
-        [2.90, 2.96, 7.59, 6.00, 8.66, 6.98, 8.63],
-    ],
-    [
-        ["*Local* Communication latencies in microseconds - smaller is better", "*Local* Communication latencie"],
-        ["ITEM", "2p/0K ctxsw", "Pipe", "AF UNIX", "UDP", "TCP", "TCP conn"],
-        [2.62, 11.70, 21.26, 27.20, 36.44, 85.00],
-        [2.38, 11.46, 20.24, 24.82, 33.98, 115.80],
-        [2.90, 12.80, 23.34, 47.72, 61.72, 174.80],
-    ],
-]
-    
 #format_dirt字典保存格式化信息
 #结果图表title格式
 formtitle_format = {
@@ -272,7 +226,6 @@ class MkSinglesheet(object):
         for i in range(1, 5):
             worksheet.set_row(i, 21)
         worksheet.set_column(0, 0, formatinfo['columnwidthst'])
-        worksheet.set_column(1, formatinfo['rowslarge'], formatinfo['columnwidthother'])
         
 
     def mk_chart(self, worksheet, chartwidth, linenum, figwide, itemdata):
@@ -330,7 +283,6 @@ class MkSinglesheet(object):
         format = self.workbook.add_format(item_format)
         worksheet.merge_range('A%s:%s%s' %(lastline, columnwidth, lastline+3), " ", format)
 
-
     def addsheet(self):
         formatinfo = self.formatinfo()
         worksheet = self.workbook.add_worksheet(self.info['sheetname'])
@@ -339,14 +291,20 @@ class MkSinglesheet(object):
         self.additems(worksheet, formatinfo)
         self.sheetformatting(worksheet, formatinfo)
 
-infolist=[sheet_speccpu_info, sheet_lmbench_info, sheet_syscpu_info]
-datalist=[sheet_speccpu_data, sheet_lmbench_data, sheet_syscpu_data]
+#infolist=[sheet_speccpu_info, sheet_lmbench_info, sheet_syscpu_info]
+#datalist=[sheet_speccpu_data, sheet_lmbench_data, sheet_syscpu_data]
+totalinfo = {'speccpu': sheet_speccpu_info, 'Perf_cpu': sheet_syscpu_info, "lmbench": sheet_lmbench_info, 'Perf_mem': 
+    sheet_sysmem_info}
 
-def mkxls():
-    workbook = xlsxwriter.Workbook("test.xlsx")
+def mkxls(totaldata, itemlist, oslist):
+    infolist=[]
+    datalist=[]
+    for test in itemlist:
+        totalinfo[test]['oslist']=oslist
+        infolist.append(totalinfo[test])
+        datalist.append(totaldata[test])
+    workbook = xlsxwriter.Workbook("result.xlsx")
     for info, data in zip(infolist, datalist):
         a = MkSinglesheet(workbook, info, data)
         a.addsheet()
     workbook.close()
-
-mkxls()
