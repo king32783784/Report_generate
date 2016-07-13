@@ -30,7 +30,6 @@ if __name__== "__main__":
     reciveargs['items'] = options.processitems.split()
     maincontrol = Control_processing(reciveargs)
     maincontrol._mkxls()
-    print "test"
 
 # reciveargs={'items': ['cpu', 'mem'], 'type': ['xls', 'html'], 'osnames': ['iSoft_Desktop_4.0', 'deepin']}
 

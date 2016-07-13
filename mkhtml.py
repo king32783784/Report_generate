@@ -1,100 +1,139 @@
 import os
-from datasorting import ResultSorting
-#from mkchart import MkChart
+import sys
+from subprocess import call, PIPE, Popen
+from mkchart import MkChart
+# sysbench_cpu
+md_syscpu = [
+    '''
+##sysbench - Performance Test of CPU
 
-chartdata = {
-          'custom_font': '/usr/share/fonts/goffer.ttf',  # chart font
-          'title': '',      # chart title
-          'osnames': [],    # os names
-          'subjects': (''), 
-          'scores': [],   
-          'pngname': ''     
-           }
-Mk_temp={
-    "sysbenchmemops" :'''
-MEM Operations performed - 4threads & 8 threads -bigger is better
+###CPU Execution time(second) - 1thread
+
+*OS* | *10000* | *20000* | *30000*
+------ | --------- | --------- | ---------''',
+]
+chart_syscpu = [{
+          'custom_font': '/usr/share/fonts/goffer.ttf',
+          'title': 'CPU Execution time (sec)',
+          'osnames': [],
+          'subjects': ('1000', '2000', '3000'),
+          'scores': [[10.844, 28.028, 48.917], [11.304, 28.860, 50.346]],
+          'pngname': 'result_html/svgfile/syscpu0.png'
+           },]
+#sysbench_mem
+md_sysmem=[
+    '''
+##sysbench - Performance Test of MEM
+### MEM Operations performed - 4threads & 8 threads
 
 *OS* | *4threads(ops/sec)* | *8threads(ops/sec)*
 ------ | ------------------- | ----------------''',
-    "sysbenchmemmrate" :'''
-MEM Transfer rate - 4threads & 8 threads -bigger is better
+    '''
+### MEM Transfer rate - 4threads & 8 threads
 *OS* | *4threads(MB/sec)* | *8threads(MB/sec)*
 ------ | ------------------- | ------------------'''
-}
+]
+chart_sysmem = [{
+    'custom_font': '/usr/share/fonts/goffer.ttf',
+    'title': 'MEM Operations performed (ops/sec)',
+    'osnames': [],
+    'subjects': ('4threads', '8threads'),
+    'scores': ([3324739.04, 3298945.06], [3351746.42, 3457950.96]),
+    'pngname': 'result_html/svgfile/sysmem0.png'},
+    {
+    'custom_font': '/usr/share/fonts/goffer.ttf',
+    'title': 'Mem Transfer Rate (MB/s)',
+    'osnames': [],
+    'subjects': ('4threads', '8threads'),
+    'scores': ([12987.26, 12886.51], [13092.76, 13507.62]),
+    'pngname': 'result_html/svgfile/sysmem1.png'},]
 
-
-data_cpu_aidinfo = {
-    "search_path": "execution time \(avg\/stddev\):(.*?)\/0.00",
-    "chart_title": ('CPU Execution time (sec)'),
-    "subjects": ('10000', '20000', '30000'),
-    "itemname" : "sysbench_cpu",
-    "mdtitle" : '''
-## Sysbench - Performance Test of CPU
-
-CPU Execution time(second) - 1thread - smaller is better
-
-*OS* | *10000* | *20000* | *30000*
------- | --------- | --------- | ---------
-'''
-}
-
-data_search_path = {
-    "sysbench_mem_ops": "Operations performed: 2097152 \((.*?)ops\/sec\)",
-    "sysbench_mem_rate": "8192.00 MB transferred \((.*?)MB\/sec\)",
-    "sysbench_cpu" : "execution time \(avg\/stddev\):(.*?)\/0.00"
-}
-
-
-class MkResult(ResultSorting):
-     def __init__(self, testitemaidinfo, times, resultfile, resultdir, oslist):
-         self.testaidinfo = testitemaidinfo
-         self.times = times
-         self.resultfile = resultfile
-         self.resultdir = resultdir
-         self.oslist = oslist
-     
-     def wraptreatment(self, length, charters):
-         temp =''
-         t = 0
-         for i, charter in enumerate(charters, 1):
-              if i % length == 0:
-                  temp = temp + charters[t:i] + "\n"
-                  t = i
-         temp = temp + charters[t:]
-         return temp
-     
-     def _mkdata(self):
-         dataresult = self.datasearch(self.testaidinfo['search_path'], self.resultfile, self.times)
-         osname = self.wraptreatment(9, ReadSysinfo.os_name())
-         charttmpdict = chartdata
-         charttmpdict['title'] = self.testaidinfo['chart_title']     
-         charttmpdict['subjects'] = self.testaidinfo['subjects']
-         charttmpdict['osnames'].append(osname)
-         charttmpdict['scores'].append(dataresult)
-         pngdir = os.path.join(self.resultdir, self.testaidinfo['chart_pngname'])
-         charttmpdict['pngname'] = pngdir
-         return charttmpdict
-         
-     def _mkchart(self, mdfile):
-         charttmpdit = self._mkdata()
-         mkchart = MkChart(chartargs=charttmpdit)
-         mkchart._mkchart()
-         f = open(mdfile, 'a+')
-         f.write("![](.%s)" %self.testaidinfo['chart_pngname'])
-        
-     def _mkmdfile(self, mdfile):
-         dataresult = self.datasearch(self.testaidinfo['search_path'], self.resultfile, self.times)
-         datatemp = ""
-         for charter in dataresult:
-              datatemp = datatemp + "|" + "%s" % charter
-         f = open(mdfile, 'a+')
-         f.write(self.testaidinfo['mdtitle'])
-         f.write("%s" % self.oslist[0] +  datatemp + "|" + "\n" + "\n")
     
-     def mkresult(self):
-         mdfile = os.path.join(self.resultdir, 'Lpb_i.md')
-         self._mkmdfile(mdfile)
-     #    self._mkchart(mdfile)
-oslist = ['iSoft_Desktop_4.0', 'Deepin_4.0']
-a = MkResult(data_cpu_aidinfo, 3, '/home/isoft_lp/Github/Lpbs-i/resulttmp/performance/Perf_cpu/result/result.out', '/home/isoft_lp/Github/Lpbs-i/finalresult', oslist)
-a.mkresult()
+class MkHtml(object):
+    def __init__(self, oslist, testitem, resultdata):
+        self.oslist = oslist
+        self.itemlist = testitem
+        self.resultdata = resultdata
+        print self.itemlist
+ #       print self.resultdata
+
+    def wraptreatment(self, length, charters):
+        temp =''
+        t = 0
+        for i, charter in enumerate(charters, 1):
+            if i % length == 0:
+                temp = temp + charters[t:i] + "\n"
+                t = i
+        temp = temp + charters[t:]
+        return temp
+     
+    def _mkchartdata(self):
+        for osname in self.oslist:
+            ostest = self.wraptreatment(9, osname)
+            chartditlist[self.itemlist][0]['osnames'].append(ostest)
+        chartditlist[self.itemlist][0]['scores'] = self.resultdata[self.itemlist]
+        if os.path.isdir("result_html/svgfile/") is not True:
+            try:
+                retcode = call("mkdir result_html/svgfile", shell=True)
+                if retcode < 0:
+                    print >> sys.stderr, "Child was terminated by signal", -retcode
+                else:
+                    print >>sys.stderr, "Child returned", retcode
+            except OSError as e:
+                print >>sys.stderr, "Execution failed:", e
+        return chartditlist[self.itemlist][0]
+         
+    def _mkchart(self, mdfile):
+        charttmpdit = self._mkchartdata()
+        mkchart = MkChart(chartargs=charttmpdit)
+        mkchart._mkchart()
+        f = open(mdfile, 'a+')
+        a = charttmpdit['pngname']
+        f.write("![](./%s)" %(a.split("/")[1] + '/' + a.split("/")[2]))
+        
+    def _mkmdfile(self, mdfile, itemmdtitle, itemmddata):
+        f = open(mdfile, 'a+')
+        f.write(itemmdtitle)
+        f.write("\n")
+        print itemmddata
+        for i, osname in enumerate(self.oslist):
+            datatemp = ""
+            for data in itemmddata:
+                datatemp = datatemp + '|' + '%s' % data
+            f.write("%s" % self.oslist[i] + datatemp + "|" + "\n")
+    
+    def _mkresult(self):
+        mdfile = os.path.join('result_html', 'Lpb_i.md')
+        step = len(self.oslist)
+        finaldata = []
+        j = 0
+        for i, data in enumerate(self.resultdata[self.itemlist]):
+            datatemp = []
+            print data
+            datatemp.append(data)
+            #print datatemp
+            if i % step == 0:
+                finaldata.append(datatemp)
+        print finaldata
+        for i, itemmdtitle in enumerate(mdtitle[self.itemlist]):
+            self._mkmdfile(mdfile, itemmdtitle, finaldata[i])
+#        self._mkchart(mdfile)
+
+mdtitle = {'Perf_cpu': md_syscpu ,'Perf_mem': md_sysmem}
+chartditlist = {'Perf_cpu': chart_syscpu, 'Perf_mem': chart_sysmem}
+
+def mkhtml(htmldata, itemlist, oslist):
+    print htmldata
+    if os.path.isdir("result_html") is not True:
+        try:
+            retcode = call("mkdir result_html", shell=True)
+            if retcode < 0:
+                print >> sys.stderr, "Child was terminated by signal", -retcode
+            else:
+                print >>sys.stderr, "Child returned", retcode
+        except OSError as e:
+            print >>sys.stderr, "Execution failed:", e
+#oslist = ['iSoft_Desktop_4.0', 'Deepin_4.0']
+    for testitem in itemlist:
+        mkhtml = MkHtml(oslist, testitem, htmldata)
+        mkhtml._mkresult()

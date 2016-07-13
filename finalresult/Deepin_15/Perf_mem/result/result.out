@@ -182,9 +182,9 @@
 2016-07-08 15:56:08,700 - Perf_mem - INFO - Threads started!
 2016-07-08 15:56:08,700 - Perf_mem - INFO - Done.
 2016-07-08 15:56:08,700 - Perf_mem - INFO - 
-2016-07-08 15:56:08,700 - Perf_mem - INFO - Operations performed: 2097152 (2296493.77 ops/sec)
+2016-07-08 15:56:08,700 - Perf_mem - INFO - Operations performed: 2097152 (22964937.7 ops/sec)
 2016-07-08 15:56:08,701 - Perf_mem - INFO - 
-2016-07-08 15:56:08,701 - Perf_mem - INFO - 8192.00 MB transferred (8970.68 MB/sec)
+2016-07-08 15:56:08,701 - Perf_mem - INFO - 8192.00 MB transferred (89706.8 MB/sec)
 2016-07-08 15:56:08,701 - Perf_mem - INFO - 
 2016-07-08 15:56:08,701 - Perf_mem - INFO - 
 2016-07-08 15:56:08,701 - Perf_mem - INFO - Test execution summary:

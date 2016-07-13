@@ -16,7 +16,7 @@
 2016-07-08 15:50:46,954 - Perf_cpu - INFO - Test execution summary:
 2016-07-08 15:50:46,954 - Perf_cpu - INFO -     total time:                          12.8582s
 2016-07-08 15:50:46,955 - Perf_cpu - INFO -     total number of events:              10000
-2016-07-08 15:50:46,955 - Perf_cpu - INFO -     total time taken by event execution: 12.8572
+2016-07-08 15:50:46,955 - Perf_cpu - INFO -     total time taken by event execution: 128.572
 2016-07-08 15:50:46,955 - Perf_cpu - INFO -     per-request statistics:
 2016-07-08 15:50:46,955 - Perf_cpu - INFO -          min:                                  1.18ms
 2016-07-08 15:50:46,955 - Perf_cpu - INFO -          avg:                                  1.29ms
@@ -77,7 +77,7 @@
 2016-07-08 15:51:12,280 - Perf_cpu - INFO - 
 2016-07-08 15:51:12,280 - Perf_cpu - INFO - Threads fairness:
 2016-07-08 15:51:12,280 - Perf_cpu - INFO -     events (avg/stddev):           10000.0000/0.00
-2016-07-08 15:51:12,280 - Perf_cpu - INFO -     execution time (avg/stddev):   12.7024/0.00
+2016-07-08 15:51:12,280 - Perf_cpu - INFO -     execution time (avg/stddev):   127.024/0.00
 2016-07-08 15:51:12,281 - Perf_cpu - INFO - /home/isoft_lp/Github/Lpbs-i/tmp/Perf_cpu/sysbench/sysbench --test=cpu --cpu-max-prime=20000 run
 2016-07-08 15:51:46,369 - Perf_cpu - INFO - sysbench 0.4.12:  multi-threaded system evaluation benchmark
 2016-07-08 15:51:46,370 - Perf_cpu - INFO - 
@@ -95,7 +95,7 @@
 2016-07-08 15:51:46,371 - Perf_cpu - INFO - Test execution summary:
 2016-07-08 15:51:46,371 - Perf_cpu - INFO -     total time:                          34.0844s
 2016-07-08 15:51:46,371 - Perf_cpu - INFO -     total number of events:              10000
-2016-07-08 15:51:46,371 - Perf_cpu - INFO -     total time taken by event execution: 34.0812
+2016-07-08 15:51:46,371 - Perf_cpu - INFO -     total time taken by event execution: 340.812
 2016-07-08 15:51:46,371 - Perf_cpu - INFO -     per-request statistics:
 2016-07-08 15:51:46,371 - Perf_cpu - INFO -          min:                                  3.08ms
 2016-07-08 15:51:46,371 - Perf_cpu - INFO -          avg:                                  3.41ms
@@ -156,7 +156,7 @@
 2016-07-08 15:52:52,859 - Perf_cpu - INFO - 
 2016-07-08 15:52:52,859 - Perf_cpu - INFO - Threads fairness:
 2016-07-08 15:52:52,859 - Perf_cpu - INFO -     events (avg/stddev):           10000.0000/0.00
-2016-07-08 15:52:52,859 - Perf_cpu - INFO -     execution time (avg/stddev):   33.1661/0.00
+2016-07-08 15:52:52,859 - Perf_cpu - INFO -     execution time (avg/stddev):   331.661/0.00
 2016-07-08 15:52:52,860 - Perf_cpu - INFO - /home/isoft_lp/Github/Lpbs-i/tmp/Perf_cpu/sysbench/sysbench --test=cpu --cpu-max-prime=30000 run
 2016-07-08 15:53:49,430 - Perf_cpu - INFO - sysbench 0.4.12:  multi-threaded system evaluation benchmark
 2016-07-08 15:53:49,430 - Perf_cpu - INFO - 
@@ -174,7 +174,7 @@
 2016-07-08 15:53:49,431 - Perf_cpu - INFO - Test execution summary:
 2016-07-08 15:53:49,432 - Perf_cpu - INFO -     total time:                          56.5655s
 2016-07-08 15:53:49,432 - Perf_cpu - INFO -     total number of events:              10000
-2016-07-08 15:53:49,432 - Perf_cpu - INFO -     total time taken by event execution: 56.5623
+2016-07-08 15:53:49,432 - Perf_cpu - INFO -     total time taken by event execution: 565.623
 2016-07-08 15:53:49,432 - Perf_cpu - INFO -     per-request statistics:
 2016-07-08 15:53:49,432 - Perf_cpu - INFO -          min:                                  5.37ms
 2016-07-08 15:53:49,432 - Perf_cpu - INFO -          avg:                                  5.66ms
@@ -183,7 +183,7 @@
 2016-07-08 15:53:49,432 - Perf_cpu - INFO - 
 2016-07-08 15:53:49,432 - Perf_cpu - INFO - Threads fairness:
 2016-07-08 15:53:49,432 - Perf_cpu - INFO -     events (avg/stddev):           10000.0000/0.00
-2016-07-08 15:53:49,432 - Perf_cpu - INFO -     execution time (avg/stddev):   56.5623/0.00
+2016-07-08 15:53:49,432 - Perf_cpu - INFO -     execution time (avg/stddev):   565.623/0.00
 2016-07-08 15:54:47,608 - Perf_cpu - INFO - sysbench 0.4.12:  multi-threaded system evaluation benchmark
 2016-07-08 15:54:47,609 - Perf_cpu - INFO - 
 2016-07-08 15:54:47,609 - Perf_cpu - INFO - Running the test with following options:

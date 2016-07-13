@@ -102,12 +102,13 @@ class MkChart(object):
         self.graphing()
         plt.savefig(self.pngname)
 # samples
+'''
 sysbenchcpu = {
           'custom_font': '/usr/share/fonts/goffer.ttf',
           'title': 'CPU Execution time (sec)',
           'osnames': ('isoft-4.0\n-beta3', 'Fedora-23'),
           'subjects': ('1000', '2000', '3000'),
-          'scores': ([10.844, 28.028, 48.917], [11.304, 28.860, 50.346]),
+          'scores': [[10.844, 28.028, 48.917], [11.304, 28.860, 50.346]],
           'pngname': 'vsysbench.cpu.png'
            }
 
@@ -207,8 +208,8 @@ lmfile = {
           'pngname': 'LMFILEVM.png'
            }
 test = {'title': 'CPU Execution time (sec)', 'custom_font': '/usr/share/fonts/goffer.ttf', 'subjects': ('10000', '20000', '30000'), 'osnames': ['iSoft_Desknktop_4.0'], 'scores': [[13.0775, 31.9033, 55.9291]], 'pngname': 'chart.cpu.png'}
-
-testsample = (sysbenchcpu, sysbenchmema, sysbenchmemb, iozone, lmbench1,
-              lmbenchint, lmdouble, lmcontext, lmfile)
-g = MkChart(chartargs=test)
-g._mkchart()
+'''
+#testsample = (sysbenchcpu, sysbenchmema, sysbenchmemb, iozone, lmbench1,
+ #             lmbenchint, lmdouble, lmcontext, lmfile)
+#g = MkChart(chartargs=sysbenchcpu)
+#g._mkchart()
