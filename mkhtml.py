@@ -1,7 +1,7 @@
 import os
 import sys
 from subprocess import call, PIPE, Popen
-from mkchart import MkChart
+from mkchart import *
 # sysbench_cpu
 md_syscpu = [
     '''
@@ -67,11 +67,12 @@ class MkHtml(object):
         temp = temp + charters[t:]
         return temp
      
-    def _mkchartdata(self):
+    def _mkchartdata(self, itemmddata, offset):
+        print offset
         for osname in self.oslist:
             ostest = self.wraptreatment(9, osname)
-            chartditlist[self.itemlist][0]['osnames'].append(ostest)
-        chartditlist[self.itemlist][0]['scores'] = self.resultdata[self.itemlist]
+            chartditlist[self.itemlist][offset]['osnames'].append(ostest)
+        chartditlist[self.itemlist][offset]['scores'] = itemmddata
         if os.path.isdir("result_html/svgfile/") is not True:
             try:
                 retcode = call("mkdir result_html/svgfile", shell=True)
@@ -81,49 +82,45 @@ class MkHtml(object):
                     print >>sys.stderr, "Child returned", retcode
             except OSError as e:
                 print >>sys.stderr, "Execution failed:", e
-        return chartditlist[self.itemlist][0]
+        return chartditlist[self.itemlist][offset]
          
-    def _mkchart(self, mdfile):
-        charttmpdit = self._mkchartdata()
-        mkchart = MkChart(chartargs=charttmpdit)
-        mkchart._mkchart()
+    def _mkchart(self, mdfile, charttmpdict):
+        mkchart(charttmpdict)
         f = open(mdfile, 'a+')
-        a = charttmpdit['pngname']
+        a = charttmpdict['pngname']
         f.write("![](./%s)" %(a.split("/")[1] + '/' + a.split("/")[2]))
         
-    def _mkmdfile(self, mdfile, itemmdtitle, itemmddata):
+    def _mkmdfile(self, mdfile, itemmdtitle, itemmddata, offset):
         f = open(mdfile, 'a+')
         f.write(itemmdtitle)
         f.write("\n")
-        print itemmddata
         for i, osname in enumerate(self.oslist):
             datatemp = ""
-            for data in itemmddata:
-                datatemp = datatemp + '|' + '%s' % data
+            for datalist in itemmddata[i]:
+                datatemp = datatemp + '|' + '%s' % datalist
             f.write("%s" % self.oslist[i] + datatemp + "|" + "\n")
-    
+        charttmpdict = self._mkchartdata(itemmddata, offset)
+        print charttmpdict
+        self._mkchart(mdfile, charttmpdict)
+
     def _mkresult(self):
         mdfile = os.path.join('result_html', 'Lpb_i.md')
         step = len(self.oslist)
         finaldata = []
-        j = 0
+        datatemp = []
         for i, data in enumerate(self.resultdata[self.itemlist]):
-            datatemp = []
-            print data
             datatemp.append(data)
-            #print datatemp
-            if i % step == 0:
+            if i % step == 1:
                 finaldata.append(datatemp)
-        print finaldata
+                datatemp = []
         for i, itemmdtitle in enumerate(mdtitle[self.itemlist]):
-            self._mkmdfile(mdfile, itemmdtitle, finaldata[i])
+            self._mkmdfile(mdfile, itemmdtitle, finaldata[i], i)
 #        self._mkchart(mdfile)
 
 mdtitle = {'Perf_cpu': md_syscpu ,'Perf_mem': md_sysmem}
 chartditlist = {'Perf_cpu': chart_syscpu, 'Perf_mem': chart_sysmem}
 
 def mkhtml(htmldata, itemlist, oslist):
-    print htmldata
     if os.path.isdir("result_html") is not True:
         try:
             retcode = call("mkdir result_html", shell=True)
