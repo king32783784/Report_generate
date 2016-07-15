@@ -35,6 +35,16 @@ sheet_sysmem_data = [
         ["ITEM", "4threads", "8threads"],
     ],
 ]
+# iozone_io
+# iozone_io_html
+html_iozone_data = []
+# iozone_io_xls
+sheet_io_data = [
+    [
+        ["Variety of file operations KB/sec", "iozone"],
+        ["ITEM", "Writer", "Re-writer", "Reader", "Re-reader", "Random Read", "Random Write"],
+    ],
+]
 # sysbench_mem_html
 html_sysmem_data=[]
 sheet_lmbench_data =[
@@ -56,9 +66,21 @@ sheet_lmbench_data =[
     ],
 ]
 
-patternmath = {'Perf_cpu': ["execution time \(avg\/stddev\):(.*?)\/0.00"], 'Perf_mem': ["Operations performed: 2097152 \((.*?)ops\/sec\)", "8192.00 MB transferred \((.*?)MB\/sec\)"]}
-totaldata = { 'speccpu': sheet_speccpu_data, 'Perf_cpu': sheet_syscpu_data, "lmbench": sheet_lmbench_data, "Perf_mem": sheet_sysmem_data}
-htmldata = {'Perf_cpu' : html_syscpu_data, 'Perf_mem': html_sysmem_data}
+patternmath = {'Perf_cpu': ["execution time \(avg\/stddev\):(.*?)\/0.00"],
+               'Perf_mem': ["Operations performed: 2097152 \((.*?)ops\/sec\)",
+                            "8192.00 MB transferred \((.*?)MB\/sec\)"],
+               'Perf_io': ["Children see throughput for  1 initial writers \t=   (.*?)KB\\/sec",
+                           "Children see throughput for  1 rewriters \t=   (.*?)KB\\/sec",
+                           "Children see throughput for  1 readers \t\t= (.*?)KB\\/sec",
+                           "Children see throughput for 1 re-readers \t= (.*?)KB\\/sec",
+                           "Children see throughput for 1 random readers \t= (.*?)KB\\/sec",
+                           "Children see throughput for 1 random writers \t=   (.*?)KB\\/sec"],
+                            }
+totaldata = { 'speccpu': sheet_speccpu_data, 'Perf_cpu': sheet_syscpu_data,
+              "lmbench": sheet_lmbench_data, "Perf_mem": sheet_sysmem_data,
+              "Perf_io": sheet_io_data,}
+htmldata = {'Perf_cpu' : html_syscpu_data, 'Perf_mem': html_sysmem_data,
+            'Perf_io': html_iozone_data,}
 class Control_processing(object):
     def __init__(self, myargs):
         '''{'items': ['cpu'], 'type': ['xls'], 'osnames': ['iSoft_Desktop_4.0']}'''
@@ -68,9 +90,11 @@ class Control_processing(object):
         for testitem in itemlist:
             for os in oslist:
                 for i, pattern in enumerate (patternmath[testitem]):
+                    print pattern
                     data=ResultSorting()
                     testdata = data.datasearch(pattern, "finalresult/%s/%s/result/result.out" %(os, testitem), 3)
-                    totaldata[testitem][i].append(testdata)
+                    print i,testdata
+            #        totaldata[testitem][i].append(testdata)
         return totaldata
  
     def _gethtmldata(self, oslist, itemlist):

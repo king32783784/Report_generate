@@ -34,7 +34,13 @@ sheet_syscpu_info = {
          ),
      'oslist': ["isoft_desktop V4.0 loongson", "Deepin15_mips_20160520",
                 "Neokylin Desktop-7.0-loongson"],}
-
+sheet_iozone_info = {
+    'sheetname': 'IO读写',
+    'testinfo': ("I/O读写性能", "测试工具:iozone3",
+        "性能指标: 包括IO的写、重复写、读、重复读、随机写、随机读等指标",
+        "对比说明：测试结果均为3次平均值， 数值越大，说明I/O性能越好",
+        "测试参数：./iozone -s 16G -i 0 -i 1 -i 2 -t 1 -r 1M",),
+    'oslist': [],}
 sheet_sysmem_info = {
     'sheetname': "内存操作",
     'testinfo': ("内存操作性能", "测试工具: sysbench", "性能指标: \
@@ -308,7 +314,8 @@ class MkSinglesheet(object):
 # infolist=[sheet_speccpu_info, sheet_lmbench_info, sheet_syscpu_info]
 # datalist=[sheet_speccpu_data, sheet_lmbench_data, sheet_syscpu_data]
 totalinfo = {'speccpu': sheet_speccpu_info, 'Perf_cpu': sheet_syscpu_info,
-             "lmbench": sheet_lmbench_info, 'Perf_mem': sheet_sysmem_info}
+             "lmbench": sheet_lmbench_info, 'Perf_mem': sheet_sysmem_info,
+             "Perf_io": sheet_iozone_info,}
 
 
 def mkxls(totaldata, itemlist, oslist):

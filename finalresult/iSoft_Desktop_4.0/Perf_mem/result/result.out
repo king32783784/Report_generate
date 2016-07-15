@@ -1,0 +1,202 @@
+2016-07-15 16:58:40,462 - Perf_mem - INFO - {u'num_threads': u'4,8', u'total_size': u'8G', u'test_type': u'memory', u'reboot': u'no', u'runtimes': u'3', u'tag': u"'mem'", u'tarbal': u'sysbench-0.4.12.tar.gz', u'block_size': u'4096'}
+2016-07-15 16:58:40,462 - Perf_mem - INFO - [u'4', u'8']
+2016-07-15 16:58:40,463 - Perf_mem - INFO - /home/isoft_lp/Github/Lpbs-i/tmp/Perf_mem/sysbench/sysbench --test=memory --num-threads=4 --memory-block-size=4096 --memory-total-size=8G run
+2016-07-15 16:58:41,389 - Perf_mem - INFO - sysbench 0.4.12:  multi-threaded system evaluation benchmark
+2016-07-15 16:58:41,389 - Perf_mem - INFO - 
+2016-07-15 16:58:41,389 - Perf_mem - INFO - Running the test with following options:
+2016-07-15 16:58:41,390 - Perf_mem - INFO - Number of threads: 4
+2016-07-15 16:58:41,390 - Perf_mem - INFO - 
+2016-07-15 16:58:41,390 - Perf_mem - INFO - Doing memory operations speed test
+2016-07-15 16:58:41,390 - Perf_mem - INFO - Memory block size: 4K
+2016-07-15 16:58:41,390 - Perf_mem - INFO - 
+2016-07-15 16:58:41,390 - Perf_mem - INFO - Memory transfer size: 8192M
+2016-07-15 16:58:41,390 - Perf_mem - INFO - 
+2016-07-15 16:58:41,390 - Perf_mem - INFO - Memory operations type: write
+2016-07-15 16:58:41,390 - Perf_mem - INFO - Memory scope type: global
+2016-07-15 16:58:41,390 - Perf_mem - INFO - Threads started!
+2016-07-15 16:58:41,390 - Perf_mem - INFO - Done.
+2016-07-15 16:58:41,390 - Perf_mem - INFO - 
+2016-07-15 16:58:41,390 - Perf_mem - INFO - Operations performed: 2097152 (2274849.81 ops/sec)
+2016-07-15 16:58:41,390 - Perf_mem - INFO - 
+2016-07-15 16:58:41,390 - Perf_mem - INFO - 8192.00 MB transferred (8886.13 MB/sec)
+2016-07-15 16:58:41,391 - Perf_mem - INFO - 
+2016-07-15 16:58:41,391 - Perf_mem - INFO - 
+2016-07-15 16:58:41,391 - Perf_mem - INFO - Test execution summary:
+2016-07-15 16:58:41,391 - Perf_mem - INFO -     total time:                          0.9219s
+2016-07-15 16:58:41,391 - Perf_mem - INFO -     total number of events:              2097152
+2016-07-15 16:58:41,391 - Perf_mem - INFO -     total time taken by event execution: 3.1018
+2016-07-15 16:58:41,391 - Perf_mem - INFO -     per-request statistics:
+2016-07-15 16:58:41,391 - Perf_mem - INFO -          min:                                  0.00ms
+2016-07-15 16:58:41,391 - Perf_mem - INFO -          avg:                                  0.00ms
+2016-07-15 16:58:41,391 - Perf_mem - INFO -          max:                                  7.57ms
+2016-07-15 16:58:41,391 - Perf_mem - INFO -          approx.  95 percentile:               0.00ms
+2016-07-15 16:58:41,391 - Perf_mem - INFO - 
+2016-07-15 16:58:41,391 - Perf_mem - INFO - Threads fairness:
+2016-07-15 16:58:41,391 - Perf_mem - INFO -     events (avg/stddev):           524288.0000/36736.60
+2016-07-15 16:58:41,392 - Perf_mem - INFO -     execution time (avg/stddev):   0.7754/0.01
+2016-07-15 16:58:42,240 - Perf_mem - INFO - sysbench 0.4.12:  multi-threaded system evaluation benchmark
+2016-07-15 16:58:42,240 - Perf_mem - INFO - 
+2016-07-15 16:58:42,241 - Perf_mem - INFO - Running the test with following options:
+2016-07-15 16:58:42,241 - Perf_mem - INFO - Number of threads: 4
+2016-07-15 16:58:42,241 - Perf_mem - INFO - 
+2016-07-15 16:58:42,241 - Perf_mem - INFO - Doing memory operations speed test
+2016-07-15 16:58:42,241 - Perf_mem - INFO - Memory block size: 4K
+2016-07-15 16:58:42,241 - Perf_mem - INFO - 
+2016-07-15 16:58:42,241 - Perf_mem - INFO - Memory transfer size: 8192M
+2016-07-15 16:58:42,241 - Perf_mem - INFO - 
+2016-07-15 16:58:42,241 - Perf_mem - INFO - Memory operations type: write
+2016-07-15 16:58:42,241 - Perf_mem - INFO - Memory scope type: global
+2016-07-15 16:58:42,241 - Perf_mem - INFO - Threads started!
+2016-07-15 16:58:42,241 - Perf_mem - INFO - Done.
+2016-07-15 16:58:42,242 - Perf_mem - INFO - 
+2016-07-15 16:58:42,242 - Perf_mem - INFO - Operations performed: 2097152 (2484896.44 ops/sec)
+2016-07-15 16:58:42,242 - Perf_mem - INFO - 
+2016-07-15 16:58:42,242 - Perf_mem - INFO - 8192.00 MB transferred (9706.63 MB/sec)
+2016-07-15 16:58:42,242 - Perf_mem - INFO - 
+2016-07-15 16:58:42,242 - Perf_mem - INFO - 
+2016-07-15 16:58:42,242 - Perf_mem - INFO - Test execution summary:
+2016-07-15 16:58:42,242 - Perf_mem - INFO -     total time:                          0.8440s
+2016-07-15 16:58:42,242 - Perf_mem - INFO -     total number of events:              2097152
+2016-07-15 16:58:42,242 - Perf_mem - INFO -     total time taken by event execution: 2.9159
+2016-07-15 16:58:42,242 - Perf_mem - INFO -     per-request statistics:
+2016-07-15 16:58:42,242 - Perf_mem - INFO -          min:                                  0.00ms
+2016-07-15 16:58:42,242 - Perf_mem - INFO -          avg:                                  0.00ms
+2016-07-15 16:58:42,242 - Perf_mem - INFO -          max:                                  3.09ms
+2016-07-15 16:58:42,242 - Perf_mem - INFO -          approx.  95 percentile:               0.00ms
+2016-07-15 16:58:42,243 - Perf_mem - INFO - 
+2016-07-15 16:58:42,243 - Perf_mem - INFO - Threads fairness:
+2016-07-15 16:58:42,243 - Perf_mem - INFO -     events (avg/stddev):           524288.0000/6800.69
+2016-07-15 16:58:42,243 - Perf_mem - INFO -     execution time (avg/stddev):   0.7290/0.00
+2016-07-15 16:58:43,085 - Perf_mem - INFO - sysbench 0.4.12:  multi-threaded system evaluation benchmark
+2016-07-15 16:58:43,085 - Perf_mem - INFO - 
+2016-07-15 16:58:43,086 - Perf_mem - INFO - Running the test with following options:
+2016-07-15 16:58:43,086 - Perf_mem - INFO - Number of threads: 4
+2016-07-15 16:58:43,086 - Perf_mem - INFO - 
+2016-07-15 16:58:43,086 - Perf_mem - INFO - Doing memory operations speed test
+2016-07-15 16:58:43,086 - Perf_mem - INFO - Memory block size: 4K
+2016-07-15 16:58:43,086 - Perf_mem - INFO - 
+2016-07-15 16:58:43,086 - Perf_mem - INFO - Memory transfer size: 8192M
+2016-07-15 16:58:43,087 - Perf_mem - INFO - 
+2016-07-15 16:58:43,087 - Perf_mem - INFO - Memory operations type: write
+2016-07-15 16:58:43,087 - Perf_mem - INFO - Memory scope type: global
+2016-07-15 16:58:43,087 - Perf_mem - INFO - Threads started!
+2016-07-15 16:58:43,087 - Perf_mem - INFO - Done.
+2016-07-15 16:58:43,087 - Perf_mem - INFO - 
+2016-07-15 16:58:43,087 - Perf_mem - INFO - Operations performed: 2097152 (2502510.01 ops/sec)
+2016-07-15 16:58:43,087 - Perf_mem - INFO - 
+2016-07-15 16:58:43,087 - Perf_mem - INFO - 8192.00 MB transferred (9775.43 MB/sec)
+2016-07-15 16:58:43,087 - Perf_mem - INFO - 
+2016-07-15 16:58:43,087 - Perf_mem - INFO - 
+2016-07-15 16:58:43,087 - Perf_mem - INFO - Test execution summary:
+2016-07-15 16:58:43,087 - Perf_mem - INFO -     total time:                          0.8380s
+2016-07-15 16:58:43,087 - Perf_mem - INFO -     total number of events:              2097152
+2016-07-15 16:58:43,087 - Perf_mem - INFO -     total time taken by event execution: 2.8941
+2016-07-15 16:58:43,088 - Perf_mem - INFO -     per-request statistics:
+2016-07-15 16:58:43,088 - Perf_mem - INFO -          min:                                  0.00ms
+2016-07-15 16:58:43,088 - Perf_mem - INFO -          avg:                                  0.00ms
+2016-07-15 16:58:43,088 - Perf_mem - INFO -          max:                                  1.02ms
+2016-07-15 16:58:43,088 - Perf_mem - INFO -          approx.  95 percentile:               0.00ms
+2016-07-15 16:58:43,088 - Perf_mem - INFO - 
+2016-07-15 16:58:43,088 - Perf_mem - INFO - Threads fairness:
+2016-07-15 16:58:43,088 - Perf_mem - INFO -     events (avg/stddev):           524288.0000/7762.65
+2016-07-15 16:58:43,088 - Perf_mem - INFO -     execution time (avg/stddev):   0.7235/0.00
+2016-07-15 16:58:43,089 - Perf_mem - INFO - /home/isoft_lp/Github/Lpbs-i/tmp/Perf_mem/sysbench/sysbench --test=memory --num-threads=8 --memory-block-size=4096 --memory-total-size=8G run
+2016-07-15 16:58:43,927 - Perf_mem - INFO - sysbench 0.4.12:  multi-threaded system evaluation benchmark
+2016-07-15 16:58:43,927 - Perf_mem - INFO - 
+2016-07-15 16:58:43,927 - Perf_mem - INFO - Running the test with following options:
+2016-07-15 16:58:43,927 - Perf_mem - INFO - Number of threads: 8
+2016-07-15 16:58:43,928 - Perf_mem - INFO - 
+2016-07-15 16:58:43,928 - Perf_mem - INFO - Doing memory operations speed test
+2016-07-15 16:58:43,928 - Perf_mem - INFO - Memory block size: 4K
+2016-07-15 16:58:43,928 - Perf_mem - INFO - 
+2016-07-15 16:58:43,928 - Perf_mem - INFO - Memory transfer size: 8192M
+2016-07-15 16:58:43,928 - Perf_mem - INFO - 
+2016-07-15 16:58:43,928 - Perf_mem - INFO - Memory operations type: write
+2016-07-15 16:58:43,928 - Perf_mem - INFO - Memory scope type: global
+2016-07-15 16:58:43,928 - Perf_mem - INFO - Threads started!
+2016-07-15 16:58:43,928 - Perf_mem - INFO - Done.
+2016-07-15 16:58:43,928 - Perf_mem - INFO - 
+2016-07-15 16:58:43,928 - Perf_mem - INFO - Operations performed: 2097152 (2517014.39 ops/sec)
+2016-07-15 16:58:43,928 - Perf_mem - INFO - 
+2016-07-15 16:58:43,928 - Perf_mem - INFO - 8192.00 MB transferred (9832.09 MB/sec)
+2016-07-15 16:58:43,928 - Perf_mem - INFO - 
+2016-07-15 16:58:43,929 - Perf_mem - INFO - 
+2016-07-15 16:58:43,929 - Perf_mem - INFO - Test execution summary:
+2016-07-15 16:58:43,929 - Perf_mem - INFO -     total time:                          0.8332s
+2016-07-15 16:58:43,929 - Perf_mem - INFO -     total number of events:              2097152
+2016-07-15 16:58:43,929 - Perf_mem - INFO -     total time taken by event execution: 4.4930
+2016-07-15 16:58:43,929 - Perf_mem - INFO -     per-request statistics:
+2016-07-15 16:58:43,929 - Perf_mem - INFO -          min:                                  0.00ms
+2016-07-15 16:58:43,929 - Perf_mem - INFO -          avg:                                  0.00ms
+2016-07-15 16:58:43,929 - Perf_mem - INFO -          max:                                 14.87ms
+2016-07-15 16:58:43,929 - Perf_mem - INFO -          approx.  95 percentile:               0.00ms
+2016-07-15 16:58:43,929 - Perf_mem - INFO - 
+2016-07-15 16:58:43,929 - Perf_mem - INFO - Threads fairness:
+2016-07-15 16:58:43,929 - Perf_mem - INFO -     events (avg/stddev):           262144.0000/35677.34
+2016-07-15 16:58:43,929 - Perf_mem - INFO -     execution time (avg/stddev):   0.5616/0.02
+2016-07-15 16:58:44,766 - Perf_mem - INFO - sysbench 0.4.12:  multi-threaded system evaluation benchmark
+2016-07-15 16:58:44,766 - Perf_mem - INFO - 
+2016-07-15 16:58:44,766 - Perf_mem - INFO - Running the test with following options:
+2016-07-15 16:58:44,766 - Perf_mem - INFO - Number of threads: 8
+2016-07-15 16:58:44,766 - Perf_mem - INFO - 
+2016-07-15 16:58:44,766 - Perf_mem - INFO - Doing memory operations speed test
+2016-07-15 16:58:44,766 - Perf_mem - INFO - Memory block size: 4K
+2016-07-15 16:58:44,766 - Perf_mem - INFO - 
+2016-07-15 16:58:44,766 - Perf_mem - INFO - Memory transfer size: 8192M
+2016-07-15 16:58:44,766 - Perf_mem - INFO - 
+2016-07-15 16:58:44,767 - Perf_mem - INFO - Memory operations type: write
+2016-07-15 16:58:44,767 - Perf_mem - INFO - Memory scope type: global
+2016-07-15 16:58:44,767 - Perf_mem - INFO - Threads started!
+2016-07-15 16:58:44,767 - Perf_mem - INFO - Done.
+2016-07-15 16:58:44,767 - Perf_mem - INFO - 
+2016-07-15 16:58:44,767 - Perf_mem - INFO - Operations performed: 2097152 (2521058.20 ops/sec)
+2016-07-15 16:58:44,767 - Perf_mem - INFO - 
+2016-07-15 16:58:44,767 - Perf_mem - INFO - 8192.00 MB transferred (9847.88 MB/sec)
+2016-07-15 16:58:44,767 - Perf_mem - INFO - 
+2016-07-15 16:58:44,767 - Perf_mem - INFO - 
+2016-07-15 16:58:44,767 - Perf_mem - INFO - Test execution summary:
+2016-07-15 16:58:44,767 - Perf_mem - INFO -     total time:                          0.8319s
+2016-07-15 16:58:44,767 - Perf_mem - INFO -     total number of events:              2097152
+2016-07-15 16:58:44,767 - Perf_mem - INFO -     total time taken by event execution: 4.4725
+2016-07-15 16:58:44,767 - Perf_mem - INFO -     per-request statistics:
+2016-07-15 16:58:44,767 - Perf_mem - INFO -          min:                                  0.00ms
+2016-07-15 16:58:44,768 - Perf_mem - INFO -          avg:                                  0.00ms
+2016-07-15 16:58:44,768 - Perf_mem - INFO -          max:                                 16.89ms
+2016-07-15 16:58:44,768 - Perf_mem - INFO -          approx.  95 percentile:               0.00ms
+2016-07-15 16:58:44,768 - Perf_mem - INFO - 
+2016-07-15 16:58:44,768 - Perf_mem - INFO - Threads fairness:
+2016-07-15 16:58:44,768 - Perf_mem - INFO -     events (avg/stddev):           262144.0000/61315.64
+2016-07-15 16:58:44,768 - Perf_mem - INFO -     execution time (avg/stddev):   0.5591/0.03
+2016-07-15 16:58:45,604 - Perf_mem - INFO - sysbench 0.4.12:  multi-threaded system evaluation benchmark
+2016-07-15 16:58:45,605 - Perf_mem - INFO - 
+2016-07-15 16:58:45,605 - Perf_mem - INFO - Running the test with following options:
+2016-07-15 16:58:45,605 - Perf_mem - INFO - Number of threads: 8
+2016-07-15 16:58:45,605 - Perf_mem - INFO - 
+2016-07-15 16:58:45,605 - Perf_mem - INFO - Doing memory operations speed test
+2016-07-15 16:58:45,605 - Perf_mem - INFO - Memory block size: 4K
+2016-07-15 16:58:45,605 - Perf_mem - INFO - 
+2016-07-15 16:58:45,605 - Perf_mem - INFO - Memory transfer size: 8192M
+2016-07-15 16:58:45,605 - Perf_mem - INFO - 
+2016-07-15 16:58:45,605 - Perf_mem - INFO - Memory operations type: write
+2016-07-15 16:58:45,605 - Perf_mem - INFO - Memory scope type: global
+2016-07-15 16:58:45,605 - Perf_mem - INFO - Threads started!
+2016-07-15 16:58:45,605 - Perf_mem - INFO - Done.
+2016-07-15 16:58:45,606 - Perf_mem - INFO - 
+2016-07-15 16:58:45,606 - Perf_mem - INFO - Operations performed: 2097152 (2521968.06 ops/sec)
+2016-07-15 16:58:45,606 - Perf_mem - INFO - 
+2016-07-15 16:58:45,606 - Perf_mem - INFO - 8192.00 MB transferred (9851.44 MB/sec)
+2016-07-15 16:58:45,606 - Perf_mem - INFO - 
+2016-07-15 16:58:45,606 - Perf_mem - INFO - 
+2016-07-15 16:58:45,606 - Perf_mem - INFO - Test execution summary:
+2016-07-15 16:58:45,606 - Perf_mem - INFO -     total time:                          0.8316s
+2016-07-15 16:58:45,606 - Perf_mem - INFO -     total number of events:              2097152
+2016-07-15 16:58:45,606 - Perf_mem - INFO -     total time taken by event execution: 4.3825
+2016-07-15 16:58:45,606 - Perf_mem - INFO -     per-request statistics:
+2016-07-15 16:58:45,606 - Perf_mem - INFO -          min:                                  0.00ms
+2016-07-15 16:58:45,606 - Perf_mem - INFO -          avg:                                  0.00ms
+2016-07-15 16:58:45,606 - Perf_mem - INFO -          max:                                 11.64ms
+2016-07-15 16:58:45,606 - Perf_mem - INFO -          approx.  95 percentile:               0.00ms
+2016-07-15 16:58:45,607 - Perf_mem - INFO - 
+2016-07-15 16:58:45,607 - Perf_mem - INFO - Threads fairness:
+2016-07-15 16:58:45,607 - Perf_mem - INFO -     events (avg/stddev):           262144.0000/13003.98
+2016-07-15 16:58:45,607 - Perf_mem - INFO -     execution time (avg/stddev):   0.5478/0.03
