@@ -54,8 +54,6 @@ class MkHtml(object):
         self.oslist = oslist
         self.itemlist = testitem
         self.resultdata = resultdata
-        print self.itemlist
- #       print self.resultdata
 
     def wraptreatment(self, length, charters):
         temp =''
@@ -68,9 +66,8 @@ class MkHtml(object):
         return temp
      
     def _mkchartdata(self, itemmddata, offset):
-        print offset
         for osname in self.oslist:
-            ostest = self.wraptreatment(9, osname)
+            ostest = self.wraptreatment(30, osname)
             chartditlist[self.itemlist][offset]['osnames'].append(ostest)
         chartditlist[self.itemlist][offset]['scores'] = itemmddata
         if os.path.isdir("result_html/svgfile/") is not True:
@@ -85,7 +82,7 @@ class MkHtml(object):
         return chartditlist[self.itemlist][offset]
          
     def _mkchart(self, mdfile, charttmpdict):
-        mkchart(charttmpdict)
+        mkcontrol(charttmpdict)
         f = open(mdfile, 'a+')
         a = charttmpdict['pngname']
         f.write("![](./%s)" %(a.split("/")[1] + '/' + a.split("/")[2]))
@@ -100,7 +97,6 @@ class MkHtml(object):
                 datatemp = datatemp + '|' + '%s' % datalist
             f.write("%s" % self.oslist[i] + datatemp + "|" + "\n")
         charttmpdict = self._mkchartdata(itemmddata, offset)
-        print charttmpdict
         self._mkchart(mdfile, charttmpdict)
 
     def _mkresult(self):

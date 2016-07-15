@@ -6,6 +6,7 @@ mpl.use('Agg')
 import matplotlib.pyplot as plt
 import numpy as np
 import sys
+import multiprocessing
 import matplotlib.patches as mpatches
 reload(sys)
 
@@ -30,8 +31,7 @@ sysbenchcpu = {
 lmdouble = {
           'custom_font': '/usr/share/fonts/goffer.ttf',
           'title': 'Basic double (usec)',
-          'osnames': ('isoft-4.0-beta3', 'Fedora-23', 'hello',
-                       'world', 'nihao'),
+          'osnames': ('isoft-4.0-beta3', 'Fedora-23'),
           'subjects': ('double\nadd', 'double\nmul', 'double\ndiv',
                        'double\nbogo'),
           'scores': ([1.39, 2.33, 10.34, 11.77], [0.98, 1.62, 8.74, 8.78],
@@ -111,4 +111,10 @@ def mkchart(chartargs):
     pngname = chartargs['pngname']
     graphing(names, subjects, scores, title, custom_font)
     plt.savefig(pngname)
+#for chartargs in (sysbenchcpu, lmdouble):
+#    mkchart(chartargs)
+def mkcontrol(chartargs):
+    p = multiprocessing.Process(target = mkchart, args = (chartargs,))
+    p.start()
+
 # samples
