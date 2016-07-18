@@ -12,7 +12,6 @@ class ResultSorting(object):
         times = int(times)
         f = self.readfile(resultfile)
         re_list = re.findall(r"%s" % searchmode, f, re.S)
-        print re_list
         testarry = []
         for i in re_list:
             testarry.append(float(i))
@@ -28,6 +27,5 @@ class ResultSorting(object):
         return result
 # useage
 #a=ResultSorting()
-#d = a.datasearch("Children see throughput for 1 random writers \t=   (.*?)KB\\/sec",
-#"finalresult/iSoft_Desktop_4.0/Perf_io/result/result.out", 3)
-#print d
+#d = a.datasearch("Children see throughput for  1 rewriters \t=   (.*?)KB\\/sec", "finalresult/iSoft_Desktop_4.0/Perf_io/result/result.out", 3)
+#print d[0]

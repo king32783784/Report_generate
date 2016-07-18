@@ -53,6 +53,24 @@ chart_sysmem = [{
     'subjects': ('4threads', '8threads'),
     'scores': ([12987.26, 12886.51], [13092.76, 13507.62]),
     'pngname': 'result_html/svgfile/sysmem1.png'}, ]
+# iozone_io
+md_iozone = [
+    '''
+
+##iozone - Performance Test of IO
+
+###Variety of file operations
+
+*OS* | *Write* | *Rewrite* | *Read* | *Reread* | *Rondom read* | *Rondom write*
+-----| ------- | --------- | ------ | -------- | ------------- | --------------'''
+]
+chart_iozone = [{
+    'custom_font': '/usr/share/fonts/goffer.ttf',
+    'title': 'Variety of file operatios KB/sec',
+    'osnames': [],
+    'subjects': ('Write', 'Rewrite', 'Read', 'Reread', 'Rondom read', 'Rondom write'),
+    'scores': ([3324739.04, 3298945.06, 12222, 124123, 12344, 12344],),
+    'pngname': 'result_html/svgfile/iozone0.png'},]
 
 
 class MkHtml(object):
@@ -111,7 +129,6 @@ class MkHtml(object):
     def _mkresult(self):
         mdfile = os.path.join('result_html', 'Lpb_i.md')
         step = len(self.oslist)
-        print self.resultdata[self.itemlist]
         finaldata = []
         datatemp = []
         for i, data in enumerate(self.resultdata[self.itemlist]):
@@ -126,8 +143,8 @@ class MkHtml(object):
         for i, itemmdtitle in enumerate(mdtitle[self.itemlist]):
             self._mkmdfile(mdfile, itemmdtitle, finaldata[i], i)
 
-mdtitle = {'Perf_cpu': md_syscpu, 'Perf_mem': md_sysmem}
-chartditlist = {'Perf_cpu': chart_syscpu, 'Perf_mem': chart_sysmem}
+mdtitle = {'Perf_cpu': md_syscpu, 'Perf_mem': md_sysmem, 'Perf_io': md_iozone}
+chartditlist = {'Perf_cpu': chart_syscpu, 'Perf_mem': chart_sysmem, 'Perf_io': chart_iozone}
 
 
 def mkhtml(htmldata, itemlist, oslist):

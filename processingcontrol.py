@@ -66,15 +66,15 @@ sheet_lmbench_data =[
     ],
 ]
 
-patternmath = {'Perf_cpu': ["execution time \(avg\/stddev\):(.*?)\/0.00"],
-               'Perf_mem': ["Operations performed: 2097152 \((.*?)ops\/sec\)",
-                            "8192.00 MB transferred \((.*?)MB\/sec\)"],
-               'Perf_io': ["Children see throughput for  1 initial writers \t=   (.*?)KB\\/sec",
+patternmath = {'Perf_cpu': [["execution time \(avg\/stddev\):(.*?)\/0.00", ],],
+               'Perf_mem': [["Operations performed: 2097152 \((.*?)ops\/sec\)",],
+                            ["8192.00 MB transferred \((.*?)MB\/sec\)",]],
+               'Perf_io': [["Children see throughput for  1 initial writers \t=   (.*?)KB\\/sec",
                            "Children see throughput for  1 rewriters \t=   (.*?)KB\\/sec",
                            "Children see throughput for  1 readers \t\t= (.*?)KB\\/sec",
                            "Children see throughput for 1 re-readers \t= (.*?)KB\\/sec",
                            "Children see throughput for 1 random readers \t= (.*?)KB\\/sec",
-                           "Children see throughput for 1 random writers \t=   (.*?)KB\\/sec"],
+                           "Children see throughput for 1 random writers \t=   (.*?)KB\\/sec"],]
                             }
 totaldata = { 'speccpu': sheet_speccpu_data, 'Perf_cpu': sheet_syscpu_data,
               "lmbench": sheet_lmbench_data, "Perf_mem": sheet_sysmem_data,
@@ -89,22 +89,36 @@ class Control_processing(object):
     def _getxlsdata(self, oslist, itemlist):
         for testitem in itemlist:
             for os in oslist:
-                for i, pattern in enumerate (patternmath[testitem]):
-                    print pattern
-                    data=ResultSorting()
-                    testdata = data.datasearch(pattern, "finalresult/%s/%s/result/result.out" %(os, testitem), 3)
-                    print i,testdata
-            #        totaldata[testitem][i].append(testdata)
+                for i, patterns in enumerate (patternmath[testitem]):
+                    testdata=[]
+                    datalist = []
+                    for j, pattern in enumerate(patterns):
+                        data=ResultSorting()
+                        datatmp = data.datasearch(pattern, "finalresult/%s/%s/result/result.out" %(os, testitem), 3)
+                        for k, datasub in enumerate(datatmp):
+                            datalist.append(datatmp[k])
+                    testdata.append(datalist)   
+                    for datasub in testdata:
+                        totaldata[testitem][i].append(datasub)
         return totaldata
  
     def _gethtmldata(self, oslist, itemlist):
         for testitem in itemlist:
-            for i, pattern in enumerate(patternmath[testitem]):
+            for i, patterns in enumerate (patternmath[testitem]):
                 for os in oslist:
-                    data=ResultSorting()
-                    testdata = data.datasearch(pattern, "finalresult/%s/%s/result/result.out" %(os, testitem), 3)
-                    htmldata[testitem].append(testdata)
-        return htmldata 
+                    testdata=[]
+                    datalist = []
+                    for j, pattern in enumerate(patterns):
+                        data=ResultSorting()
+                        datatmp = data.datasearch(pattern, "finalresult/%s/%s/result/result.out" %(os, testitem), 3)
+                        for k, datasub in enumerate(datatmp):
+                            datalist.append(datatmp[k])
+                    testdata.append(datalist)
+                    for datasub in testdata:
+                        htmldata[testitem].append(datasub)
+        print htmldata
+        return htmldata
+
 
     def _mkxls(self):
         '''infolist=[sheet_speccpu_info, sheet_lmbench_info, sheet_syscpu_info]
