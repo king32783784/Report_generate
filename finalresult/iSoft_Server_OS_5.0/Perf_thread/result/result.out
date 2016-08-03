@@ -1,0 +1,36 @@
+2016-08-02 09:37:04,606 - Perf_thread - INFO - {u'tarbal': u'pingpong.tar.gz', u'tag': u"'thread'", u'games': u'16,32,64', u'reboot': u'no', u'runtimes': u'3'}
+2016-08-02 09:37:04,606 - Perf_thread - INFO -  16  32  64
+2016-08-02 09:37:04,606 - Perf_thread - INFO - /home/Lpbs-i/tmp/Perf_thread/RunTest.sh  16  32  64
+2016-08-02 09:37:54,910 - Perf_thread - INFO - 32 threads initialised in 690.20 usec
+2016-08-02 09:37:54,910 - Perf_thread - INFO - 
+2016-08-02 09:37:54,910 - Perf_thread - INFO - 16 games completed in 1010057.00 msec
+2016-08-02 09:37:54,910 - Perf_thread - INFO - 
+2016-08-02 09:37:54,910 - Perf_thread - INFO - 64 threads initialised in 1058.80 usec
+2016-08-02 09:37:54,910 - Perf_thread - INFO - 
+2016-08-02 09:37:54,910 - Perf_thread - INFO - 32 games completed in 1984979.00 msec
+2016-08-02 09:37:54,910 - Perf_thread - INFO - 
+2016-08-02 09:37:54,910 - Perf_thread - INFO - 128 threads initialised in 1666.80 usec
+2016-08-02 09:37:54,910 - Perf_thread - INFO - 
+2016-08-02 09:37:54,910 - Perf_thread - INFO - 64 games completed in 4021540.80 msec
+2016-08-02 09:38:45,164 - Perf_thread - INFO - 32 threads initialised in 687.40 usec
+2016-08-02 09:38:45,164 - Perf_thread - INFO - 
+2016-08-02 09:38:45,164 - Perf_thread - INFO - 16 games completed in 1025512.80 msec
+2016-08-02 09:38:45,164 - Perf_thread - INFO - 
+2016-08-02 09:38:45,164 - Perf_thread - INFO - 64 threads initialised in 1012.00 usec
+2016-08-02 09:38:45,164 - Perf_thread - INFO - 
+2016-08-02 09:38:45,165 - Perf_thread - INFO - 32 games completed in 1964088.20 msec
+2016-08-02 09:38:45,165 - Perf_thread - INFO - 
+2016-08-02 09:38:45,165 - Perf_thread - INFO - 128 threads initialised in 1684.60 usec
+2016-08-02 09:38:45,165 - Perf_thread - INFO - 
+2016-08-02 09:38:45,165 - Perf_thread - INFO - 64 games completed in 4031155.60 msec
+2016-08-02 09:39:35,512 - Perf_thread - INFO - 32 threads initialised in 592.60 usec
+2016-08-02 09:39:35,512 - Perf_thread - INFO - 
+2016-08-02 09:39:35,512 - Perf_thread - INFO - 16 games completed in 1026437.40 msec
+2016-08-02 09:39:35,512 - Perf_thread - INFO - 
+2016-08-02 09:39:35,512 - Perf_thread - INFO - 64 threads initialised in 1045.20 usec
+2016-08-02 09:39:35,512 - Perf_thread - INFO - 
+2016-08-02 09:39:35,512 - Perf_thread - INFO - 32 games completed in 1992720.20 msec
+2016-08-02 09:39:35,513 - Perf_thread - INFO - 
+2016-08-02 09:39:35,513 - Perf_thread - INFO - 128 threads initialised in 1580.40 usec
+2016-08-02 09:39:35,513 - Perf_thread - INFO - 
+2016-08-02 09:39:35,513 - Perf_thread - INFO - 64 games completed in 4020579.40 msec

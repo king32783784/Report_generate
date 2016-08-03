@@ -1,0 +1,38 @@
+2016-07-18 17:06:43,419 - Perf_thread - INFO - {u'tarbal': u'pingpong.tar.gz', u'tag': u"'thread'", u'games': u'16,32,64', u'reboot': u'no', u'runtimes': u'3'}
+2016-07-18 17:06:43,419 - Perf_thread - INFO -  16  32  64
+2016-07-18 17:06:43,419 - Perf_thread - INFO - /home/isoft_lp/Github/Lpbs-i/tmp/Perf_thread/RunTest.sh  16  32  64
+2016-07-18 17:08:24,604 - Perf_thread - INFO - 32 threads initialised in 441.20 usec
+2016-07-18 17:08:24,605 - Perf_thread - INFO - 
+2016-07-18 17:08:24,605 - Perf_thread - INFO - 16 games completed in 2771719.00 msec
+2016-07-18 17:08:24,605 - Perf_thread - INFO - 
+2016-07-18 17:08:24,605 - Perf_thread - INFO - 64 threads initialised in 745.60 usec
+2016-07-18 17:08:24,605 - Perf_thread - INFO - 
+2016-07-18 17:08:24,605 - Perf_thread - INFO - 32 games completed in 4788406.60 msec
+2016-07-18 17:08:24,605 - Perf_thread - INFO - 
+2016-07-18 17:08:24,605 - Perf_thread - INFO - 128 threads initialised in 1777.60 usec
+2016-07-18 17:08:24,605 - Perf_thread - INFO - 
+2016-07-18 17:08:24,605 - Perf_thread - INFO - 64 games completed in 9598602.80 msec
+2016-07-18 17:09:59,217 - Perf_thread - INFO - 32 threads initialised in 486.20 usec
+2016-07-18 17:09:59,217 - Perf_thread - INFO - 
+2016-07-18 17:09:59,218 - Perf_thread - INFO - 16 games completed in 2384461.20 msec
+2016-07-18 17:09:59,218 - Perf_thread - INFO - 
+2016-07-18 17:09:59,218 - Perf_thread - INFO - 64 threads initialised in 773.60 usec
+2016-07-18 17:09:59,218 - Perf_thread - INFO - 
+2016-07-18 17:09:59,218 - Perf_thread - INFO - 32 games completed in 4607935.20 msec
+2016-07-18 17:09:59,218 - Perf_thread - INFO - 
+2016-07-18 17:09:59,218 - Perf_thread - INFO - 128 threads initialised in 1522.40 usec
+2016-07-18 17:09:59,218 - Perf_thread - INFO - 
+2016-07-18 17:09:59,218 - Perf_thread - INFO - 64 games completed in 8838025.00 msec
+2016-07-18 17:11:32,438 - Perf_thread - INFO - 32 threads initialised in 481.40 usec
+2016-07-18 17:11:32,439 - Perf_thread - INFO - 
+2016-07-18 17:11:32,439 - Perf_thread - INFO - 16 games completed in 2344815.00 msec
+2016-07-18 17:11:32,439 - Perf_thread - INFO - 
+2016-07-18 17:11:32,439 - Perf_thread - INFO - 64 threads initialised in 668.20 usec
+2016-07-18 17:11:32,439 - Perf_thread - INFO - 
+2016-07-18 17:11:32,439 - Perf_thread - INFO - 32 games completed in 4724809.80 msec
+2016-07-18 17:11:32,439 - Perf_thread - INFO - 
+2016-07-18 17:11:32,439 - Perf_thread - INFO - 128 threads initialised in 2026.60 usec
+2016-07-18 17:11:32,439 - Perf_thread - INFO - 
+2016-07-18 17:11:32,439 - Perf_thread - INFO - 64 games completed in 8492731.80 msec
+2016-07-18 17:11:32,439 - Perf_thread - INFO - /home/isoft_lp/Github/Lpbs-i/resulttmp/performance
+2016-07-18 17:11:32,440 - Perf_thread - INFO - /home/isoft_lp/Github/Lpbs-i/finalresult/iSoft_Desktop_4.0

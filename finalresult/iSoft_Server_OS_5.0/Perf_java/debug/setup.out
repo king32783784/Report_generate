@@ -1,0 +1,385 @@
+2016-08-03 08:32:56,776 - Perf_java - INFO - /home/Lpbs-i/Setup.xml
+2016-08-03 08:32:56,776 - Perf_java - INFO - /home/Lpbs-i/Test_parameter.xml
+2016-08-03 08:32:56,919 - Perf_java - INFO - /home/Lpbs-i/Setup.xml
+2016-08-03 08:33:02,686 - Perf_java - INFO - test is /home/Lpbs-i/tmp
+2016-08-03 08:33:04,675 - Perf_java - INFO - {u'tarbal': u'SPECjvm2008.tar.gz', u'arg': u'-jar,SPECjvm2008.jar,-ikv', u'tag': u"'java'", u'reboot': u'no', u'runtimes': u'1'}
+2016-08-03 08:33:04,770 - Perf_java - INFO - /usr/bin/java -jar SPECjvm2008.jar -ikv
+2016-08-03 08:33:57,731 - Perf_java - INFO - 
+2016-08-03 08:33:57,731 - Perf_java - INFO - SPECjvm2008 Base
+2016-08-03 08:33:57,732 - Perf_java - INFO -   Properties file:   none
+2016-08-03 08:33:57,732 - Perf_java - INFO -   Benchmarks:        startup.helloworld startup.compiler.compiler startup.compiler.sunflow startup.compress startup.crypto.aes startup.crypto.rsa startup.crypto.signverify startup.mpegaudio startup.scimark.fft startup.scimark.lu startup.scimark.monte_carlo startup.scimark.sor startup.scimark.sparse startup.serial startup.sunflow startup.xml.transform startup.xml.validation compiler.compiler compiler.sunflow compress crypto.aes crypto.rsa crypto.signverify derby mpegaudio scimark.fft.large scimark.lu.large scimark.sor.large scimark.sparse.large scimark.fft.small scimark.lu.small scimark.sor.small scimark.sparse.small scimark.monte_carlo serial sunflow xml.transform xml.validation
+2016-08-03 08:33:57,732 - Perf_java - INFO - 
+2016-08-03 08:33:57,732 - Perf_java - INFO -   WARNING: Run will not be compliant.
+2016-08-03 08:33:57,732 - Perf_java - INFO -   Property specjvm.run.checksum.validation must be true for publication.
+2016-08-03 08:33:57,732 - Perf_java - INFO - 
+2016-08-03 08:33:57,732 - Perf_java - INFO - 
+2016-08-03 08:33:57,732 - Perf_java - INFO - --- --- --- --- --- --- --- --- ---
+2016-08-03 08:33:57,732 - Perf_java - INFO - 
+2016-08-03 08:33:57,732 - Perf_java - INFO -   Benchmark:   check
+2016-08-03 08:33:57,732 - Perf_java - INFO -   Run mode:    static run
+2016-08-03 08:33:57,732 - Perf_java - INFO -   Test type:   functional
+2016-08-03 08:33:57,732 - Perf_java - INFO -   Threads:     1
+2016-08-03 08:33:57,733 - Perf_java - INFO -   Iterations:  1
+2016-08-03 08:33:57,733 - Perf_java - INFO -   Run length:  1 operation
+2016-08-03 08:33:57,733 - Perf_java - INFO - 
+2016-08-03 08:33:57,733 - Perf_java - INFO - Iteration 1 (1 operation) begins: Wed Aug 03 08:33:06 CST 2016
+2016-08-03 08:33:57,733 - Perf_java - INFO - Iteration 1 (1 operation) ends:   Wed Aug 03 08:33:06 CST 2016
+2016-08-03 08:33:57,733 - Perf_java - INFO - Iteration 1 (1 operation) result: PASSED
+2016-08-03 08:33:57,733 - Perf_java - INFO - 
+2016-08-03 08:33:57,733 - Perf_java - INFO - Valid run!
+2016-08-03 08:33:57,733 - Perf_java - INFO - 
+2016-08-03 08:33:57,733 - Perf_java - INFO - 
+2016-08-03 08:33:57,733 - Perf_java - INFO - --- --- --- --- --- --- --- --- ---
+2016-08-03 08:33:57,733 - Perf_java - INFO - 
+2016-08-03 08:33:57,733 - Perf_java - INFO -   Benchmark:   startup.helloworld
+2016-08-03 08:33:57,734 - Perf_java - INFO -   Run mode:    static run
+2016-08-03 08:33:57,734 - Perf_java - INFO -   Test type:   single
+2016-08-03 08:33:57,734 - Perf_java - INFO -   Threads:     1
+2016-08-03 08:33:57,734 - Perf_java - INFO -   Iterations:  1
+2016-08-03 08:33:57,734 - Perf_java - INFO -   Run length:  1 operation
+2016-08-03 08:33:57,734 - Perf_java - INFO - 
+2016-08-03 08:33:57,734 - Perf_java - INFO - Iteration 1 (1 operation) begins: Wed Aug 03 08:33:06 CST 2016
+2016-08-03 08:33:57,734 - Perf_java - INFO - Iteration 1 (1 operation) ends:   Wed Aug 03 08:33:06 CST 2016
+2016-08-03 08:33:57,734 - Perf_java - INFO - Iteration 1 (1 operation) result: 260.87 ops/m
+2016-08-03 08:33:57,734 - Perf_java - INFO - 
+2016-08-03 08:33:57,734 - Perf_java - INFO - Valid run!
+2016-08-03 08:33:57,734 - Perf_java - INFO - Score on startup.helloworld: 260.87 ops/m
+2016-08-03 08:33:57,734 - Perf_java - INFO - 
+2016-08-03 08:33:57,734 - Perf_java - INFO - 
+2016-08-03 08:33:57,735 - Perf_java - INFO - --- --- --- --- --- --- --- --- ---
+2016-08-03 08:33:57,735 - Perf_java - INFO - 
+2016-08-03 08:33:57,735 - Perf_java - INFO -   Benchmark:   startup.compiler.compiler
+2016-08-03 08:33:57,735 - Perf_java - INFO -   Run mode:    static run
+2016-08-03 08:33:57,735 - Perf_java - INFO -   Test type:   single
+2016-08-03 08:33:57,735 - Perf_java - INFO -   Threads:     1
+2016-08-03 08:33:57,735 - Perf_java - INFO -   Iterations:  1
+2016-08-03 08:33:57,735 - Perf_java - INFO -   Run length:  1 operation
+2016-08-03 08:33:57,735 - Perf_java - INFO - 
+2016-08-03 08:33:57,735 - Perf_java - INFO - Iteration 1 (1 operation) begins: Wed Aug 03 08:33:06 CST 2016
+2016-08-03 08:33:57,735 - Perf_java - INFO - Iteration 1 (1 operation) ends:   Wed Aug 03 08:33:08 CST 2016
+2016-08-03 08:33:57,735 - Perf_java - INFO - Iteration 1 (1 operation) result: 34.13 ops/m
+2016-08-03 08:33:57,735 - Perf_java - INFO - 
+2016-08-03 08:33:57,736 - Perf_java - INFO - Valid run!
+2016-08-03 08:33:57,736 - Perf_java - INFO - Score on startup.compiler.compiler: 34.13 ops/m
+2016-08-03 08:33:57,736 - Perf_java - INFO - 
+2016-08-03 08:33:57,736 - Perf_java - INFO - 
+2016-08-03 08:33:57,736 - Perf_java - INFO - --- --- --- --- --- --- --- --- ---
+2016-08-03 08:33:57,736 - Perf_java - INFO - 
+2016-08-03 08:33:57,736 - Perf_java - INFO -   Benchmark:   startup.compiler.sunflow
+2016-08-03 08:33:57,736 - Perf_java - INFO -   Run mode:    static run
+2016-08-03 08:33:57,736 - Perf_java - INFO -   Test type:   single
+2016-08-03 08:33:57,736 - Perf_java - INFO -   Threads:     1
+2016-08-03 08:33:57,736 - Perf_java - INFO -   Iterations:  1
+2016-08-03 08:33:57,736 - Perf_java - INFO -   Run length:  1 operation
+2016-08-03 08:33:57,736 - Perf_java - INFO - 
+2016-08-03 08:33:57,737 - Perf_java - INFO - Iteration 1 (1 operation) begins: Wed Aug 03 08:33:08 CST 2016
+2016-08-03 08:33:57,737 - Perf_java - INFO - Iteration 1 (1 operation) ends:   Wed Aug 03 08:33:09 CST 2016
+2016-08-03 08:33:57,737 - Perf_java - INFO - Iteration 1 (1 operation) result: 38.81 ops/m
+2016-08-03 08:33:57,737 - Perf_java - INFO - 
+2016-08-03 08:33:57,737 - Perf_java - INFO - Valid run!
+2016-08-03 08:33:57,737 - Perf_java - INFO - Score on startup.compiler.sunflow: 38.81 ops/m
+2016-08-03 08:33:57,737 - Perf_java - INFO - 
+2016-08-03 08:33:57,737 - Perf_java - INFO - 
+2016-08-03 08:33:57,737 - Perf_java - INFO - --- --- --- --- --- --- --- --- ---
+2016-08-03 08:33:57,737 - Perf_java - INFO - 
+2016-08-03 08:33:57,737 - Perf_java - INFO -   Benchmark:   startup.compress
+2016-08-03 08:33:57,737 - Perf_java - INFO -   Run mode:    static run
+2016-08-03 08:33:57,737 - Perf_java - INFO -   Test type:   single
+2016-08-03 08:33:57,738 - Perf_java - INFO -   Threads:     1
+2016-08-03 08:33:57,738 - Perf_java - INFO -   Iterations:  1
+2016-08-03 08:33:57,738 - Perf_java - INFO -   Run length:  1 operation
+2016-08-03 08:33:57,738 - Perf_java - INFO - 
+2016-08-03 08:33:57,738 - Perf_java - INFO - Iteration 1 (1 operation) begins: Wed Aug 03 08:33:09 CST 2016
+2016-08-03 08:33:57,738 - Perf_java - INFO - Iteration 1 (1 operation) ends:   Wed Aug 03 08:33:11 CST 2016
+2016-08-03 08:33:57,738 - Perf_java - INFO - Iteration 1 (1 operation) result: 45.84 ops/m
+2016-08-03 08:33:57,738 - Perf_java - INFO - 
+2016-08-03 08:33:57,738 - Perf_java - INFO - Valid run!
+2016-08-03 08:33:57,738 - Perf_java - INFO - Score on startup.compress: 45.84 ops/m
+2016-08-03 08:33:57,738 - Perf_java - INFO - 
+2016-08-03 08:33:57,738 - Perf_java - INFO - 
+2016-08-03 08:33:57,738 - Perf_java - INFO - --- --- --- --- --- --- --- --- ---
+2016-08-03 08:33:57,738 - Perf_java - INFO - 
+2016-08-03 08:33:57,739 - Perf_java - INFO -   Benchmark:   startup.crypto.aes
+2016-08-03 08:33:57,739 - Perf_java - INFO -   Run mode:    static run
+2016-08-03 08:33:57,739 - Perf_java - INFO -   Test type:   single
+2016-08-03 08:33:57,739 - Perf_java - INFO -   Threads:     1
+2016-08-03 08:33:57,739 - Perf_java - INFO -   Iterations:  1
+2016-08-03 08:33:57,739 - Perf_java - INFO -   Run length:  1 operation
+2016-08-03 08:33:57,739 - Perf_java - INFO - 
+2016-08-03 08:33:57,739 - Perf_java - INFO - Iteration 1 (1 operation) begins: Wed Aug 03 08:33:11 CST 2016
+2016-08-03 08:33:57,739 - Perf_java - INFO - Iteration 1 (1 operation) ends:   Wed Aug 03 08:33:14 CST 2016
+2016-08-03 08:33:57,739 - Perf_java - INFO - Iteration 1 (1 operation) result: 18.91 ops/m
+2016-08-03 08:33:57,739 - Perf_java - INFO - 
+2016-08-03 08:33:57,739 - Perf_java - INFO - Valid run!
+2016-08-03 08:33:57,739 - Perf_java - INFO - Score on startup.crypto.aes: 18.91 ops/m
+2016-08-03 08:33:57,740 - Perf_java - INFO - 
+2016-08-03 08:33:57,740 - Perf_java - INFO - 
+2016-08-03 08:33:57,740 - Perf_java - INFO - --- --- --- --- --- --- --- --- ---
+2016-08-03 08:33:57,740 - Perf_java - INFO - 
+2016-08-03 08:33:57,740 - Perf_java - INFO -   Benchmark:   startup.crypto.rsa
+2016-08-03 08:33:57,740 - Perf_java - INFO -   Run mode:    static run
+2016-08-03 08:33:57,740 - Perf_java - INFO -   Test type:   single
+2016-08-03 08:33:57,740 - Perf_java - INFO -   Threads:     1
+2016-08-03 08:33:57,740 - Perf_java - INFO -   Iterations:  1
+2016-08-03 08:33:57,740 - Perf_java - INFO -   Run length:  1 operation
+2016-08-03 08:33:57,740 - Perf_java - INFO - 
+2016-08-03 08:33:57,740 - Perf_java - INFO - Iteration 1 (1 operation) begins: Wed Aug 03 08:33:14 CST 2016
+2016-08-03 08:33:57,740 - Perf_java - INFO - Iteration 1 (1 operation) ends:   Wed Aug 03 08:33:15 CST 2016
+2016-08-03 08:33:57,741 - Perf_java - INFO - Iteration 1 (1 operation) result: 65.01 ops/m
+2016-08-03 08:33:57,741 - Perf_java - INFO - 
+2016-08-03 08:33:57,741 - Perf_java - INFO - Valid run!
+2016-08-03 08:33:57,741 - Perf_java - INFO - Score on startup.crypto.rsa: 65.01 ops/m
+2016-08-03 08:33:57,741 - Perf_java - INFO - 
+2016-08-03 08:33:57,741 - Perf_java - INFO - 
+2016-08-03 08:33:57,741 - Perf_java - INFO - --- --- --- --- --- --- --- --- ---
+2016-08-03 08:33:57,741 - Perf_java - INFO - 
+2016-08-03 08:33:57,741 - Perf_java - INFO -   Benchmark:   startup.crypto.signverify
+2016-08-03 08:33:57,741 - Perf_java - INFO -   Run mode:    static run
+2016-08-03 08:33:57,741 - Perf_java - INFO -   Test type:   single
+2016-08-03 08:33:57,741 - Perf_java - INFO -   Threads:     1
+2016-08-03 08:33:57,741 - Perf_java - INFO -   Iterations:  1
+2016-08-03 08:33:57,741 - Perf_java - INFO -   Run length:  1 operation
+2016-08-03 08:33:57,742 - Perf_java - INFO - 
+2016-08-03 08:33:57,742 - Perf_java - INFO - Iteration 1 (1 operation) begins: Wed Aug 03 08:33:15 CST 2016
+2016-08-03 08:33:57,742 - Perf_java - INFO - Iteration 1 (1 operation) ends:   Wed Aug 03 08:33:16 CST 2016
+2016-08-03 08:33:57,742 - Perf_java - INFO - Iteration 1 (1 operation) result: 61.86 ops/m
+2016-08-03 08:33:57,742 - Perf_java - INFO - 
+2016-08-03 08:33:57,742 - Perf_java - INFO - Valid run!
+2016-08-03 08:33:57,742 - Perf_java - INFO - Score on startup.crypto.signverify: 61.86 ops/m
+2016-08-03 08:33:57,742 - Perf_java - INFO - 
+2016-08-03 08:33:57,742 - Perf_java - INFO - 
+2016-08-03 08:33:57,742 - Perf_java - INFO - --- --- --- --- --- --- --- --- ---
+2016-08-03 08:33:57,742 - Perf_java - INFO - 
+2016-08-03 08:33:57,742 - Perf_java - INFO -   Benchmark:   startup.mpegaudio
+2016-08-03 08:33:57,742 - Perf_java - INFO -   Run mode:    static run
+2016-08-03 08:33:57,743 - Perf_java - INFO -   Test type:   single
+2016-08-03 08:33:57,743 - Perf_java - INFO -   Threads:     1
+2016-08-03 08:33:57,743 - Perf_java - INFO -   Iterations:  1
+2016-08-03 08:33:57,743 - Perf_java - INFO -   Run length:  1 operation
+2016-08-03 08:33:57,743 - Perf_java - INFO - 
+2016-08-03 08:33:57,743 - Perf_java - INFO - Iteration 1 (1 operation) begins: Wed Aug 03 08:33:16 CST 2016
+2016-08-03 08:33:57,743 - Perf_java - INFO - Iteration 1 (1 operation) ends:   Wed Aug 03 08:33:18 CST 2016
+2016-08-03 08:33:57,743 - Perf_java - INFO - Iteration 1 (1 operation) result: 29.69 ops/m
+2016-08-03 08:33:57,743 - Perf_java - INFO - 
+2016-08-03 08:33:57,743 - Perf_java - INFO - Valid run!
+2016-08-03 08:33:57,743 - Perf_java - INFO - Score on startup.mpegaudio: 29.69 ops/m
+2016-08-03 08:33:57,743 - Perf_java - INFO - 
+2016-08-03 08:33:57,743 - Perf_java - INFO - 
+2016-08-03 08:33:57,743 - Perf_java - INFO - --- --- --- --- --- --- --- --- ---
+2016-08-03 08:33:57,744 - Perf_java - INFO - 
+2016-08-03 08:33:57,744 - Perf_java - INFO -   Benchmark:   startup.scimark.fft
+2016-08-03 08:33:57,744 - Perf_java - INFO -   Run mode:    static run
+2016-08-03 08:33:57,744 - Perf_java - INFO -   Test type:   single
+2016-08-03 08:33:57,744 - Perf_java - INFO -   Threads:     1
+2016-08-03 08:33:57,744 - Perf_java - INFO -   Iterations:  1
+2016-08-03 08:33:57,744 - Perf_java - INFO -   Run length:  1 operation
+2016-08-03 08:33:57,744 - Perf_java - INFO - 
+2016-08-03 08:33:57,744 - Perf_java - INFO - Iteration 1 (1 operation) begins: Wed Aug 03 08:33:18 CST 2016
+2016-08-03 08:33:57,744 - Perf_java - INFO - Iteration 1 (1 operation) ends:   Wed Aug 03 08:33:18 CST 2016
+2016-08-03 08:33:57,744 - Perf_java - INFO - Iteration 1 (1 operation) result: 69.52 ops/m
+2016-08-03 08:33:57,744 - Perf_java - INFO - 
+2016-08-03 08:33:57,744 - Perf_java - INFO - Valid run!
+2016-08-03 08:33:57,745 - Perf_java - INFO - Score on startup.scimark.fft: 69.52 ops/m
+2016-08-03 08:33:57,745 - Perf_java - INFO - 
+2016-08-03 08:33:57,745 - Perf_java - INFO - 
+2016-08-03 08:33:57,745 - Perf_java - INFO - --- --- --- --- --- --- --- --- ---
+2016-08-03 08:33:57,745 - Perf_java - INFO - 
+2016-08-03 08:33:57,745 - Perf_java - INFO -   Benchmark:   startup.scimark.lu
+2016-08-03 08:33:57,745 - Perf_java - INFO -   Run mode:    static run
+2016-08-03 08:33:57,745 - Perf_java - INFO -   Test type:   single
+2016-08-03 08:33:57,745 - Perf_java - INFO -   Threads:     1
+2016-08-03 08:33:57,745 - Perf_java - INFO -   Iterations:  1
+2016-08-03 08:33:57,745 - Perf_java - INFO -   Run length:  1 operation
+2016-08-03 08:33:57,745 - Perf_java - INFO - 
+2016-08-03 08:33:57,745 - Perf_java - INFO - Iteration 1 (1 operation) begins: Wed Aug 03 08:33:18 CST 2016
+2016-08-03 08:33:57,746 - Perf_java - INFO - Iteration 1 (1 operation) ends:   Wed Aug 03 08:33:19 CST 2016
+2016-08-03 08:33:57,746 - Perf_java - INFO - Iteration 1 (1 operation) result: 96.31 ops/m
+2016-08-03 08:33:57,746 - Perf_java - INFO - 
+2016-08-03 08:33:57,746 - Perf_java - INFO - Valid run!
+2016-08-03 08:33:57,746 - Perf_java - INFO - Score on startup.scimark.lu: 96.31 ops/m
+2016-08-03 08:33:57,746 - Perf_java - INFO - 
+2016-08-03 08:33:57,746 - Perf_java - INFO - 
+2016-08-03 08:33:57,746 - Perf_java - INFO - --- --- --- --- --- --- --- --- ---
+2016-08-03 08:33:57,746 - Perf_java - INFO - 
+2016-08-03 08:33:57,746 - Perf_java - INFO -   Benchmark:   startup.scimark.monte_carlo
+2016-08-03 08:33:57,746 - Perf_java - INFO -   Run mode:    static run
+2016-08-03 08:33:57,746 - Perf_java - INFO -   Test type:   single
+2016-08-03 08:33:57,746 - Perf_java - INFO -   Threads:     1
+2016-08-03 08:33:57,746 - Perf_java - INFO -   Iterations:  1
+2016-08-03 08:33:57,747 - Perf_java - INFO -   Run length:  1 operation
+2016-08-03 08:33:57,747 - Perf_java - INFO - 
+2016-08-03 08:33:57,747 - Perf_java - INFO - Iteration 1 (1 operation) begins: Wed Aug 03 08:33:19 CST 2016
+2016-08-03 08:33:57,747 - Perf_java - INFO - Iteration 1 (1 operation) ends:   Wed Aug 03 08:33:21 CST 2016
+2016-08-03 08:33:57,747 - Perf_java - INFO - Iteration 1 (1 operation) result: 35.76 ops/m
+2016-08-03 08:33:57,747 - Perf_java - INFO - 
+2016-08-03 08:33:57,747 - Perf_java - INFO - Valid run!
+2016-08-03 08:33:57,747 - Perf_java - INFO - Score on startup.scimark.monte_carlo: 35.76 ops/m
+2016-08-03 08:33:57,747 - Perf_java - INFO - 
+2016-08-03 08:33:57,747 - Perf_java - INFO - 
+2016-08-03 08:33:57,747 - Perf_java - INFO - --- --- --- --- --- --- --- --- ---
+2016-08-03 08:33:57,747 - Perf_java - INFO - 
+2016-08-03 08:33:57,747 - Perf_java - INFO -   Benchmark:   startup.scimark.sor
+2016-08-03 08:33:57,748 - Perf_java - INFO -   Run mode:    static run
+2016-08-03 08:33:57,748 - Perf_java - INFO -   Test type:   single
+2016-08-03 08:33:57,748 - Perf_java - INFO -   Threads:     1
+2016-08-03 08:33:57,748 - Perf_java - INFO -   Iterations:  1
+2016-08-03 08:33:57,748 - Perf_java - INFO -   Run length:  1 operation
+2016-08-03 08:33:57,748 - Perf_java - INFO - 
+2016-08-03 08:33:57,748 - Perf_java - INFO - Iteration 1 (1 operation) begins: Wed Aug 03 08:33:21 CST 2016
+2016-08-03 08:33:57,748 - Perf_java - INFO - Iteration 1 (1 operation) ends:   Wed Aug 03 08:33:22 CST 2016
+2016-08-03 08:33:57,748 - Perf_java - INFO - Iteration 1 (1 operation) result: 45.45 ops/m
+2016-08-03 08:33:57,748 - Perf_java - INFO - 
+2016-08-03 08:33:57,748 - Perf_java - INFO - Valid run!
+2016-08-03 08:33:57,748 - Perf_java - INFO - Score on startup.scimark.sor: 45.45 ops/m
+2016-08-03 08:33:57,748 - Perf_java - INFO - 
+2016-08-03 08:33:57,748 - Perf_java - INFO - 
+2016-08-03 08:33:57,749 - Perf_java - INFO - --- --- --- --- --- --- --- --- ---
+2016-08-03 08:33:57,749 - Perf_java - INFO - 
+2016-08-03 08:33:57,749 - Perf_java - INFO -   Benchmark:   startup.scimark.sparse
+2016-08-03 08:33:57,749 - Perf_java - INFO -   Run mode:    static run
+2016-08-03 08:33:57,749 - Perf_java - INFO -   Test type:   single
+2016-08-03 08:33:57,749 - Perf_java - INFO -   Threads:     1
+2016-08-03 08:33:57,749 - Perf_java - INFO -   Iterations:  1
+2016-08-03 08:33:57,749 - Perf_java - INFO -   Run length:  1 operation
+2016-08-03 08:33:57,749 - Perf_java - INFO - 
+2016-08-03 08:33:57,749 - Perf_java - INFO - Iteration 1 (1 operation) begins: Wed Aug 03 08:33:22 CST 2016
+2016-08-03 08:33:57,749 - Perf_java - INFO - Iteration 1 (1 operation) ends:   Wed Aug 03 08:33:23 CST 2016
+2016-08-03 08:33:57,749 - Perf_java - INFO - Iteration 1 (1 operation) result: 45.49 ops/m
+2016-08-03 08:33:57,749 - Perf_java - INFO - 
+2016-08-03 08:33:57,750 - Perf_java - INFO - Valid run!
+2016-08-03 08:33:57,750 - Perf_java - INFO - Score on startup.scimark.sparse: 45.49 ops/m
+2016-08-03 08:33:57,750 - Perf_java - INFO - 
+2016-08-03 08:33:57,750 - Perf_java - INFO - 
+2016-08-03 08:33:57,750 - Perf_java - INFO - --- --- --- --- --- --- --- --- ---
+2016-08-03 08:33:57,750 - Perf_java - INFO - 
+2016-08-03 08:33:57,750 - Perf_java - INFO -   Benchmark:   startup.serial
+2016-08-03 08:33:57,750 - Perf_java - INFO -   Run mode:    static run
+2016-08-03 08:33:57,750 - Perf_java - INFO -   Test type:   single
+2016-08-03 08:33:57,750 - Perf_java - INFO -   Threads:     1
+2016-08-03 08:33:57,750 - Perf_java - INFO -   Iterations:  1
+2016-08-03 08:33:57,750 - Perf_java - INFO -   Run length:  1 operation
+2016-08-03 08:33:57,750 - Perf_java - INFO - 
+2016-08-03 08:33:57,750 - Perf_java - INFO - Iteration 1 (1 operation) begins: Wed Aug 03 08:33:23 CST 2016
+2016-08-03 08:33:57,751 - Perf_java - INFO - Iteration 1 (1 operation) ends:   Wed Aug 03 08:33:26 CST 2016
+2016-08-03 08:33:57,751 - Perf_java - INFO - Iteration 1 (1 operation) result: 24.92 ops/m
+2016-08-03 08:33:57,751 - Perf_java - INFO - 
+2016-08-03 08:33:57,751 - Perf_java - INFO - Valid run!
+2016-08-03 08:33:57,751 - Perf_java - INFO - Score on startup.serial: 24.92 ops/m
+2016-08-03 08:33:57,751 - Perf_java - INFO - 
+2016-08-03 08:33:57,751 - Perf_java - INFO - 
+2016-08-03 08:33:57,751 - Perf_java - INFO - --- --- --- --- --- --- --- --- ---
+2016-08-03 08:33:57,751 - Perf_java - INFO - 
+2016-08-03 08:33:57,751 - Perf_java - INFO -   Benchmark:   startup.sunflow
+2016-08-03 08:33:57,751 - Perf_java - INFO -   Run mode:    static run
+2016-08-03 08:33:57,751 - Perf_java - INFO -   Test type:   single
+2016-08-03 08:33:57,751 - Perf_java - INFO -   Threads:     1
+2016-08-03 08:33:57,752 - Perf_java - INFO -   Iterations:  1
+2016-08-03 08:33:57,752 - Perf_java - INFO -   Run length:  1 operation
+2016-08-03 08:33:57,752 - Perf_java - INFO - 
+2016-08-03 08:33:57,752 - Perf_java - INFO - Iteration 1 (1 operation) begins: Wed Aug 03 08:33:26 CST 2016
+2016-08-03 08:33:57,752 - Perf_java - INFO - Iteration 1 (1 operation) ends:   Wed Aug 03 08:33:28 CST 2016
+2016-08-03 08:33:57,752 - Perf_java - INFO - Iteration 1 (1 operation) result: 28.17 ops/m
+2016-08-03 08:33:57,752 - Perf_java - INFO - 
+2016-08-03 08:33:57,752 - Perf_java - INFO - Valid run!
+2016-08-03 08:33:57,752 - Perf_java - INFO - Score on startup.sunflow: 28.17 ops/m
+2016-08-03 08:33:57,752 - Perf_java - INFO - 
+2016-08-03 08:33:57,752 - Perf_java - INFO - 
+2016-08-03 08:33:57,752 - Perf_java - INFO - --- --- --- --- --- --- --- --- ---
+2016-08-03 08:33:57,752 - Perf_java - INFO - 
+2016-08-03 08:33:57,752 - Perf_java - INFO -   Benchmark:   startup.xml.transform
+2016-08-03 08:33:57,753 - Perf_java - INFO -   Run mode:    static run
+2016-08-03 08:33:57,753 - Perf_java - INFO -   Test type:   single
+2016-08-03 08:33:57,753 - Perf_java - INFO -   Threads:     1
+2016-08-03 08:33:57,753 - Perf_java - INFO -   Iterations:  1
+2016-08-03 08:33:57,753 - Perf_java - INFO -   Run length:  1 operation
+2016-08-03 08:33:57,753 - Perf_java - INFO - 
+2016-08-03 08:33:57,753 - Perf_java - INFO - Iteration 1 (1 operation) begins: Wed Aug 03 08:33:28 CST 2016
+2016-08-03 08:33:57,753 - Perf_java - INFO - Iteration 1 (1 operation) ends:   Wed Aug 03 08:33:45 CST 2016
+2016-08-03 08:33:57,753 - Perf_java - INFO - Iteration 1 (1 operation) result: 3.43 ops/m
+2016-08-03 08:33:57,753 - Perf_java - INFO - 
+2016-08-03 08:33:57,753 - Perf_java - INFO - Valid run!
+2016-08-03 08:33:57,753 - Perf_java - INFO - Score on startup.xml.transform: 3.43 ops/m
+2016-08-03 08:33:57,753 - Perf_java - INFO - 
+2016-08-03 08:33:57,754 - Perf_java - INFO - 
+2016-08-03 08:33:57,754 - Perf_java - INFO - --- --- --- --- --- --- --- --- ---
+2016-08-03 08:33:57,754 - Perf_java - INFO - 
+2016-08-03 08:33:57,754 - Perf_java - INFO -   Benchmark:   startup.xml.validation
+2016-08-03 08:33:57,754 - Perf_java - INFO -   Run mode:    static run
+2016-08-03 08:33:57,754 - Perf_java - INFO -   Test type:   single
+2016-08-03 08:33:57,754 - Perf_java - INFO -   Threads:     1
+2016-08-03 08:33:57,754 - Perf_java - INFO -   Iterations:  1
+2016-08-03 08:33:57,754 - Perf_java - INFO -   Run length:  1 operation
+2016-08-03 08:33:57,754 - Perf_java - INFO - 
+2016-08-03 08:33:57,754 - Perf_java - INFO - Iteration 1 (1 operation) begins: Wed Aug 03 08:33:45 CST 2016
+2016-08-03 08:33:57,754 - Perf_java - INFO - Iteration 1 (1 operation) ends:   Wed Aug 03 08:33:47 CST 2016
+2016-08-03 08:33:57,754 - Perf_java - INFO - Iteration 1 (1 operation) result: 34.38 ops/m
+2016-08-03 08:33:57,755 - Perf_java - INFO - 
+2016-08-03 08:33:57,755 - Perf_java - INFO - Valid run!
+2016-08-03 08:33:57,755 - Perf_java - INFO - Score on startup.xml.validation: 34.38 ops/m
+2016-08-03 08:33:57,755 - Perf_java - INFO - 
+2016-08-03 08:33:57,755 - Perf_java - INFO - 
+2016-08-03 08:33:57,755 - Perf_java - INFO - --- --- --- --- --- --- --- --- ---
+2016-08-03 08:33:57,755 - Perf_java - INFO - 
+2016-08-03 08:33:57,755 - Perf_java - INFO -   Benchmark:   compiler.compiler
+2016-08-03 08:33:57,755 - Perf_java - INFO -   Run mode:    timed run
+2016-08-03 08:33:57,755 - Perf_java - INFO -   Test type:   multi
+2016-08-03 08:33:57,755 - Perf_java - INFO -   Threads:     4
+2016-08-03 08:33:57,755 - Perf_java - INFO -   Warmup:      120s
+2016-08-03 08:33:57,755 - Perf_java - INFO -   Iterations:  1
+2016-08-03 08:33:57,755 - Perf_java - INFO -   Run length:  240s
+2016-08-03 08:33:57,756 - Perf_java - INFO - ERROR: compiler exit code: 1
+2016-08-03 08:33:57,756 - Perf_java - INFO - 
+2016-08-03 08:33:57,756 - Perf_java - INFO - Warmup (120s) begins: Wed Aug 03 08:33:48 CST 2016
+2016-08-03 08:33:57,756 - Perf_java - INFO - Warmup (120s) ends:   Wed Aug 03 08:33:49 CST 2016
+2016-08-03 08:33:57,756 - Perf_java - INFO - Warmup (120s) result:  **NOT VALID**
+2016-08-03 08:33:57,756 - Perf_java - INFO - 
+2016-08-03 08:33:57,756 - Perf_java - INFO - Errors in benchmark: compiler.compiler
+2016-08-03 08:33:57,756 - Perf_java - INFO -   [warmup] Harness interruped during measurement period.
+2016-08-03 08:33:57,756 - Perf_java - INFO -   [warmup][bt:3|op:1] Validation failure on line 1.
+2016-08-03 08:33:57,756 - Perf_java - INFO -     Expected output:
+2016-08-03 08:33:57,756 - Perf_java - INFO -     [001] Total checksum:-3167923542039497468
+2016-08-03 08:33:57,756 - Perf_java - INFO -     Received output:
+2016-08-03 08:33:57,756 - Perf_java - INFO -     [001] ERROR: compiler exit code: 1
+2016-08-03 08:33:57,756 - Perf_java - INFO - Complete output: /home/Lpbs-i/tmp/Perf_java/results/SPECjvm2008.012/compiler.compiler.bt3.i0.op1.error.log
+2016-08-03 08:33:57,757 - Perf_java - INFO - Validation file: /home/Lpbs-i/tmp/Perf_java/resources/compiler.compiler/validity.compiler.compiler.dat
+2016-08-03 08:33:57,757 - Perf_java - INFO - 
+2016-08-03 08:33:57,757 - Perf_java - INFO - 
+2016-08-03 08:33:57,757 - Perf_java - INFO -   [warmup][bt:1|op:1] Validation failure on line 1.
+2016-08-03 08:33:57,757 - Perf_java - INFO -     Expected output:
+2016-08-03 08:33:57,757 - Perf_java - INFO -     [001] Total checksum:-3167923542039497468
+2016-08-03 08:33:57,757 - Perf_java - INFO -     Received output:
+2016-08-03 08:33:57,757 - Perf_java - INFO -     [001] ERROR: compiler exit code: 1
+2016-08-03 08:33:57,757 - Perf_java - INFO - Complete output: /home/Lpbs-i/tmp/Perf_java/results/SPECjvm2008.012/compiler.compiler.bt1.i0.op1.error.log
+2016-08-03 08:33:57,757 - Perf_java - INFO - Validation file: /home/Lpbs-i/tmp/Perf_java/resources/compiler.compiler/validity.compiler.compiler.dat
+2016-08-03 08:33:57,757 - Perf_java - INFO - 
+2016-08-03 08:33:57,757 - Perf_java - INFO - 
+2016-08-03 08:33:57,757 - Perf_java - INFO -   [warmup][bt:2|op:1] Validation failure on line 1.
+2016-08-03 08:33:57,758 - Perf_java - INFO -     Expected output:
+2016-08-03 08:33:57,758 - Perf_java - INFO -     [001] Total checksum:-3167923542039497468
+2016-08-03 08:33:57,758 - Perf_java - INFO -     Received output:
+2016-08-03 08:33:57,758 - Perf_java - INFO -     [001] ERROR: compiler exit code: 1
+2016-08-03 08:33:57,758 - Perf_java - INFO - Complete output: /home/Lpbs-i/tmp/Perf_java/results/SPECjvm2008.012/compiler.compiler.bt2.i0.op1.error.log
+2016-08-03 08:33:57,758 - Perf_java - INFO - Validation file: /home/Lpbs-i/tmp/Perf_java/resources/compiler.compiler/validity.compiler.compiler.dat
+2016-08-03 08:33:57,758 - Perf_java - INFO - 
+2016-08-03 08:33:57,758 - Perf_java - INFO - 
+2016-08-03 08:33:57,758 - Perf_java - INFO -   [warmup][bt:4|op:1] Validation failure on line 1.
+2016-08-03 08:33:57,758 - Perf_java - INFO -     Expected output:
+2016-08-03 08:33:57,758 - Perf_java - INFO -     [001] Total checksum:-3167923542039497468
+2016-08-03 08:33:57,758 - Perf_java - INFO -     Received output:
+2016-08-03 08:33:57,758 - Perf_java - INFO -     [001] ERROR: compiler exit code: 1
+2016-08-03 08:33:57,759 - Perf_java - INFO - Complete output: /home/Lpbs-i/tmp/Perf_java/results/SPECjvm2008.012/compiler.compiler.bt4.i0.op1.error.log
+2016-08-03 08:33:57,759 - Perf_java - INFO - Validation file: /home/Lpbs-i/tmp/Perf_java/resources/compiler.compiler/validity.compiler.compiler.dat
+2016-08-03 08:33:57,759 - Perf_java - INFO - 
+2016-08-03 08:33:57,759 - Perf_java - INFO - 
+2016-08-03 08:33:57,759 - Perf_java - INFO - Score on compiler.compiler:  **NOT VALID**
+2016-08-03 08:33:57,759 - Perf_java - INFO - 
+2016-08-03 08:33:57,759 - Perf_java - INFO - Benchmark compiler.compiler failed. Aborting run.
+2016-08-03 08:33:57,759 - Perf_java - INFO - 
+2016-08-03 08:33:57,759 - Perf_java - INFO - Results are stored in:
+2016-08-03 08:33:57,759 - Perf_java - INFO - /home/Lpbs-i/tmp/Perf_java/results/SPECjvm2008.012/SPECjvm2008.012.raw
+2016-08-03 08:33:57,759 - Perf_java - INFO - Generating reports in:
+2016-08-03 08:33:57,759 - Perf_java - INFO - /home/Lpbs-i/tmp/Perf_java/results/SPECjvm2008.012
+2016-08-03 08:33:57,759 - Perf_java - INFO - 
+2016-08-03 08:33:57,759 - Perf_java - INFO - Composite result: not valid
+2016-08-03 08:33:57,776 - Perf_java - INFO - /home/Lpbs-i/resulttmp/performance
+2016-08-03 08:33:57,776 - Perf_java - INFO - /home/Lpbs-i/finalresult/iSoft_Server_OS_4.0

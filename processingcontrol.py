@@ -35,6 +35,8 @@ sheet_sysmem_data = [
         ["ITEM", "4threads", "8threads"],
     ],
 ]
+# sysbench_mem_html
+html_sysmem_data=[]
 # iozone_io
 # iozone_io_html
 html_iozone_data = []
@@ -45,8 +47,20 @@ sheet_io_data = [
         ["ITEM", "Writer", "Re-writer", "Reader", "Re-reader", "Random Read", "Random Write"],
     ],
 ]
-# sysbench_mem_html
-html_sysmem_data=[]
+# pingpong_html
+html_pingpong_data = []
+# pingpong_xls
+sheet_pingpong_data = [
+    [
+        ["Threads initialised usec", "pingpong"],
+        ["ITEM", "32threads", "64threads", "128threads"],
+    ],
+    [
+        ["Games completed usec", "pingpong"],
+        ["ITEM", "16Games", "32Games", "64Games"],
+    ],
+]
+# lmbench_xls
 sheet_lmbench_data =[
     [
         ["Processor, Processes - times in microseconds - smaller is better", \
@@ -69,18 +83,23 @@ sheet_lmbench_data =[
 patternmath = {'Perf_cpu': [["execution time \(avg\/stddev\):(.*?)\/0.00", ],],
                'Perf_mem': [["Operations performed: 2097152 \((.*?)ops\/sec\)",],
                             ["8192.00 MB transferred \((.*?)MB\/sec\)",]],
-               'Perf_io': [["Children see throughput for  1 initial writers \t=   (.*?)KB\\/sec",
-                           "Children see throughput for  1 rewriters \t=   (.*?)KB\\/sec",
+               'Perf_io': [["Children see throughput for  1 initial writers \t=  (.*?)KB\\/sec",
+                           "Children see throughput for  1 rewriters \t=  (.*?)KB\\/sec",
                            "Children see throughput for  1 readers \t\t= (.*?)KB\\/sec",
                            "Children see throughput for 1 re-readers \t= (.*?)KB\\/sec",
                            "Children see throughput for 1 random readers \t= (.*?)KB\\/sec",
-                           "Children see throughput for 1 random writers \t=   (.*?)KB\\/sec"],]
+                           "Children see throughput for 1 random writers \t=  (.*?)KB\\/sec"],],
+               'Perf_thread': [["32 threads initialised in(.*?)usec", "64 threads initialised in(.*?)usec",
+                                "128 threads initialised in(.*?)usec"],
+                               ["16 games completed in(.*?)msec", "32 games completed in(.*?)msec",
+                                "64 games completed in(.*?)msec",]]
                             }
+patternnum = {'Perf_cpu': 3, 'Perf_mem':3, 'Perf_io':3, 'Perf_thread':3}
 totaldata = { 'speccpu': sheet_speccpu_data, 'Perf_cpu': sheet_syscpu_data,
               "lmbench": sheet_lmbench_data, "Perf_mem": sheet_sysmem_data,
-              "Perf_io": sheet_io_data,}
+              "Perf_io": sheet_io_data, "Perf_thread": sheet_pingpong_data}
 htmldata = {'Perf_cpu' : html_syscpu_data, 'Perf_mem': html_sysmem_data,
-            'Perf_io': html_iozone_data,}
+            'Perf_io': html_iozone_data, 'Perf_thread': html_pingpong_data}
 class Control_processing(object):
     def __init__(self, myargs):
         '''{'items': ['cpu'], 'type': ['xls'], 'osnames': ['iSoft_Desktop_4.0']}'''
@@ -94,7 +113,7 @@ class Control_processing(object):
                     datalist = []
                     for j, pattern in enumerate(patterns):
                         data=ResultSorting()
-                        datatmp = data.datasearch(pattern, "finalresult/%s/%s/result/result.out" %(os, testitem), 3)
+                        datatmp = data.datasearch(pattern, "finalresult/%s/%s/result/result.out" %(os, testitem), patternnum[testitem])
                         for k, datasub in enumerate(datatmp):
                             datalist.append(datatmp[k])
                     testdata.append(datalist)   

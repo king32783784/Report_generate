@@ -1,0 +1,68 @@
+2016-08-02 09:39:36,586 - Perf_system - INFO - {u'tarbal': u'unixbench-5.1.3.tar.gz', u'c': u'4,8', u'tag': u"'system'", u'reboot': u'no', u'runtimes': u'1'}
+2016-08-02 09:39:36,587 - Perf_system - INFO - /home/Lpbs-i/tmp/Perf_system/Run  -i 5 -c 4 -c 8 context1
+2016-08-02 09:41:47,626 - Perf_system - INFO - make all
+2016-08-02 09:41:47,626 - Perf_system - INFO - make[1]: Entering directory `/home/Lpbs-i/tmp/Perf_system'
+2016-08-02 09:41:47,626 - Perf_system - INFO - Checking distribution of files
+2016-08-02 09:41:47,626 - Perf_system - INFO - ./pgms  exists
+2016-08-02 09:41:47,626 - Perf_system - INFO - ./src  exists
+2016-08-02 09:41:47,626 - Perf_system - INFO - ./testdir  exists
+2016-08-02 09:41:47,627 - Perf_system - INFO - ./tmp  exists
+2016-08-02 09:41:47,627 - Perf_system - INFO - ./results  exists
+2016-08-02 09:41:47,627 - Perf_system - INFO - make[1]: Leaving directory `/home/Lpbs-i/tmp/Perf_system'
+2016-08-02 09:41:47,627 - Perf_system - INFO - 
+2016-08-02 09:41:47,627 - Perf_system - INFO -    #    #  #    #  #  #    #          #####   ######  #    #   ####   #    #
+2016-08-02 09:41:47,627 - Perf_system - INFO -    #    #  ##   #  #   #  #           #    #  #       ##   #  #    #  #    #
+2016-08-02 09:41:47,627 - Perf_system - INFO -    #    #  # #  #  #    ##            #####   #####   # #  #  #       ######
+2016-08-02 09:41:47,627 - Perf_system - INFO -    #    #  #  # #  #    ##            #    #  #       #  # #  #       #    #
+2016-08-02 09:41:47,627 - Perf_system - INFO -    #    #  #   ##  #   #  #           #    #  #       #   ##  #    #  #    #
+2016-08-02 09:41:47,627 - Perf_system - INFO -     ####   #    #  #  #    #          #####   ######  #    #   ####   #    #
+2016-08-02 09:41:47,627 - Perf_system - INFO - 
+2016-08-02 09:41:47,627 - Perf_system - INFO -    Version 5.1.2                      Based on the Byte Magazine Unix Benchmark
+2016-08-02 09:41:47,627 - Perf_system - INFO - 
+2016-08-02 09:41:47,628 - Perf_system - INFO -    Multi-CPU version                  Version 5 revisions by Ian Smith,
+2016-08-02 09:41:47,628 - Perf_system - INFO -                                       Sunnyvale, CA, USA
+2016-08-02 09:41:47,628 - Perf_system - INFO -    December 22, 2007                  johantheghost at yahoo period com
+2016-08-02 09:41:47,628 - Perf_system - INFO - 
+2016-08-02 09:41:47,628 - Perf_system - INFO - 
+2016-08-02 09:41:47,628 - Perf_system - INFO - 4 x Pipe-based Context Switching  1 2 3 4 5
+2016-08-02 09:41:47,628 - Perf_system - INFO - 
+2016-08-02 09:41:47,628 - Perf_system - INFO - 8 x Pipe-based Context Switching  1 2 3 4 5
+2016-08-02 09:41:47,628 - Perf_system - INFO - 
+2016-08-02 09:41:47,628 - Perf_system - INFO - ========================================================================
+2016-08-02 09:41:47,628 - Perf_system - INFO -    BYTE UNIX Benchmarks (Version 5.1.2)
+2016-08-02 09:41:47,628 - Perf_system - INFO - 
+2016-08-02 09:41:47,628 - Perf_system - INFO -    System: localhost: GNU/Linux
+2016-08-02 09:41:47,629 - Perf_system - INFO -    OS: GNU/Linux -- 3.10.0-327.el7.isoft.x86_64 -- #1 SMP Tue Mar 29 17:08:26 CST 2016
+2016-08-02 09:41:47,629 - Perf_system - INFO -    Machine: x86_64 (x86_64)
+2016-08-02 09:41:47,629 - Perf_system - INFO -    Language: en_US.utf8 (charmap="UTF-8", collate="UTF-8")
+2016-08-02 09:41:47,629 - Perf_system - INFO -    CPU 0: Intel(R) Core(TM) i5-2400 CPU @ 3.10GHz (6185.7 bogomips)
+2016-08-02 09:41:47,629 - Perf_system - INFO -           Hyper-Threading, x86-64, MMX, Physical Address Ext, SYSENTER/SYSEXIT, SYSCALL/SYSRET, Intel virtualization
+2016-08-02 09:41:47,629 - Perf_system - INFO -    CPU 1: Intel(R) Core(TM) i5-2400 CPU @ 3.10GHz (6185.7 bogomips)
+2016-08-02 09:41:47,629 - Perf_system - INFO -           Hyper-Threading, x86-64, MMX, Physical Address Ext, SYSENTER/SYSEXIT, SYSCALL/SYSRET, Intel virtualization
+2016-08-02 09:41:47,629 - Perf_system - INFO -    CPU 2: Intel(R) Core(TM) i5-2400 CPU @ 3.10GHz (6185.7 bogomips)
+2016-08-02 09:41:47,629 - Perf_system - INFO -           Hyper-Threading, x86-64, MMX, Physical Address Ext, SYSENTER/SYSEXIT, SYSCALL/SYSRET, Intel virtualization
+2016-08-02 09:41:47,629 - Perf_system - INFO -    CPU 3: Intel(R) Core(TM) i5-2400 CPU @ 3.10GHz (6185.7 bogomips)
+2016-08-02 09:41:47,629 - Perf_system - INFO -           Hyper-Threading, x86-64, MMX, Physical Address Ext, SYSENTER/SYSEXIT, SYSCALL/SYSRET, Intel virtualization
+2016-08-02 09:41:47,629 - Perf_system - INFO -    09:39:36 up 28 min,  3 users,  load average: 35.80, 14.07, 5.38; runlevel 5
+2016-08-02 09:41:47,629 - Perf_system - INFO - 
+2016-08-02 09:41:47,630 - Perf_system - INFO - ------------------------------------------------------------------------
+2016-08-02 09:41:47,630 - Perf_system - INFO - Benchmark Run: 二 8月 02 2016 09:39:36 - 09:40:42
+2016-08-02 09:41:47,630 - Perf_system - INFO - 4 CPUs in system; running 4 parallel copies of tests
+2016-08-02 09:41:47,630 - Perf_system - INFO - 
+2016-08-02 09:41:47,630 - Perf_system - INFO - Pipe-based Context Switching                1469897.6 lps   (10.0 s, 4 samples)
+2016-08-02 09:41:47,630 - Perf_system - INFO - 
+2016-08-02 09:41:47,630 - Perf_system - INFO - System Benchmarks Partial Index              BASELINE       RESULT    INDEX
+2016-08-02 09:41:47,630 - Perf_system - INFO - Pipe-based Context Switching                   4000.0    1469897.6   3674.7
+2016-08-02 09:41:47,630 - Perf_system - INFO -                                                                    ========
+2016-08-02 09:41:47,630 - Perf_system - INFO - System Benchmarks Index Score (Partial Only)                         3674.7
+2016-08-02 09:41:47,630 - Perf_system - INFO - 
+2016-08-02 09:41:47,630 - Perf_system - INFO - ------------------------------------------------------------------------
+2016-08-02 09:41:47,630 - Perf_system - INFO - Benchmark Run: 二 8月 02 2016 09:40:42 - 09:41:47
+2016-08-02 09:41:47,631 - Perf_system - INFO - 4 CPUs in system; running 8 parallel copies of tests
+2016-08-02 09:41:47,631 - Perf_system - INFO - 
+2016-08-02 09:41:47,631 - Perf_system - INFO - Pipe-based Context Switching                1433913.9 lps   (10.0 s, 4 samples)
+2016-08-02 09:41:47,631 - Perf_system - INFO - 
+2016-08-02 09:41:47,631 - Perf_system - INFO - System Benchmarks Partial Index              BASELINE       RESULT    INDEX
+2016-08-02 09:41:47,631 - Perf_system - INFO - Pipe-based Context Switching                   4000.0    1433913.9   3584.8
+2016-08-02 09:41:47,631 - Perf_system - INFO -                                                                    ========
+2016-08-02 09:41:47,631 - Perf_system - INFO - System Benchmarks Index Score (Partial Only)                         3584.8

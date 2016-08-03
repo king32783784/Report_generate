@@ -1,0 +1,66 @@
+2016-08-03 08:32:22,953 - Perf_graphics - INFO - /home/Lpbs-i/Setup.xml
+2016-08-03 08:32:22,953 - Perf_graphics - INFO - /home/Lpbs-i/Test_parameter.xml
+2016-08-03 08:32:22,958 - Perf_graphics - INFO - /home/Lpbs-i/Setup.xml
+2016-08-03 08:32:23,220 - Perf_graphics - INFO - test is /home/Lpbs-i/tmp
+2016-08-03 08:32:23,278 - Perf_graphics - INFO - /home/Lpbs-i/tmp/Perf_graphics/Make
+2016-08-03 08:32:25,377 - Perf_graphics - INFO - g++ *.cpp -o glmark -Wall -lSDL -lGL -lGLU -lGLEW
+2016-08-03 08:32:25,378 - Perf_graphics - INFO - Checking distribution of files
+2016-08-03 08:32:25,378 - Perf_graphics - INFO - ./pgms  exists
+2016-08-03 08:32:25,378 - Perf_graphics - INFO - ./src  exists
+2016-08-03 08:32:25,378 - Perf_graphics - INFO - ./testdir  exists
+2016-08-03 08:32:25,378 - Perf_graphics - INFO - ./tmp  exists
+2016-08-03 08:32:25,378 - Perf_graphics - INFO - ./results  exists
+2016-08-03 08:32:25,378 - Perf_graphics - INFO - gcc -o ./pgms/arithoh -DTIME -Wall -pedantic -ansi -O2 -fomit-frame-pointer -fforce-addr -ffast-math -Wall -Darithoh ./src/arith.c
+2016-08-03 08:32:25,378 - Perf_graphics - INFO - gcc -o ./pgms/register -DTIME -Wall -pedantic -ansi -O2 -fomit-frame-pointer -fforce-addr -ffast-math -Wall -Ddatum='register int' ./src/arith.c
+2016-08-03 08:32:25,378 - Perf_graphics - INFO - gcc -o ./pgms/short -DTIME -Wall -pedantic -ansi -O2 -fomit-frame-pointer -fforce-addr -ffast-math -Wall -Ddatum=short ./src/arith.c
+2016-08-03 08:32:25,378 - Perf_graphics - INFO - gcc -o ./pgms/int -DTIME -Wall -pedantic -ansi -O2 -fomit-frame-pointer -fforce-addr -ffast-math -Wall -Ddatum=int ./src/arith.c
+2016-08-03 08:32:25,378 - Perf_graphics - INFO - gcc -o ./pgms/long -DTIME -Wall -pedantic -ansi -O2 -fomit-frame-pointer -fforce-addr -ffast-math -Wall -Ddatum=long ./src/arith.c
+2016-08-03 08:32:25,378 - Perf_graphics - INFO - gcc -o ./pgms/float -DTIME -Wall -pedantic -ansi -O2 -fomit-frame-pointer -fforce-addr -ffast-math -Wall -Ddatum=float ./src/arith.c
+2016-08-03 08:32:25,378 - Perf_graphics - INFO - gcc -o ./pgms/double -DTIME -Wall -pedantic -ansi -O2 -fomit-frame-pointer -fforce-addr -ffast-math -Wall -Ddatum=double ./src/arith.c
+2016-08-03 08:32:25,378 - Perf_graphics - INFO - gcc -o ./pgms/hanoi -DTIME -Wall -pedantic -ansi -O2 -fomit-frame-pointer -fforce-addr -ffast-math -Wall ./src/hanoi.c
+2016-08-03 08:32:25,378 - Perf_graphics - INFO - gcc -o ./pgms/syscall -DTIME -Wall -pedantic -ansi -O2 -fomit-frame-pointer -fforce-addr -ffast-math -Wall ./src/syscall.c
+2016-08-03 08:32:25,378 - Perf_graphics - INFO - gcc -o ./pgms/context1 -DTIME -Wall -pedantic -ansi -O2 -fomit-frame-pointer -fforce-addr -ffast-math -Wall ./src/context1.c
+2016-08-03 08:32:25,378 - Perf_graphics - INFO - gcc -o ./pgms/pipe -DTIME -Wall -pedantic -ansi -O2 -fomit-frame-pointer -fforce-addr -ffast-math -Wall ./src/pipe.c
+2016-08-03 08:32:25,378 - Perf_graphics - INFO - gcc -o ./pgms/spawn -DTIME -Wall -pedantic -ansi -O2 -fomit-frame-pointer -fforce-addr -ffast-math -Wall ./src/spawn.c
+2016-08-03 08:32:25,378 - Perf_graphics - INFO - gcc -o ./pgms/execl -DTIME -Wall -pedantic -ansi -O2 -fomit-frame-pointer -fforce-addr -ffast-math -Wall ./src/execl.c
+2016-08-03 08:32:25,379 - Perf_graphics - INFO - cd ./src; gcc -c -DTIME -Wall -pedantic -ansi -DHZ= -O2 -fomit-frame-pointer -fforce-addr -ffast-math -Wall dhry_1.c
+2016-08-03 08:32:25,379 - Perf_graphics - INFO - cd ./src; gcc -c -DTIME -Wall -pedantic -ansi -DHZ= -O2 -fomit-frame-pointer -fforce-addr -ffast-math -Wall dhry_2.c
+2016-08-03 08:32:25,379 - Perf_graphics - INFO - gcc -o ./pgms/dhry2 -DTIME -Wall -pedantic -ansi -O2 -fomit-frame-pointer -fforce-addr -ffast-math -Wall ./src/dhry_1.o ./src/dhry_2.o
+2016-08-03 08:32:25,379 - Perf_graphics - INFO - cd ./src; rm -f dhry_1.o dhry_2.o
+2016-08-03 08:32:25,379 - Perf_graphics - INFO - cd ./src; gcc -c -DTIME -Wall -pedantic -ansi -DREG=register -DHZ= -O2 -fomit-frame-pointer -fforce-addr -ffast-math -Wall dhry_1.c -o dhry_1_reg.o
+2016-08-03 08:32:25,379 - Perf_graphics - INFO - cd ./src; gcc -c -DTIME -Wall -pedantic -ansi -DREG=register -DHZ= -O2 -fomit-frame-pointer -fforce-addr -ffast-math -Wall dhry_2.c -o dhry_2_reg.o
+2016-08-03 08:32:25,379 - Perf_graphics - INFO - gcc -o ./pgms/dhry2reg -DTIME -Wall -pedantic -ansi -O2 -fomit-frame-pointer -fforce-addr -ffast-math -Wall ./src/dhry_1_reg.o ./src/dhry_2_reg.o
+2016-08-03 08:32:25,379 - Perf_graphics - INFO - cd ./src; rm -f dhry_1_reg.o dhry_2_reg.o
+2016-08-03 08:32:25,379 - Perf_graphics - INFO - gcc -o ./pgms/looper -DTIME -Wall -pedantic -ansi -O2 -fomit-frame-pointer -fforce-addr -ffast-math -Wall ./src/looper.c
+2016-08-03 08:32:25,379 - Perf_graphics - INFO - gcc -o ./pgms/fstime -DTIME -Wall -pedantic -ansi -O2 -fomit-frame-pointer -fforce-addr -ffast-math -Wall ./src/fstime.c
+2016-08-03 08:32:25,379 - Perf_graphics - INFO - gcc -o ./pgms/whetstone-double -DTIME -Wall -pedantic -ansi -O2 -fomit-frame-pointer -fforce-addr -ffast-math -Wall -DDP -DUNIX -DUNIXBENCH ./src/whets.c -lm
+2016-08-03 08:32:25,379 - Perf_graphics - INFO - gcc -o ./pgms/ubgears -DTIME -Wall -pedantic -ansi -O2 -fomit-frame-pointer -fforce-addr -ffast-math -Wall ./src/ubgears.c -lGL -lXext -lX11 -lm
+2016-08-03 08:32:25,380 - Perf_graphics - INFO - {u'tarbal': u'linux-graphics.tar.gz', u'tag': u"'graphics'", u'resolution': u'1366,768', u'reboot': u'no', u'runtimes': u'3'}
+2016-08-03 08:32:25,380 - Perf_graphics - INFO - /home/Lpbs-i/tmp/Perf_graphics/Run  1366 768
+2016-08-03 08:32:25,930 - Perf_graphics - INFO - spawn ./glmark
+2016-08-03 08:32:25,930 - Perf_graphics - INFO - gcc -o ./pgms/ubgears -DTIME -Wall -pedantic -ansi -O2 -fomit-frame-pointer -fforce-addr -ffast-math -Wall ./src/ubgears.c -lGL -lXext -lX11 -lm
+2016-08-03 08:32:25,930 - Perf_graphics - INFO - Checking distribution of files
+2016-08-03 08:32:25,930 - Perf_graphics - INFO - ./pgms  exists
+2016-08-03 08:32:25,931 - Perf_graphics - INFO - ./src  exists
+2016-08-03 08:32:25,931 - Perf_graphics - INFO - ./testdir  exists
+2016-08-03 08:32:25,931 - Perf_graphics - INFO - ./tmp  exists
+2016-08-03 08:32:25,931 - Perf_graphics - INFO - ./results  exists
+2016-08-03 08:32:25,931 - Perf_graphics - INFO - gcc -o ./pgms/ubgears -DTIME -Wall -pedantic -ansi -O2 -fomit-frame-pointer -fforce-addr -ffast-math -Wall ./src/ubgears.c -lGL -lXext -lX11 -lm
+2016-08-03 08:32:26,079 - Perf_graphics - INFO - spawn ./glmark
+2016-08-03 08:32:26,079 - Perf_graphics - INFO - gcc -o ./pgms/ubgears -DTIME -Wall -pedantic -ansi -O2 -fomit-frame-pointer -fforce-addr -ffast-math -Wall ./src/ubgears.c -lGL -lXext -lX11 -lm
+2016-08-03 08:32:26,080 - Perf_graphics - INFO - Checking distribution of files
+2016-08-03 08:32:26,080 - Perf_graphics - INFO - ./pgms  exists
+2016-08-03 08:32:26,080 - Perf_graphics - INFO - ./src  exists
+2016-08-03 08:32:26,080 - Perf_graphics - INFO - ./testdir  exists
+2016-08-03 08:32:26,080 - Perf_graphics - INFO - ./tmp  exists
+2016-08-03 08:32:26,080 - Perf_graphics - INFO - ./results  exists
+2016-08-03 08:32:26,080 - Perf_graphics - INFO - gcc -o ./pgms/ubgears -DTIME -Wall -pedantic -ansi -O2 -fomit-frame-pointer -fforce-addr -ffast-math -Wall ./src/ubgears.c -lGL -lXext -lX11 -lm
+2016-08-03 08:32:26,228 - Perf_graphics - INFO - spawn ./glmark
+2016-08-03 08:32:26,228 - Perf_graphics - INFO - gcc -o ./pgms/ubgears -DTIME -Wall -pedantic -ansi -O2 -fomit-frame-pointer -fforce-addr -ffast-math -Wall ./src/ubgears.c -lGL -lXext -lX11 -lm
+2016-08-03 08:32:26,228 - Perf_graphics - INFO - Checking distribution of files
+2016-08-03 08:32:26,228 - Perf_graphics - INFO - ./pgms  exists
+2016-08-03 08:32:26,228 - Perf_graphics - INFO - ./src  exists
+2016-08-03 08:32:26,228 - Perf_graphics - INFO - ./testdir  exists
+2016-08-03 08:32:26,228 - Perf_graphics - INFO - ./tmp  exists
+2016-08-03 08:32:26,228 - Perf_graphics - INFO - ./results  exists
+2016-08-03 08:32:26,229 - Perf_graphics - INFO - gcc -o ./pgms/ubgears -DTIME -Wall -pedantic -ansi -O2 -fomit-frame-pointer -fforce-addr -ffast-math -Wall ./src/ubgears.c -lGL -lXext -lX11 -lm

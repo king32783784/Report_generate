@@ -1,0 +1,103 @@
+2016-08-02 09:39:35,517 - Perf_system - INFO - /home/Lpbs-i/Setup.xml
+2016-08-02 09:39:35,517 - Perf_system - INFO - /home/Lpbs-i/Test_parameter.xml
+2016-08-02 09:39:35,521 - Perf_system - INFO - /home/Lpbs-i/Setup.xml
+2016-08-02 09:39:35,564 - Perf_system - INFO - test is /home/Lpbs-i/tmp
+2016-08-02 09:39:35,592 - Perf_system - INFO - rm -f ./pgms/arithoh ./pgms/register ./pgms/short ./pgms/int ./pgms/long ./pgms/float ./pgms/double ./pgms/hanoi ./pgms/syscall ./pgms/context1 ./pgms/pipe ./pgms/spawn ./pgms/execl ./pgms/dhry2 ./pgms/dhry2reg  ./pgms/looper ./pgms/fstime ./pgms/whetstone-double  core *~ */*~
+2016-08-02 09:39:36,580 - Perf_system - INFO - Checking distribution of files
+2016-08-02 09:39:36,581 - Perf_system - INFO - ./pgms  exists
+2016-08-02 09:39:36,581 - Perf_system - INFO - ./src  exists
+2016-08-02 09:39:36,581 - Perf_system - INFO - ./testdir  exists
+2016-08-02 09:39:36,581 - Perf_system - INFO - ./tmp  exists
+2016-08-02 09:39:36,581 - Perf_system - INFO - ./results  exists
+2016-08-02 09:39:36,581 - Perf_system - INFO - gcc -o ./pgms/arithoh -DTIME -Wall -pedantic -ansi -O2 -fomit-frame-pointer -fforce-addr -ffast-math -Wall -Darithoh ./src/arith.c
+2016-08-02 09:39:36,581 - Perf_system - INFO - gcc -o ./pgms/register -DTIME -Wall -pedantic -ansi -O2 -fomit-frame-pointer -fforce-addr -ffast-math -Wall -Ddatum='register int' ./src/arith.c
+2016-08-02 09:39:36,581 - Perf_system - INFO - gcc -o ./pgms/short -DTIME -Wall -pedantic -ansi -O2 -fomit-frame-pointer -fforce-addr -ffast-math -Wall -Ddatum=short ./src/arith.c
+2016-08-02 09:39:36,581 - Perf_system - INFO - gcc -o ./pgms/int -DTIME -Wall -pedantic -ansi -O2 -fomit-frame-pointer -fforce-addr -ffast-math -Wall -Ddatum=int ./src/arith.c
+2016-08-02 09:39:36,581 - Perf_system - INFO - gcc -o ./pgms/long -DTIME -Wall -pedantic -ansi -O2 -fomit-frame-pointer -fforce-addr -ffast-math -Wall -Ddatum=long ./src/arith.c
+2016-08-02 09:39:36,581 - Perf_system - INFO - gcc -o ./pgms/float -DTIME -Wall -pedantic -ansi -O2 -fomit-frame-pointer -fforce-addr -ffast-math -Wall -Ddatum=float ./src/arith.c
+2016-08-02 09:39:36,581 - Perf_system - INFO - gcc -o ./pgms/double -DTIME -Wall -pedantic -ansi -O2 -fomit-frame-pointer -fforce-addr -ffast-math -Wall -Ddatum=double ./src/arith.c
+2016-08-02 09:39:36,581 - Perf_system - INFO - gcc -o ./pgms/hanoi -DTIME -Wall -pedantic -ansi -O2 -fomit-frame-pointer -fforce-addr -ffast-math -Wall ./src/hanoi.c
+2016-08-02 09:39:36,581 - Perf_system - INFO - gcc -o ./pgms/syscall -DTIME -Wall -pedantic -ansi -O2 -fomit-frame-pointer -fforce-addr -ffast-math -Wall ./src/syscall.c
+2016-08-02 09:39:36,581 - Perf_system - INFO - gcc -o ./pgms/context1 -DTIME -Wall -pedantic -ansi -O2 -fomit-frame-pointer -fforce-addr -ffast-math -Wall ./src/context1.c
+2016-08-02 09:39:36,581 - Perf_system - INFO - gcc -o ./pgms/pipe -DTIME -Wall -pedantic -ansi -O2 -fomit-frame-pointer -fforce-addr -ffast-math -Wall ./src/pipe.c
+2016-08-02 09:39:36,581 - Perf_system - INFO - gcc -o ./pgms/spawn -DTIME -Wall -pedantic -ansi -O2 -fomit-frame-pointer -fforce-addr -ffast-math -Wall ./src/spawn.c
+2016-08-02 09:39:36,581 - Perf_system - INFO - gcc -o ./pgms/execl -DTIME -Wall -pedantic -ansi -O2 -fomit-frame-pointer -fforce-addr -ffast-math -Wall ./src/execl.c
+2016-08-02 09:39:36,582 - Perf_system - INFO - cd ./src; gcc -c -DTIME -Wall -pedantic -ansi -DHZ= -O2 -fomit-frame-pointer -fforce-addr -ffast-math -Wall dhry_1.c
+2016-08-02 09:39:36,582 - Perf_system - INFO - cd ./src; gcc -c -DTIME -Wall -pedantic -ansi -DHZ= -O2 -fomit-frame-pointer -fforce-addr -ffast-math -Wall dhry_2.c
+2016-08-02 09:39:36,582 - Perf_system - INFO - gcc -o ./pgms/dhry2 -DTIME -Wall -pedantic -ansi -O2 -fomit-frame-pointer -fforce-addr -ffast-math -Wall ./src/dhry_1.o ./src/dhry_2.o
+2016-08-02 09:39:36,582 - Perf_system - INFO - cd ./src; rm -f dhry_1.o dhry_2.o
+2016-08-02 09:39:36,582 - Perf_system - INFO - cd ./src; gcc -c -DTIME -Wall -pedantic -ansi -DREG=register -DHZ= -O2 -fomit-frame-pointer -fforce-addr -ffast-math -Wall dhry_1.c -o dhry_1_reg.o
+2016-08-02 09:39:36,582 - Perf_system - INFO - cd ./src; gcc -c -DTIME -Wall -pedantic -ansi -DREG=register -DHZ= -O2 -fomit-frame-pointer -fforce-addr -ffast-math -Wall dhry_2.c -o dhry_2_reg.o
+2016-08-02 09:39:36,582 - Perf_system - INFO - gcc -o ./pgms/dhry2reg -DTIME -Wall -pedantic -ansi -O2 -fomit-frame-pointer -fforce-addr -ffast-math -Wall ./src/dhry_1_reg.o ./src/dhry_2_reg.o
+2016-08-02 09:39:36,582 - Perf_system - INFO - cd ./src; rm -f dhry_1_reg.o dhry_2_reg.o
+2016-08-02 09:39:36,582 - Perf_system - INFO - gcc -o ./pgms/looper -DTIME -Wall -pedantic -ansi -O2 -fomit-frame-pointer -fforce-addr -ffast-math -Wall ./src/looper.c
+2016-08-02 09:39:36,582 - Perf_system - INFO - gcc -o ./pgms/fstime -DTIME -Wall -pedantic -ansi -O2 -fomit-frame-pointer -fforce-addr -ffast-math -Wall ./src/fstime.c
+2016-08-02 09:39:36,582 - Perf_system - INFO - gcc -o ./pgms/whetstone-double -DTIME -Wall -pedantic -ansi -O2 -fomit-frame-pointer -fforce-addr -ffast-math -Wall -DDP -DUNIX -DUNIXBENCH ./src/whets.c -lm
+2016-08-02 09:39:36,586 - Perf_system - INFO - {u'tarbal': u'unixbench-5.1.3.tar.gz', u'c': u'4,8', u'tag': u"'system'", u'reboot': u'no', u'runtimes': u'1'}
+2016-08-02 09:39:36,587 - Perf_system - INFO - /home/Lpbs-i/tmp/Perf_system/Run  -i 5 -c 4 -c 8 context1
+2016-08-02 09:41:47,626 - Perf_system - INFO - make all
+2016-08-02 09:41:47,626 - Perf_system - INFO - make[1]: Entering directory `/home/Lpbs-i/tmp/Perf_system'
+2016-08-02 09:41:47,626 - Perf_system - INFO - Checking distribution of files
+2016-08-02 09:41:47,626 - Perf_system - INFO - ./pgms  exists
+2016-08-02 09:41:47,626 - Perf_system - INFO - ./src  exists
+2016-08-02 09:41:47,626 - Perf_system - INFO - ./testdir  exists
+2016-08-02 09:41:47,627 - Perf_system - INFO - ./tmp  exists
+2016-08-02 09:41:47,627 - Perf_system - INFO - ./results  exists
+2016-08-02 09:41:47,627 - Perf_system - INFO - make[1]: Leaving directory `/home/Lpbs-i/tmp/Perf_system'
+2016-08-02 09:41:47,627 - Perf_system - INFO - 
+2016-08-02 09:41:47,627 - Perf_system - INFO -    #    #  #    #  #  #    #          #####   ######  #    #   ####   #    #
+2016-08-02 09:41:47,627 - Perf_system - INFO -    #    #  ##   #  #   #  #           #    #  #       ##   #  #    #  #    #
+2016-08-02 09:41:47,627 - Perf_system - INFO -    #    #  # #  #  #    ##            #####   #####   # #  #  #       ######
+2016-08-02 09:41:47,627 - Perf_system - INFO -    #    #  #  # #  #    ##            #    #  #       #  # #  #       #    #
+2016-08-02 09:41:47,627 - Perf_system - INFO -    #    #  #   ##  #   #  #           #    #  #       #   ##  #    #  #    #
+2016-08-02 09:41:47,627 - Perf_system - INFO -     ####   #    #  #  #    #          #####   ######  #    #   ####   #    #
+2016-08-02 09:41:47,627 - Perf_system - INFO - 
+2016-08-02 09:41:47,627 - Perf_system - INFO -    Version 5.1.2                      Based on the Byte Magazine Unix Benchmark
+2016-08-02 09:41:47,627 - Perf_system - INFO - 
+2016-08-02 09:41:47,628 - Perf_system - INFO -    Multi-CPU version                  Version 5 revisions by Ian Smith,
+2016-08-02 09:41:47,628 - Perf_system - INFO -                                       Sunnyvale, CA, USA
+2016-08-02 09:41:47,628 - Perf_system - INFO -    December 22, 2007                  johantheghost at yahoo period com
+2016-08-02 09:41:47,628 - Perf_system - INFO - 
+2016-08-02 09:41:47,628 - Perf_system - INFO - 
+2016-08-02 09:41:47,628 - Perf_system - INFO - 4 x Pipe-based Context Switching  1 2 3 4 5
+2016-08-02 09:41:47,628 - Perf_system - INFO - 
+2016-08-02 09:41:47,628 - Perf_system - INFO - 8 x Pipe-based Context Switching  1 2 3 4 5
+2016-08-02 09:41:47,628 - Perf_system - INFO - 
+2016-08-02 09:41:47,628 - Perf_system - INFO - ========================================================================
+2016-08-02 09:41:47,628 - Perf_system - INFO -    BYTE UNIX Benchmarks (Version 5.1.2)
+2016-08-02 09:41:47,628 - Perf_system - INFO - 
+2016-08-02 09:41:47,628 - Perf_system - INFO -    System: localhost: GNU/Linux
+2016-08-02 09:41:47,629 - Perf_system - INFO -    OS: GNU/Linux -- 3.10.0-327.el7.isoft.x86_64 -- #1 SMP Tue Mar 29 17:08:26 CST 2016
+2016-08-02 09:41:47,629 - Perf_system - INFO -    Machine: x86_64 (x86_64)
+2016-08-02 09:41:47,629 - Perf_system - INFO -    Language: en_US.utf8 (charmap="UTF-8", collate="UTF-8")
+2016-08-02 09:41:47,629 - Perf_system - INFO -    CPU 0: Intel(R) Core(TM) i5-2400 CPU @ 3.10GHz (6185.7 bogomips)
+2016-08-02 09:41:47,629 - Perf_system - INFO -           Hyper-Threading, x86-64, MMX, Physical Address Ext, SYSENTER/SYSEXIT, SYSCALL/SYSRET, Intel virtualization
+2016-08-02 09:41:47,629 - Perf_system - INFO -    CPU 1: Intel(R) Core(TM) i5-2400 CPU @ 3.10GHz (6185.7 bogomips)
+2016-08-02 09:41:47,629 - Perf_system - INFO -           Hyper-Threading, x86-64, MMX, Physical Address Ext, SYSENTER/SYSEXIT, SYSCALL/SYSRET, Intel virtualization
+2016-08-02 09:41:47,629 - Perf_system - INFO -    CPU 2: Intel(R) Core(TM) i5-2400 CPU @ 3.10GHz (6185.7 bogomips)
+2016-08-02 09:41:47,629 - Perf_system - INFO -           Hyper-Threading, x86-64, MMX, Physical Address Ext, SYSENTER/SYSEXIT, SYSCALL/SYSRET, Intel virtualization
+2016-08-02 09:41:47,629 - Perf_system - INFO -    CPU 3: Intel(R) Core(TM) i5-2400 CPU @ 3.10GHz (6185.7 bogomips)
+2016-08-02 09:41:47,629 - Perf_system - INFO -           Hyper-Threading, x86-64, MMX, Physical Address Ext, SYSENTER/SYSEXIT, SYSCALL/SYSRET, Intel virtualization
+2016-08-02 09:41:47,629 - Perf_system - INFO -    09:39:36 up 28 min,  3 users,  load average: 35.80, 14.07, 5.38; runlevel 5
+2016-08-02 09:41:47,629 - Perf_system - INFO - 
+2016-08-02 09:41:47,630 - Perf_system - INFO - ------------------------------------------------------------------------
+2016-08-02 09:41:47,630 - Perf_system - INFO - Benchmark Run: 二 8月 02 2016 09:39:36 - 09:40:42
+2016-08-02 09:41:47,630 - Perf_system - INFO - 4 CPUs in system; running 4 parallel copies of tests
+2016-08-02 09:41:47,630 - Perf_system - INFO - 
+2016-08-02 09:41:47,630 - Perf_system - INFO - Pipe-based Context Switching                1469897.6 lps   (10.0 s, 4 samples)
+2016-08-02 09:41:47,630 - Perf_system - INFO - 
+2016-08-02 09:41:47,630 - Perf_system - INFO - System Benchmarks Partial Index              BASELINE       RESULT    INDEX
+2016-08-02 09:41:47,630 - Perf_system - INFO - Pipe-based Context Switching                   4000.0    1469897.6   3674.7
+2016-08-02 09:41:47,630 - Perf_system - INFO -                                                                    ========
+2016-08-02 09:41:47,630 - Perf_system - INFO - System Benchmarks Index Score (Partial Only)                         3674.7
+2016-08-02 09:41:47,630 - Perf_system - INFO - 
+2016-08-02 09:41:47,630 - Perf_system - INFO - ------------------------------------------------------------------------
+2016-08-02 09:41:47,630 - Perf_system - INFO - Benchmark Run: 二 8月 02 2016 09:40:42 - 09:41:47
+2016-08-02 09:41:47,631 - Perf_system - INFO - 4 CPUs in system; running 8 parallel copies of tests
+2016-08-02 09:41:47,631 - Perf_system - INFO - 
+2016-08-02 09:41:47,631 - Perf_system - INFO - Pipe-based Context Switching                1433913.9 lps   (10.0 s, 4 samples)
+2016-08-02 09:41:47,631 - Perf_system - INFO - 
+2016-08-02 09:41:47,631 - Perf_system - INFO - System Benchmarks Partial Index              BASELINE       RESULT    INDEX
+2016-08-02 09:41:47,631 - Perf_system - INFO - Pipe-based Context Switching                   4000.0    1433913.9   3584.8
+2016-08-02 09:41:47,631 - Perf_system - INFO -                                                                    ========
+2016-08-02 09:41:47,631 - Perf_system - INFO - System Benchmarks Index Score (Partial Only)                         3584.8

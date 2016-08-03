@@ -53,6 +53,38 @@ chart_sysmem = [{
     'subjects': ('4threads', '8threads'),
     'scores': ([12987.26, 12886.51], [13092.76, 13507.62]),
     'pngname': 'result_html/svgfile/sysmem1.png'}, ]
+# pingpong_thread
+md_pingpong = [
+    '''
+
+##Pingpong - Performance Test of Threads
+
+Threads initialised - times in microseconds - smaller is better
+
+*OS* | *Tables 16* | *Tables 32* | *Tables 64*
+------ | ------------- | ------------- | ------------''',
+    '''
+
+Games completed - times in microseconds - smaller is better
+
+*OS* | *Tables 16* | *Tables 32* | *Tables 64*
+------ | ------------ | ------------ | ------------'''
+]
+chart_pingpong = [{
+    'custom_font': '/usr/share/fonts/goffer.ttf',
+    'title': 'Threads initialised(usec)',
+    'osnames': [],
+    'subjects': ('32threads', '64threads', '128threads'),
+    'scores': ([0, 0, 0], [1, 1, 1]),
+    'pngname': 'result_html/svgfile/pingpong0.png'},
+    {
+    'custom_font': '/usr/share/fonts/goffer.ttf',
+    'title': 'Games completed (usec)',
+    'osnames': [],
+    'subjects': ('16Games', '32Games', '64Games'),
+    'scores': ([0, 0, 0], [1, 1, 1]),
+    'pngname': 'result_html/svgfile/pinpong1.png'}, ]
+
 # iozone_io
 md_iozone = [
     '''
@@ -129,22 +161,26 @@ class MkHtml(object):
     def _mkresult(self):
         mdfile = os.path.join('result_html', 'Lpb_i.md')
         step = len(self.oslist)
+        print step
         finaldata = []
         datatemp = []
         for i, data in enumerate(self.resultdata[self.itemlist]):
             datatemp.append(data)
             if step > 1:
-                if i % step == 1:
+                if i % step == step-1:
                     finaldata.append(datatemp)
                     datatemp = []
             else:
                 finaldata.append(datatemp)
                 datatemp = []
+        print finaldata
         for i, itemmdtitle in enumerate(mdtitle[self.itemlist]):
             self._mkmdfile(mdfile, itemmdtitle, finaldata[i], i)
 
-mdtitle = {'Perf_cpu': md_syscpu, 'Perf_mem': md_sysmem, 'Perf_io': md_iozone}
-chartditlist = {'Perf_cpu': chart_syscpu, 'Perf_mem': chart_sysmem, 'Perf_io': chart_iozone}
+mdtitle = {'Perf_cpu': md_syscpu, 'Perf_mem': md_sysmem, 'Perf_io': md_iozone, 'Perf_thread':
+           md_pingpong}
+chartditlist = {'Perf_cpu': chart_syscpu, 'Perf_mem': chart_sysmem, 'Perf_io': chart_iozone,
+                'Perf_thread': chart_pingpong}
 
 
 def mkhtml(htmldata, itemlist, oslist):

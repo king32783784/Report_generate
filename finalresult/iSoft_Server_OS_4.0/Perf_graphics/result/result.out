@@ -1,0 +1,29 @@
+2016-08-03 08:32:25,380 - Perf_graphics - INFO - {u'tarbal': u'linux-graphics.tar.gz', u'tag': u"'graphics'", u'resolution': u'1366,768', u'reboot': u'no', u'runtimes': u'3'}
+2016-08-03 08:32:25,380 - Perf_graphics - INFO - /home/Lpbs-i/tmp/Perf_graphics/Run  1366 768
+2016-08-03 08:32:25,930 - Perf_graphics - INFO - spawn ./glmark
+2016-08-03 08:32:25,930 - Perf_graphics - INFO - gcc -o ./pgms/ubgears -DTIME -Wall -pedantic -ansi -O2 -fomit-frame-pointer -fforce-addr -ffast-math -Wall ./src/ubgears.c -lGL -lXext -lX11 -lm
+2016-08-03 08:32:25,930 - Perf_graphics - INFO - Checking distribution of files
+2016-08-03 08:32:25,930 - Perf_graphics - INFO - ./pgms  exists
+2016-08-03 08:32:25,931 - Perf_graphics - INFO - ./src  exists
+2016-08-03 08:32:25,931 - Perf_graphics - INFO - ./testdir  exists
+2016-08-03 08:32:25,931 - Perf_graphics - INFO - ./tmp  exists
+2016-08-03 08:32:25,931 - Perf_graphics - INFO - ./results  exists
+2016-08-03 08:32:25,931 - Perf_graphics - INFO - gcc -o ./pgms/ubgears -DTIME -Wall -pedantic -ansi -O2 -fomit-frame-pointer -fforce-addr -ffast-math -Wall ./src/ubgears.c -lGL -lXext -lX11 -lm
+2016-08-03 08:32:26,079 - Perf_graphics - INFO - spawn ./glmark
+2016-08-03 08:32:26,079 - Perf_graphics - INFO - gcc -o ./pgms/ubgears -DTIME -Wall -pedantic -ansi -O2 -fomit-frame-pointer -fforce-addr -ffast-math -Wall ./src/ubgears.c -lGL -lXext -lX11 -lm
+2016-08-03 08:32:26,080 - Perf_graphics - INFO - Checking distribution of files
+2016-08-03 08:32:26,080 - Perf_graphics - INFO - ./pgms  exists
+2016-08-03 08:32:26,080 - Perf_graphics - INFO - ./src  exists
+2016-08-03 08:32:26,080 - Perf_graphics - INFO - ./testdir  exists
+2016-08-03 08:32:26,080 - Perf_graphics - INFO - ./tmp  exists
+2016-08-03 08:32:26,080 - Perf_graphics - INFO - ./results  exists
+2016-08-03 08:32:26,080 - Perf_graphics - INFO - gcc -o ./pgms/ubgears -DTIME -Wall -pedantic -ansi -O2 -fomit-frame-pointer -fforce-addr -ffast-math -Wall ./src/ubgears.c -lGL -lXext -lX11 -lm
+2016-08-03 08:32:26,228 - Perf_graphics - INFO - spawn ./glmark
+2016-08-03 08:32:26,228 - Perf_graphics - INFO - gcc -o ./pgms/ubgears -DTIME -Wall -pedantic -ansi -O2 -fomit-frame-pointer -fforce-addr -ffast-math -Wall ./src/ubgears.c -lGL -lXext -lX11 -lm
+2016-08-03 08:32:26,228 - Perf_graphics - INFO - Checking distribution of files
+2016-08-03 08:32:26,228 - Perf_graphics - INFO - ./pgms  exists
+2016-08-03 08:32:26,228 - Perf_graphics - INFO - ./src  exists
+2016-08-03 08:32:26,228 - Perf_graphics - INFO - ./testdir  exists
+2016-08-03 08:32:26,228 - Perf_graphics - INFO - ./tmp  exists
+2016-08-03 08:32:26,228 - Perf_graphics - INFO - ./results  exists
+2016-08-03 08:32:26,229 - Perf_graphics - INFO - gcc -o ./pgms/ubgears -DTIME -Wall -pedantic -ansi -O2 -fomit-frame-pointer -fforce-addr -ffast-math -Wall ./src/ubgears.c -lGL -lXext -lX11 -lm
