@@ -1,350 +1,386 @@
-2016-08-03 08:32:26,610 - Perf_stream - INFO - {u'tarbal': u'stream-5.9.tar.gz', u'tag': u"'stream'", u'reboot': u'no', u'runtimes': u'3'}
-2016-08-03 08:32:26,610 - Perf_stream - INFO - /home/Lpbs-i/tmp/Perf_stream/stream_test
-2016-08-03 08:32:36,861 - Perf_stream - INFO - stream 测试开始
-2016-08-03 08:32:36,936 - Perf_stream - INFO - -------------------------------------------------------------
-2016-08-03 08:32:36,936 - Perf_stream - INFO - STREAM version $Revision: 5.9 $
-2016-08-03 08:32:36,936 - Perf_stream - INFO - -------------------------------------------------------------
-2016-08-03 08:32:36,936 - Perf_stream - INFO - This system uses 8 bytes per DOUBLE PRECISION word.
-2016-08-03 08:32:36,936 - Perf_stream - INFO - -------------------------------------------------------------
-2016-08-03 08:32:36,937 - Perf_stream - INFO - Array size = 2000000, Offset = 0
-2016-08-03 08:32:36,937 - Perf_stream - INFO - Total memory required = 45.8 MB.
-2016-08-03 08:32:36,937 - Perf_stream - INFO - Each test is run 10 times, but only
-2016-08-03 08:32:36,937 - Perf_stream - INFO - the *best* time for each is used.
-2016-08-03 08:32:36,937 - Perf_stream - INFO - -------------------------------------------------------------
-2016-08-03 08:32:36,937 - Perf_stream - INFO - Number of Threads requested = 1
-2016-08-03 08:32:36,937 - Perf_stream - INFO - -------------------------------------------------------------
-2016-08-03 08:32:36,937 - Perf_stream - INFO - Printing one line per active thread....
-2016-08-03 08:32:36,937 - Perf_stream - INFO - -------------------------------------------------------------
-2016-08-03 08:32:36,937 - Perf_stream - INFO - Your clock granularity/precision appears to be 1 microseconds.
-2016-08-03 08:32:36,937 - Perf_stream - INFO - Each test below will take on the order of 2157 microseconds.
-2016-08-03 08:32:36,937 - Perf_stream - INFO -    (= 2157 clock ticks)
-2016-08-03 08:32:36,937 - Perf_stream - INFO - Increase the size of the arrays if this shows that
-2016-08-03 08:32:36,937 - Perf_stream - INFO - you are not getting at least 20 clock ticks per test.
-2016-08-03 08:32:36,938 - Perf_stream - INFO - -------------------------------------------------------------
-2016-08-03 08:32:36,938 - Perf_stream - INFO - WARNING -- The above is only a rough guideline.
-2016-08-03 08:32:36,938 - Perf_stream - INFO - For best results, please be sure you know the
-2016-08-03 08:32:36,938 - Perf_stream - INFO - precision of your system timer.
-2016-08-03 08:32:36,938 - Perf_stream - INFO - -------------------------------------------------------------
-2016-08-03 08:32:36,938 - Perf_stream - INFO - Function      Rate (MB/s)   Avg time     Min time     Max time
-2016-08-03 08:32:36,938 - Perf_stream - INFO - Copy:       14286.0807       0.0023       0.0022       0.0023
-2016-08-03 08:32:36,938 - Perf_stream - INFO - Scale:      11869.2720       0.0027       0.0027       0.0027
-2016-08-03 08:32:36,938 - Perf_stream - INFO - Add:        12173.5755       0.0039       0.0039       0.0040
-2016-08-03 08:32:36,938 - Perf_stream - INFO - Triad:      12661.2535       0.0038       0.0038       0.0038
-2016-08-03 08:32:36,938 - Perf_stream - INFO - -------------------------------------------------------------
-2016-08-03 08:32:36,938 - Perf_stream - INFO - Solution Validates
-2016-08-03 08:32:36,938 - Perf_stream - INFO - -------------------------------------------------------------
-2016-08-03 08:32:36,939 - Perf_stream - INFO - -------------------------------------------------------------
-2016-08-03 08:32:36,939 - Perf_stream - INFO - STREAM version $Revision: 5.9 $
-2016-08-03 08:32:36,939 - Perf_stream - INFO - -------------------------------------------------------------
-2016-08-03 08:32:36,939 - Perf_stream - INFO - This system uses 8 bytes per DOUBLE PRECISION word.
-2016-08-03 08:32:36,939 - Perf_stream - INFO - -------------------------------------------------------------
-2016-08-03 08:32:36,939 - Perf_stream - INFO - Array size = 2000000, Offset = 0
-2016-08-03 08:32:36,939 - Perf_stream - INFO - Total memory required = 45.8 MB.
-2016-08-03 08:32:36,939 - Perf_stream - INFO - Each test is run 10 times, but only
-2016-08-03 08:32:36,939 - Perf_stream - INFO - the *best* time for each is used.
-2016-08-03 08:32:36,939 - Perf_stream - INFO - -------------------------------------------------------------
-2016-08-03 08:32:36,939 - Perf_stream - INFO - Number of Threads requested = 4
-2016-08-03 08:32:36,939 - Perf_stream - INFO - -------------------------------------------------------------
-2016-08-03 08:32:36,939 - Perf_stream - INFO - Printing one line per active thread....
-2016-08-03 08:32:36,939 - Perf_stream - INFO - Printing one line per active thread....
-2016-08-03 08:32:36,940 - Perf_stream - INFO - Printing one line per active thread....
-2016-08-03 08:32:36,940 - Perf_stream - INFO - Printing one line per active thread....
-2016-08-03 08:32:36,940 - Perf_stream - INFO - -------------------------------------------------------------
-2016-08-03 08:32:36,940 - Perf_stream - INFO - Your clock granularity/precision appears to be 1 microseconds.
-2016-08-03 08:32:36,940 - Perf_stream - INFO - Each test below will take on the order of 1640 microseconds.
-2016-08-03 08:32:36,940 - Perf_stream - INFO -    (= 1640 clock ticks)
-2016-08-03 08:32:36,940 - Perf_stream - INFO - Increase the size of the arrays if this shows that
-2016-08-03 08:32:36,940 - Perf_stream - INFO - you are not getting at least 20 clock ticks per test.
-2016-08-03 08:32:36,940 - Perf_stream - INFO - -------------------------------------------------------------
-2016-08-03 08:32:36,940 - Perf_stream - INFO - WARNING -- The above is only a rough guideline.
-2016-08-03 08:32:36,940 - Perf_stream - INFO - For best results, please be sure you know the
-2016-08-03 08:32:36,940 - Perf_stream - INFO - precision of your system timer.
-2016-08-03 08:32:36,940 - Perf_stream - INFO - -------------------------------------------------------------
-2016-08-03 08:32:36,940 - Perf_stream - INFO - Function      Rate (MB/s)   Avg time     Min time     Max time
-2016-08-03 08:32:36,941 - Perf_stream - INFO - Copy:       15725.5686       0.0021       0.0020       0.0021
-2016-08-03 08:32:36,941 - Perf_stream - INFO - Scale:      11881.8810       0.0027       0.0027       0.0027
-2016-08-03 08:32:36,941 - Perf_stream - INFO - Add:        12307.5310       0.0039       0.0039       0.0039
-2016-08-03 08:32:36,941 - Perf_stream - INFO - Triad:      12451.3941       0.0039       0.0039       0.0039
-2016-08-03 08:32:36,941 - Perf_stream - INFO - -------------------------------------------------------------
-2016-08-03 08:32:36,941 - Perf_stream - INFO - Solution Validates
-2016-08-03 08:32:36,941 - Perf_stream - INFO - -------------------------------------------------------------
-2016-08-03 08:32:36,941 - Perf_stream - INFO - -------------------------------------------------------------
-2016-08-03 08:32:36,941 - Perf_stream - INFO - STREAM version $Revision: 5.9 $
-2016-08-03 08:32:36,941 - Perf_stream - INFO - -------------------------------------------------------------
-2016-08-03 08:32:36,941 - Perf_stream - INFO - This system uses 8 bytes per DOUBLE PRECISION word.
-2016-08-03 08:32:36,941 - Perf_stream - INFO - -------------------------------------------------------------
-2016-08-03 08:32:36,941 - Perf_stream - INFO - Array size = 2000000, Offset = 0
-2016-08-03 08:32:36,942 - Perf_stream - INFO - Total memory required = 45.8 MB.
-2016-08-03 08:32:36,942 - Perf_stream - INFO - Each test is run 10 times, but only
-2016-08-03 08:32:36,942 - Perf_stream - INFO - the *best* time for each is used.
-2016-08-03 08:32:36,942 - Perf_stream - INFO - -------------------------------------------------------------
-2016-08-03 08:32:36,942 - Perf_stream - INFO - Number of Threads requested = 16
-2016-08-03 08:32:36,942 - Perf_stream - INFO - -------------------------------------------------------------
-2016-08-03 08:32:36,942 - Perf_stream - INFO - Printing one line per active thread....
-2016-08-03 08:32:36,942 - Perf_stream - INFO - Printing one line per active thread....
-2016-08-03 08:32:36,942 - Perf_stream - INFO - Printing one line per active thread....
-2016-08-03 08:32:36,942 - Perf_stream - INFO - Printing one line per active thread....
-2016-08-03 08:32:36,942 - Perf_stream - INFO - Printing one line per active thread....
-2016-08-03 08:32:36,942 - Perf_stream - INFO - Printing one line per active thread....
-2016-08-03 08:32:36,942 - Perf_stream - INFO - Printing one line per active thread....
-2016-08-03 08:32:36,942 - Perf_stream - INFO - Printing one line per active thread....
-2016-08-03 08:32:36,943 - Perf_stream - INFO - Printing one line per active thread....
-2016-08-03 08:32:36,943 - Perf_stream - INFO - Printing one line per active thread....
-2016-08-03 08:32:36,943 - Perf_stream - INFO - Printing one line per active thread....
-2016-08-03 08:32:36,943 - Perf_stream - INFO - Printing one line per active thread....
-2016-08-03 08:32:36,943 - Perf_stream - INFO - Printing one line per active thread....
-2016-08-03 08:32:36,943 - Perf_stream - INFO - Printing one line per active thread....
-2016-08-03 08:32:36,943 - Perf_stream - INFO - Printing one line per active thread....
-2016-08-03 08:32:36,943 - Perf_stream - INFO - Printing one line per active thread....
-2016-08-03 08:32:36,943 - Perf_stream - INFO - -------------------------------------------------------------
-2016-08-03 08:32:36,943 - Perf_stream - INFO - Your clock granularity/precision appears to be 1 microseconds.
-2016-08-03 08:32:36,943 - Perf_stream - INFO - Each test below will take on the order of 1996 microseconds.
-2016-08-03 08:32:36,943 - Perf_stream - INFO -    (= 1996 clock ticks)
-2016-08-03 08:32:36,943 - Perf_stream - INFO - Increase the size of the arrays if this shows that
-2016-08-03 08:32:36,943 - Perf_stream - INFO - you are not getting at least 20 clock ticks per test.
-2016-08-03 08:32:36,944 - Perf_stream - INFO - -------------------------------------------------------------
-2016-08-03 08:32:36,944 - Perf_stream - INFO - WARNING -- The above is only a rough guideline.
-2016-08-03 08:32:36,944 - Perf_stream - INFO - For best results, please be sure you know the
-2016-08-03 08:32:36,944 - Perf_stream - INFO - precision of your system timer.
-2016-08-03 08:32:36,944 - Perf_stream - INFO - -------------------------------------------------------------
-2016-08-03 08:32:36,944 - Perf_stream - INFO - Function      Rate (MB/s)   Avg time     Min time     Max time
-2016-08-03 08:32:36,944 - Perf_stream - INFO - Copy:       11952.7766       0.0028       0.0027       0.0032
-2016-08-03 08:32:36,944 - Perf_stream - INFO - Scale:      11042.1825       0.0029       0.0029       0.0030
-2016-08-03 08:32:36,944 - Perf_stream - INFO - Add:        12396.1943       0.0040       0.0039       0.0042
-2016-08-03 08:32:36,944 - Perf_stream - INFO - Triad:      12415.3054       0.0041       0.0039       0.0060
-2016-08-03 08:32:36,944 - Perf_stream - INFO - -------------------------------------------------------------
-2016-08-03 08:32:36,944 - Perf_stream - INFO - Solution Validates
-2016-08-03 08:32:36,944 - Perf_stream - INFO - -------------------------------------------------------------
-2016-08-03 08:32:36,945 - Perf_stream - INFO - stream 测试完成
-2016-08-03 08:32:46,828 - Perf_stream - INFO - stream 测试开始
-2016-08-03 08:32:46,829 - Perf_stream - INFO - -------------------------------------------------------------
-2016-08-03 08:32:46,829 - Perf_stream - INFO - STREAM version $Revision: 5.9 $
-2016-08-03 08:32:46,829 - Perf_stream - INFO - -------------------------------------------------------------
-2016-08-03 08:32:46,829 - Perf_stream - INFO - This system uses 8 bytes per DOUBLE PRECISION word.
-2016-08-03 08:32:46,829 - Perf_stream - INFO - -------------------------------------------------------------
-2016-08-03 08:32:46,829 - Perf_stream - INFO - Array size = 2000000, Offset = 0
-2016-08-03 08:32:46,829 - Perf_stream - INFO - Total memory required = 45.8 MB.
-2016-08-03 08:32:46,830 - Perf_stream - INFO - Each test is run 10 times, but only
-2016-08-03 08:32:46,830 - Perf_stream - INFO - the *best* time for each is used.
-2016-08-03 08:32:46,830 - Perf_stream - INFO - -------------------------------------------------------------
-2016-08-03 08:32:46,830 - Perf_stream - INFO - Number of Threads requested = 1
-2016-08-03 08:32:46,830 - Perf_stream - INFO - -------------------------------------------------------------
-2016-08-03 08:32:46,830 - Perf_stream - INFO - Printing one line per active thread....
-2016-08-03 08:32:46,830 - Perf_stream - INFO - -------------------------------------------------------------
-2016-08-03 08:32:46,830 - Perf_stream - INFO - Your clock granularity/precision appears to be 1 microseconds.
-2016-08-03 08:32:46,830 - Perf_stream - INFO - Each test below will take on the order of 1895 microseconds.
-2016-08-03 08:32:46,830 - Perf_stream - INFO -    (= 1895 clock ticks)
-2016-08-03 08:32:46,830 - Perf_stream - INFO - Increase the size of the arrays if this shows that
-2016-08-03 08:32:46,830 - Perf_stream - INFO - you are not getting at least 20 clock ticks per test.
-2016-08-03 08:32:46,830 - Perf_stream - INFO - -------------------------------------------------------------
-2016-08-03 08:32:46,831 - Perf_stream - INFO - WARNING -- The above is only a rough guideline.
-2016-08-03 08:32:46,831 - Perf_stream - INFO - For best results, please be sure you know the
-2016-08-03 08:32:46,831 - Perf_stream - INFO - precision of your system timer.
-2016-08-03 08:32:46,831 - Perf_stream - INFO - -------------------------------------------------------------
-2016-08-03 08:32:46,831 - Perf_stream - INFO - Function      Rate (MB/s)   Avg time     Min time     Max time
-2016-08-03 08:32:46,831 - Perf_stream - INFO - Copy:       14252.7055       0.0023       0.0022       0.0023
-2016-08-03 08:32:46,831 - Perf_stream - INFO - Scale:      11856.6898       0.0027       0.0027       0.0027
-2016-08-03 08:32:46,831 - Perf_stream - INFO - Add:        12151.5326       0.0040       0.0040       0.0040
-2016-08-03 08:32:46,831 - Perf_stream - INFO - Triad:      12674.8043       0.0038       0.0038       0.0038
-2016-08-03 08:32:46,831 - Perf_stream - INFO - -------------------------------------------------------------
-2016-08-03 08:32:46,831 - Perf_stream - INFO - Solution Validates
-2016-08-03 08:32:46,831 - Perf_stream - INFO - -------------------------------------------------------------
-2016-08-03 08:32:46,831 - Perf_stream - INFO - -------------------------------------------------------------
-2016-08-03 08:32:46,832 - Perf_stream - INFO - STREAM version $Revision: 5.9 $
-2016-08-03 08:32:46,832 - Perf_stream - INFO - -------------------------------------------------------------
-2016-08-03 08:32:46,832 - Perf_stream - INFO - This system uses 8 bytes per DOUBLE PRECISION word.
-2016-08-03 08:32:46,832 - Perf_stream - INFO - -------------------------------------------------------------
-2016-08-03 08:32:46,832 - Perf_stream - INFO - Array size = 2000000, Offset = 0
-2016-08-03 08:32:46,832 - Perf_stream - INFO - Total memory required = 45.8 MB.
-2016-08-03 08:32:46,832 - Perf_stream - INFO - Each test is run 10 times, but only
-2016-08-03 08:32:46,832 - Perf_stream - INFO - the *best* time for each is used.
-2016-08-03 08:32:46,832 - Perf_stream - INFO - -------------------------------------------------------------
-2016-08-03 08:32:46,832 - Perf_stream - INFO - Number of Threads requested = 4
-2016-08-03 08:32:46,832 - Perf_stream - INFO - -------------------------------------------------------------
-2016-08-03 08:32:46,832 - Perf_stream - INFO - Printing one line per active thread....
-2016-08-03 08:32:46,832 - Perf_stream - INFO - Printing one line per active thread....
-2016-08-03 08:32:46,833 - Perf_stream - INFO - Printing one line per active thread....
-2016-08-03 08:32:46,833 - Perf_stream - INFO - Printing one line per active thread....
-2016-08-03 08:32:46,833 - Perf_stream - INFO - -------------------------------------------------------------
-2016-08-03 08:32:46,833 - Perf_stream - INFO - Your clock granularity/precision appears to be 1 microseconds.
-2016-08-03 08:32:46,833 - Perf_stream - INFO - Each test below will take on the order of 1585 microseconds.
-2016-08-03 08:32:46,833 - Perf_stream - INFO -    (= 1585 clock ticks)
-2016-08-03 08:32:46,833 - Perf_stream - INFO - Increase the size of the arrays if this shows that
-2016-08-03 08:32:46,833 - Perf_stream - INFO - you are not getting at least 20 clock ticks per test.
-2016-08-03 08:32:46,833 - Perf_stream - INFO - -------------------------------------------------------------
-2016-08-03 08:32:46,833 - Perf_stream - INFO - WARNING -- The above is only a rough guideline.
-2016-08-03 08:32:46,833 - Perf_stream - INFO - For best results, please be sure you know the
-2016-08-03 08:32:46,833 - Perf_stream - INFO - precision of your system timer.
-2016-08-03 08:32:46,833 - Perf_stream - INFO - -------------------------------------------------------------
-2016-08-03 08:32:46,833 - Perf_stream - INFO - Function      Rate (MB/s)   Avg time     Min time     Max time
-2016-08-03 08:32:46,834 - Perf_stream - INFO - Copy:       15527.2707       0.0021       0.0021       0.0021
-2016-08-03 08:32:46,834 - Perf_stream - INFO - Scale:      11900.8448       0.0027       0.0027       0.0028
-2016-08-03 08:32:46,834 - Perf_stream - INFO - Add:        12285.7504       0.0039       0.0039       0.0039
-2016-08-03 08:32:46,834 - Perf_stream - INFO - Triad:      12477.6320       0.0039       0.0038       0.0039
-2016-08-03 08:32:46,834 - Perf_stream - INFO - -------------------------------------------------------------
-2016-08-03 08:32:46,834 - Perf_stream - INFO - Solution Validates
-2016-08-03 08:32:46,834 - Perf_stream - INFO - -------------------------------------------------------------
-2016-08-03 08:32:46,834 - Perf_stream - INFO - -------------------------------------------------------------
-2016-08-03 08:32:46,834 - Perf_stream - INFO - STREAM version $Revision: 5.9 $
-2016-08-03 08:32:46,834 - Perf_stream - INFO - -------------------------------------------------------------
-2016-08-03 08:32:46,834 - Perf_stream - INFO - This system uses 8 bytes per DOUBLE PRECISION word.
-2016-08-03 08:32:46,834 - Perf_stream - INFO - -------------------------------------------------------------
-2016-08-03 08:32:46,834 - Perf_stream - INFO - Array size = 2000000, Offset = 0
-2016-08-03 08:32:46,835 - Perf_stream - INFO - Total memory required = 45.8 MB.
-2016-08-03 08:32:46,835 - Perf_stream - INFO - Each test is run 10 times, but only
-2016-08-03 08:32:46,835 - Perf_stream - INFO - the *best* time for each is used.
-2016-08-03 08:32:46,835 - Perf_stream - INFO - -------------------------------------------------------------
-2016-08-03 08:32:46,835 - Perf_stream - INFO - Number of Threads requested = 16
-2016-08-03 08:32:46,835 - Perf_stream - INFO - -------------------------------------------------------------
-2016-08-03 08:32:46,835 - Perf_stream - INFO - Printing one line per active thread....
-2016-08-03 08:32:46,835 - Perf_stream - INFO - Printing one line per active thread....
-2016-08-03 08:32:46,835 - Perf_stream - INFO - Printing one line per active thread....
-2016-08-03 08:32:46,835 - Perf_stream - INFO - Printing one line per active thread....
-2016-08-03 08:32:46,835 - Perf_stream - INFO - Printing one line per active thread....
-2016-08-03 08:32:46,835 - Perf_stream - INFO - Printing one line per active thread....
-2016-08-03 08:32:46,835 - Perf_stream - INFO - Printing one line per active thread....
-2016-08-03 08:32:46,836 - Perf_stream - INFO - Printing one line per active thread....
-2016-08-03 08:32:46,836 - Perf_stream - INFO - Printing one line per active thread....
-2016-08-03 08:32:46,836 - Perf_stream - INFO - Printing one line per active thread....
-2016-08-03 08:32:46,836 - Perf_stream - INFO - Printing one line per active thread....
-2016-08-03 08:32:46,836 - Perf_stream - INFO - Printing one line per active thread....
-2016-08-03 08:32:46,836 - Perf_stream - INFO - Printing one line per active thread....
-2016-08-03 08:32:46,836 - Perf_stream - INFO - Printing one line per active thread....
-2016-08-03 08:32:46,836 - Perf_stream - INFO - Printing one line per active thread....
-2016-08-03 08:32:46,836 - Perf_stream - INFO - Printing one line per active thread....
-2016-08-03 08:32:46,836 - Perf_stream - INFO - -------------------------------------------------------------
-2016-08-03 08:32:46,836 - Perf_stream - INFO - Your clock granularity/precision appears to be 1 microseconds.
-2016-08-03 08:32:46,836 - Perf_stream - INFO - Each test below will take on the order of 1866 microseconds.
-2016-08-03 08:32:46,836 - Perf_stream - INFO -    (= 1866 clock ticks)
-2016-08-03 08:32:46,836 - Perf_stream - INFO - Increase the size of the arrays if this shows that
-2016-08-03 08:32:46,837 - Perf_stream - INFO - you are not getting at least 20 clock ticks per test.
-2016-08-03 08:32:46,837 - Perf_stream - INFO - -------------------------------------------------------------
-2016-08-03 08:32:46,837 - Perf_stream - INFO - WARNING -- The above is only a rough guideline.
-2016-08-03 08:32:46,837 - Perf_stream - INFO - For best results, please be sure you know the
-2016-08-03 08:32:46,837 - Perf_stream - INFO - precision of your system timer.
-2016-08-03 08:32:46,837 - Perf_stream - INFO - -------------------------------------------------------------
-2016-08-03 08:32:46,837 - Perf_stream - INFO - Function      Rate (MB/s)   Avg time     Min time     Max time
-2016-08-03 08:32:46,837 - Perf_stream - INFO - Copy:       12030.9903       0.0027       0.0027       0.0028
-2016-08-03 08:32:46,837 - Perf_stream - INFO - Scale:      11096.0423       0.0029       0.0029       0.0030
-2016-08-03 08:32:46,837 - Perf_stream - INFO - Add:        12121.5360       0.0040       0.0040       0.0041
-2016-08-03 08:32:46,837 - Perf_stream - INFO - Triad:      12665.2360       0.0039       0.0038       0.0040
-2016-08-03 08:32:46,837 - Perf_stream - INFO - -------------------------------------------------------------
-2016-08-03 08:32:46,837 - Perf_stream - INFO - Solution Validates
-2016-08-03 08:32:46,838 - Perf_stream - INFO - -------------------------------------------------------------
-2016-08-03 08:32:46,838 - Perf_stream - INFO - stream 测试完成
-2016-08-03 08:32:56,544 - Perf_stream - INFO - stream 测试开始
-2016-08-03 08:32:56,567 - Perf_stream - INFO - -------------------------------------------------------------
-2016-08-03 08:32:56,567 - Perf_stream - INFO - STREAM version $Revision: 5.9 $
-2016-08-03 08:32:56,567 - Perf_stream - INFO - -------------------------------------------------------------
-2016-08-03 08:32:56,567 - Perf_stream - INFO - This system uses 8 bytes per DOUBLE PRECISION word.
-2016-08-03 08:32:56,567 - Perf_stream - INFO - -------------------------------------------------------------
-2016-08-03 08:32:56,567 - Perf_stream - INFO - Array size = 2000000, Offset = 0
-2016-08-03 08:32:56,567 - Perf_stream - INFO - Total memory required = 45.8 MB.
-2016-08-03 08:32:56,567 - Perf_stream - INFO - Each test is run 10 times, but only
-2016-08-03 08:32:56,567 - Perf_stream - INFO - the *best* time for each is used.
-2016-08-03 08:32:56,567 - Perf_stream - INFO - -------------------------------------------------------------
-2016-08-03 08:32:56,567 - Perf_stream - INFO - Number of Threads requested = 1
-2016-08-03 08:32:56,567 - Perf_stream - INFO - -------------------------------------------------------------
-2016-08-03 08:32:56,568 - Perf_stream - INFO - Printing one line per active thread....
-2016-08-03 08:32:56,568 - Perf_stream - INFO - -------------------------------------------------------------
-2016-08-03 08:32:56,568 - Perf_stream - INFO - Your clock granularity/precision appears to be 1 microseconds.
-2016-08-03 08:32:56,568 - Perf_stream - INFO - Each test below will take on the order of 1886 microseconds.
-2016-08-03 08:32:56,568 - Perf_stream - INFO -    (= 1886 clock ticks)
-2016-08-03 08:32:56,568 - Perf_stream - INFO - Increase the size of the arrays if this shows that
-2016-08-03 08:32:56,568 - Perf_stream - INFO - you are not getting at least 20 clock ticks per test.
-2016-08-03 08:32:56,568 - Perf_stream - INFO - -------------------------------------------------------------
-2016-08-03 08:32:56,568 - Perf_stream - INFO - WARNING -- The above is only a rough guideline.
-2016-08-03 08:32:56,568 - Perf_stream - INFO - For best results, please be sure you know the
-2016-08-03 08:32:56,568 - Perf_stream - INFO - precision of your system timer.
-2016-08-03 08:32:56,568 - Perf_stream - INFO - -------------------------------------------------------------
-2016-08-03 08:32:56,568 - Perf_stream - INFO - Function      Rate (MB/s)   Avg time     Min time     Max time
-2016-08-03 08:32:56,569 - Perf_stream - INFO - Copy:       14214.9680       0.0023       0.0023       0.0023
-2016-08-03 08:32:56,569 - Perf_stream - INFO - Scale:      11927.2841       0.0027       0.0027       0.0027
-2016-08-03 08:32:56,569 - Perf_stream - INFO - Add:        12133.2244       0.0040       0.0040       0.0040
-2016-08-03 08:32:56,569 - Perf_stream - INFO - Triad:      12745.4161       0.0038       0.0038       0.0038
-2016-08-03 08:32:56,569 - Perf_stream - INFO - -------------------------------------------------------------
-2016-08-03 08:32:56,569 - Perf_stream - INFO - Solution Validates
-2016-08-03 08:32:56,569 - Perf_stream - INFO - -------------------------------------------------------------
-2016-08-03 08:32:56,569 - Perf_stream - INFO - -------------------------------------------------------------
-2016-08-03 08:32:56,569 - Perf_stream - INFO - STREAM version $Revision: 5.9 $
-2016-08-03 08:32:56,569 - Perf_stream - INFO - -------------------------------------------------------------
-2016-08-03 08:32:56,569 - Perf_stream - INFO - This system uses 8 bytes per DOUBLE PRECISION word.
-2016-08-03 08:32:56,569 - Perf_stream - INFO - -------------------------------------------------------------
-2016-08-03 08:32:56,569 - Perf_stream - INFO - Array size = 2000000, Offset = 0
-2016-08-03 08:32:56,569 - Perf_stream - INFO - Total memory required = 45.8 MB.
-2016-08-03 08:32:56,570 - Perf_stream - INFO - Each test is run 10 times, but only
-2016-08-03 08:32:56,570 - Perf_stream - INFO - the *best* time for each is used.
-2016-08-03 08:32:56,570 - Perf_stream - INFO - -------------------------------------------------------------
-2016-08-03 08:32:56,570 - Perf_stream - INFO - Number of Threads requested = 4
-2016-08-03 08:32:56,570 - Perf_stream - INFO - -------------------------------------------------------------
-2016-08-03 08:32:56,570 - Perf_stream - INFO - Printing one line per active thread....
-2016-08-03 08:32:56,570 - Perf_stream - INFO - Printing one line per active thread....
-2016-08-03 08:32:56,570 - Perf_stream - INFO - Printing one line per active thread....
-2016-08-03 08:32:56,570 - Perf_stream - INFO - Printing one line per active thread....
-2016-08-03 08:32:56,570 - Perf_stream - INFO - -------------------------------------------------------------
-2016-08-03 08:32:56,570 - Perf_stream - INFO - Your clock granularity/precision appears to be 1 microseconds.
-2016-08-03 08:32:56,570 - Perf_stream - INFO - Each test below will take on the order of 1619 microseconds.
-2016-08-03 08:32:56,570 - Perf_stream - INFO -    (= 1619 clock ticks)
-2016-08-03 08:32:56,570 - Perf_stream - INFO - Increase the size of the arrays if this shows that
-2016-08-03 08:32:56,571 - Perf_stream - INFO - you are not getting at least 20 clock ticks per test.
-2016-08-03 08:32:56,571 - Perf_stream - INFO - -------------------------------------------------------------
-2016-08-03 08:32:56,571 - Perf_stream - INFO - WARNING -- The above is only a rough guideline.
-2016-08-03 08:32:56,571 - Perf_stream - INFO - For best results, please be sure you know the
-2016-08-03 08:32:56,571 - Perf_stream - INFO - precision of your system timer.
-2016-08-03 08:32:56,571 - Perf_stream - INFO - -------------------------------------------------------------
-2016-08-03 08:32:56,571 - Perf_stream - INFO - Function      Rate (MB/s)   Avg time     Min time     Max time
-2016-08-03 08:32:56,571 - Perf_stream - INFO - Copy:       15610.3429       0.0021       0.0020       0.0021
-2016-08-03 08:32:56,571 - Perf_stream - INFO - Scale:      11869.2720       0.0027       0.0027       0.0027
-2016-08-03 08:32:56,571 - Perf_stream - INFO - Add:        12317.3198       0.0039       0.0039       0.0039
-2016-08-03 08:32:56,571 - Perf_stream - INFO - Triad:      12432.1719       0.0039       0.0039       0.0039
-2016-08-03 08:32:56,571 - Perf_stream - INFO - -------------------------------------------------------------
-2016-08-03 08:32:56,571 - Perf_stream - INFO - Solution Validates
-2016-08-03 08:32:56,571 - Perf_stream - INFO - -------------------------------------------------------------
-2016-08-03 08:32:56,572 - Perf_stream - INFO - -------------------------------------------------------------
-2016-08-03 08:32:56,572 - Perf_stream - INFO - STREAM version $Revision: 5.9 $
-2016-08-03 08:32:56,572 - Perf_stream - INFO - -------------------------------------------------------------
-2016-08-03 08:32:56,572 - Perf_stream - INFO - This system uses 8 bytes per DOUBLE PRECISION word.
-2016-08-03 08:32:56,572 - Perf_stream - INFO - -------------------------------------------------------------
-2016-08-03 08:32:56,572 - Perf_stream - INFO - Array size = 2000000, Offset = 0
-2016-08-03 08:32:56,572 - Perf_stream - INFO - Total memory required = 45.8 MB.
-2016-08-03 08:32:56,572 - Perf_stream - INFO - Each test is run 10 times, but only
-2016-08-03 08:32:56,572 - Perf_stream - INFO - the *best* time for each is used.
-2016-08-03 08:32:56,572 - Perf_stream - INFO - -------------------------------------------------------------
-2016-08-03 08:32:56,572 - Perf_stream - INFO - Number of Threads requested = 16
-2016-08-03 08:32:56,572 - Perf_stream - INFO - -------------------------------------------------------------
-2016-08-03 08:32:56,572 - Perf_stream - INFO - Printing one line per active thread....
-2016-08-03 08:32:56,572 - Perf_stream - INFO - Printing one line per active thread....
-2016-08-03 08:32:56,573 - Perf_stream - INFO - Printing one line per active thread....
-2016-08-03 08:32:56,573 - Perf_stream - INFO - Printing one line per active thread....
-2016-08-03 08:32:56,573 - Perf_stream - INFO - Printing one line per active thread....
-2016-08-03 08:32:56,573 - Perf_stream - INFO - Printing one line per active thread....
-2016-08-03 08:32:56,573 - Perf_stream - INFO - Printing one line per active thread....
-2016-08-03 08:32:56,573 - Perf_stream - INFO - Printing one line per active thread....
-2016-08-03 08:32:56,573 - Perf_stream - INFO - Printing one line per active thread....
-2016-08-03 08:32:56,573 - Perf_stream - INFO - Printing one line per active thread....
-2016-08-03 08:32:56,573 - Perf_stream - INFO - Printing one line per active thread....
-2016-08-03 08:32:56,573 - Perf_stream - INFO - Printing one line per active thread....
-2016-08-03 08:32:56,573 - Perf_stream - INFO - Printing one line per active thread....
-2016-08-03 08:32:56,573 - Perf_stream - INFO - Printing one line per active thread....
-2016-08-03 08:32:56,573 - Perf_stream - INFO - Printing one line per active thread....
-2016-08-03 08:32:56,574 - Perf_stream - INFO - Printing one line per active thread....
-2016-08-03 08:32:56,574 - Perf_stream - INFO - -------------------------------------------------------------
-2016-08-03 08:32:56,574 - Perf_stream - INFO - Your clock granularity/precision appears to be 1 microseconds.
-2016-08-03 08:32:56,574 - Perf_stream - INFO - Each test below will take on the order of 1943 microseconds.
-2016-08-03 08:32:56,574 - Perf_stream - INFO -    (= 1943 clock ticks)
-2016-08-03 08:32:56,574 - Perf_stream - INFO - Increase the size of the arrays if this shows that
-2016-08-03 08:32:56,574 - Perf_stream - INFO - you are not getting at least 20 clock ticks per test.
-2016-08-03 08:32:56,574 - Perf_stream - INFO - -------------------------------------------------------------
-2016-08-03 08:32:56,574 - Perf_stream - INFO - WARNING -- The above is only a rough guideline.
-2016-08-03 08:32:56,574 - Perf_stream - INFO - For best results, please be sure you know the
-2016-08-03 08:32:56,574 - Perf_stream - INFO - precision of your system timer.
-2016-08-03 08:32:56,574 - Perf_stream - INFO - -------------------------------------------------------------
-2016-08-03 08:32:56,574 - Perf_stream - INFO - Function      Rate (MB/s)   Avg time     Min time     Max time
-2016-08-03 08:32:56,574 - Perf_stream - INFO - Copy:       12181.6780       0.0028       0.0026       0.0029
-2016-08-03 08:32:56,575 - Perf_stream - INFO - Scale:      11173.6370       0.0029       0.0029       0.0030
-2016-08-03 08:32:56,575 - Perf_stream - INFO - Add:        12269.2786       0.0040       0.0039       0.0040
-2016-08-03 08:32:56,575 - Perf_stream - INFO - Triad:      12662.0498       0.0039       0.0038       0.0041
-2016-08-03 08:32:56,575 - Perf_stream - INFO - -------------------------------------------------------------
-2016-08-03 08:32:56,575 - Perf_stream - INFO - Solution Validates
-2016-08-03 08:32:56,575 - Perf_stream - INFO - -------------------------------------------------------------
-2016-08-03 08:32:56,575 - Perf_stream - INFO - stream 测试完成
+2016-08-04 11:04:40,761 - Perf_stream - INFO - {u'tarbal': u'stream-5.9.tar.gz', u'tag': u"'stream'", u'reboot': u'no', u'thread': u'1,4,16', u'runtimes': u'3'}
+2016-08-04 11:05:05,365 - Perf_stream - INFO - {u'tarbal': u'stream-5.9.tar.gz', u'tag': u"'stream'", u'reboot': u'no', u'thread': u'1,4,16', u'runtimes': u'3'}
+2016-08-04 11:05:15,155 - Perf_stream - INFO - {u'tarbal': u'stream-5.9.tar.gz', u'tag': u"'stream'", u'reboot': u'no', u'thread': u'1,4,16', u'runtimes': u'3'}
+2016-08-04 11:05:15,155 - Perf_stream - INFO - /home/isoft_lp/Github/Lpbs-i/tmp/Perf_stream/stream_test 1
+2016-08-04 11:05:16,297 - Perf_stream - INFO - -------------------------------------------------------------
+2016-08-04 11:05:16,297 - Perf_stream - INFO - STREAM version $Revision: 5.9 $
+2016-08-04 11:05:16,297 - Perf_stream - INFO - -------------------------------------------------------------
+2016-08-04 11:05:16,297 - Perf_stream - INFO - This system uses 8 bytes per DOUBLE PRECISION word.
+2016-08-04 11:05:16,297 - Perf_stream - INFO - -------------------------------------------------------------
+2016-08-04 11:05:16,297 - Perf_stream - INFO - Array size = 2000000, Offset = 0
+2016-08-04 11:05:16,298 - Perf_stream - INFO - Total memory required = 45.8 MB.
+2016-08-04 11:05:16,298 - Perf_stream - INFO - Each test is run 10 times, but only
+2016-08-04 11:05:16,298 - Perf_stream - INFO - the *best* time for each is used.
+2016-08-04 11:05:16,298 - Perf_stream - INFO - -------------------------------------------------------------
+2016-08-04 11:05:16,298 - Perf_stream - INFO - Number of Threads requested = 1
+2016-08-04 11:05:16,298 - Perf_stream - INFO - -------------------------------------------------------------
+2016-08-04 11:05:16,298 - Perf_stream - INFO - Printing one line per active thread....
+2016-08-04 11:05:16,298 - Perf_stream - INFO - -------------------------------------------------------------
+2016-08-04 11:05:16,298 - Perf_stream - INFO - Your clock granularity/precision appears to be 1 microseconds.
+2016-08-04 11:05:16,298 - Perf_stream - INFO - Each test below will take on the order of 3530 microseconds.
+2016-08-04 11:05:16,298 - Perf_stream - INFO -    (= 3530 clock ticks)
+2016-08-04 11:05:16,298 - Perf_stream - INFO - Increase the size of the arrays if this shows that
+2016-08-04 11:05:16,298 - Perf_stream - INFO - you are not getting at least 20 clock ticks per test.
+2016-08-04 11:05:16,298 - Perf_stream - INFO - -------------------------------------------------------------
+2016-08-04 11:05:16,299 - Perf_stream - INFO - WARNING -- The above is only a rough guideline.
+2016-08-04 11:05:16,299 - Perf_stream - INFO - For best results, please be sure you know the
+2016-08-04 11:05:16,299 - Perf_stream - INFO - precision of your system timer.
+2016-08-04 11:05:16,299 - Perf_stream - INFO - -------------------------------------------------------------
+2016-08-04 11:05:16,299 - Perf_stream - INFO - Function      Rate (MB/s)   Avg time     Min time     Max time
+2016-08-04 11:05:16,299 - Perf_stream - INFO - Copy:        9956.8047       0.0035       0.0032       0.0038
+2016-08-04 11:05:16,299 - Perf_stream - INFO - Scale:       6831.4617       0.0049       0.0047       0.0052
+2016-08-04 11:05:16,299 - Perf_stream - INFO - Add:         7587.7810       0.0065       0.0063       0.0067
+2016-08-04 11:05:16,299 - Perf_stream - INFO - Triad:       7585.4938       0.0066       0.0063       0.0067
+2016-08-04 11:05:16,299 - Perf_stream - INFO - -------------------------------------------------------------
+2016-08-04 11:05:16,299 - Perf_stream - INFO - Solution Validates
+2016-08-04 11:05:16,299 - Perf_stream - INFO - -------------------------------------------------------------
+2016-08-04 11:05:16,300 - Perf_stream - INFO - ***************************************************
+2016-08-04 11:05:16,300 - Perf_stream - INFO - Test result is: COPY   SCALE   ADD    TRIAD
+2016-08-04 11:05:16,300 - Perf_stream - INFO - (1)threads_result: 9956.8047 6831.4617 7587.7810 7585.4938
+2016-08-04 11:05:16,300 - Perf_stream - INFO - ***************************************************
+2016-08-04 11:05:17,260 - Perf_stream - INFO - -------------------------------------------------------------
+2016-08-04 11:05:17,260 - Perf_stream - INFO - STREAM version $Revision: 5.9 $
+2016-08-04 11:05:17,260 - Perf_stream - INFO - -------------------------------------------------------------
+2016-08-04 11:05:17,260 - Perf_stream - INFO - This system uses 8 bytes per DOUBLE PRECISION word.
+2016-08-04 11:05:17,260 - Perf_stream - INFO - -------------------------------------------------------------
+2016-08-04 11:05:17,260 - Perf_stream - INFO - Array size = 2000000, Offset = 0
+2016-08-04 11:05:17,260 - Perf_stream - INFO - Total memory required = 45.8 MB.
+2016-08-04 11:05:17,261 - Perf_stream - INFO - Each test is run 10 times, but only
+2016-08-04 11:05:17,261 - Perf_stream - INFO - the *best* time for each is used.
+2016-08-04 11:05:17,261 - Perf_stream - INFO - -------------------------------------------------------------
+2016-08-04 11:05:17,261 - Perf_stream - INFO - Number of Threads requested = 1
+2016-08-04 11:05:17,261 - Perf_stream - INFO - -------------------------------------------------------------
+2016-08-04 11:05:17,261 - Perf_stream - INFO - Printing one line per active thread....
+2016-08-04 11:05:17,261 - Perf_stream - INFO - -------------------------------------------------------------
+2016-08-04 11:05:17,261 - Perf_stream - INFO - Your clock granularity/precision appears to be 1 microseconds.
+2016-08-04 11:05:17,261 - Perf_stream - INFO - Each test below will take on the order of 3551 microseconds.
+2016-08-04 11:05:17,261 - Perf_stream - INFO -    (= 3551 clock ticks)
+2016-08-04 11:05:17,261 - Perf_stream - INFO - Increase the size of the arrays if this shows that
+2016-08-04 11:05:17,261 - Perf_stream - INFO - you are not getting at least 20 clock ticks per test.
+2016-08-04 11:05:17,261 - Perf_stream - INFO - -------------------------------------------------------------
+2016-08-04 11:05:17,261 - Perf_stream - INFO - WARNING -- The above is only a rough guideline.
+2016-08-04 11:05:17,261 - Perf_stream - INFO - For best results, please be sure you know the
+2016-08-04 11:05:17,262 - Perf_stream - INFO - precision of your system timer.
+2016-08-04 11:05:17,262 - Perf_stream - INFO - -------------------------------------------------------------
+2016-08-04 11:05:17,262 - Perf_stream - INFO - Function      Rate (MB/s)   Avg time     Min time     Max time
+2016-08-04 11:05:17,262 - Perf_stream - INFO - Copy:        9650.3975       0.0036       0.0033       0.0041
+2016-08-04 11:05:17,262 - Perf_stream - INFO - Scale:       6805.4826       0.0050       0.0047       0.0053
+2016-08-04 11:05:17,262 - Perf_stream - INFO - Add:         7293.6490       0.0070       0.0066       0.0083
+2016-08-04 11:05:17,262 - Perf_stream - INFO - Triad:       7369.7413       0.0067       0.0065       0.0069
+2016-08-04 11:05:17,262 - Perf_stream - INFO - -------------------------------------------------------------
+2016-08-04 11:05:17,262 - Perf_stream - INFO - Solution Validates
+2016-08-04 11:05:17,262 - Perf_stream - INFO - -------------------------------------------------------------
+2016-08-04 11:05:17,262 - Perf_stream - INFO - ***************************************************
+2016-08-04 11:05:17,262 - Perf_stream - INFO - Test result is: COPY   SCALE   ADD    TRIAD
+2016-08-04 11:05:17,262 - Perf_stream - INFO - (1)threads_result: 9650.3975 6805.4826 7293.6490 7369.7413
+2016-08-04 11:05:17,262 - Perf_stream - INFO - ***************************************************
+2016-08-04 11:05:18,300 - Perf_stream - INFO - -------------------------------------------------------------
+2016-08-04 11:05:18,301 - Perf_stream - INFO - STREAM version $Revision: 5.9 $
+2016-08-04 11:05:18,301 - Perf_stream - INFO - -------------------------------------------------------------
+2016-08-04 11:05:18,301 - Perf_stream - INFO - This system uses 8 bytes per DOUBLE PRECISION word.
+2016-08-04 11:05:18,301 - Perf_stream - INFO - -------------------------------------------------------------
+2016-08-04 11:05:18,301 - Perf_stream - INFO - Array size = 2000000, Offset = 0
+2016-08-04 11:05:18,301 - Perf_stream - INFO - Total memory required = 45.8 MB.
+2016-08-04 11:05:18,301 - Perf_stream - INFO - Each test is run 10 times, but only
+2016-08-04 11:05:18,301 - Perf_stream - INFO - the *best* time for each is used.
+2016-08-04 11:05:18,301 - Perf_stream - INFO - -------------------------------------------------------------
+2016-08-04 11:05:18,301 - Perf_stream - INFO - Number of Threads requested = 1
+2016-08-04 11:05:18,301 - Perf_stream - INFO - -------------------------------------------------------------
+2016-08-04 11:05:18,301 - Perf_stream - INFO - Printing one line per active thread....
+2016-08-04 11:05:18,302 - Perf_stream - INFO - -------------------------------------------------------------
+2016-08-04 11:05:18,302 - Perf_stream - INFO - Your clock granularity/precision appears to be 1 microseconds.
+2016-08-04 11:05:18,302 - Perf_stream - INFO - Each test below will take on the order of 3674 microseconds.
+2016-08-04 11:05:18,302 - Perf_stream - INFO -    (= 3674 clock ticks)
+2016-08-04 11:05:18,302 - Perf_stream - INFO - Increase the size of the arrays if this shows that
+2016-08-04 11:05:18,302 - Perf_stream - INFO - you are not getting at least 20 clock ticks per test.
+2016-08-04 11:05:18,302 - Perf_stream - INFO - -------------------------------------------------------------
+2016-08-04 11:05:18,302 - Perf_stream - INFO - WARNING -- The above is only a rough guideline.
+2016-08-04 11:05:18,302 - Perf_stream - INFO - For best results, please be sure you know the
+2016-08-04 11:05:18,302 - Perf_stream - INFO - precision of your system timer.
+2016-08-04 11:05:18,302 - Perf_stream - INFO - -------------------------------------------------------------
+2016-08-04 11:05:18,302 - Perf_stream - INFO - Function      Rate (MB/s)   Avg time     Min time     Max time
+2016-08-04 11:05:18,302 - Perf_stream - INFO - Copy:       10018.4913       0.0035       0.0032       0.0036
+2016-08-04 11:05:18,302 - Perf_stream - INFO - Scale:       7112.7572       0.0048       0.0045       0.0051
+2016-08-04 11:05:18,303 - Perf_stream - INFO - Add:         7673.6771       0.0064       0.0063       0.0068
+2016-08-04 11:05:18,303 - Perf_stream - INFO - Triad:       7720.7621       0.0065       0.0062       0.0068
+2016-08-04 11:05:18,303 - Perf_stream - INFO - -------------------------------------------------------------
+2016-08-04 11:05:18,303 - Perf_stream - INFO - Solution Validates
+2016-08-04 11:05:18,303 - Perf_stream - INFO - -------------------------------------------------------------
+2016-08-04 11:05:18,303 - Perf_stream - INFO - ***************************************************
+2016-08-04 11:05:18,303 - Perf_stream - INFO - Test result is: COPY   SCALE   ADD    TRIAD
+2016-08-04 11:05:18,303 - Perf_stream - INFO - (1)threads_result: 10018.4913 7112.7572 7673.6771 7720.7621
+2016-08-04 11:05:18,303 - Perf_stream - INFO - ***************************************************
+2016-08-04 11:05:18,303 - Perf_stream - INFO - /home/isoft_lp/Github/Lpbs-i/tmp/Perf_stream/stream_test 4
+2016-08-04 11:05:19,263 - Perf_stream - INFO - -------------------------------------------------------------
+2016-08-04 11:05:19,264 - Perf_stream - INFO - STREAM version $Revision: 5.9 $
+2016-08-04 11:05:19,264 - Perf_stream - INFO - -------------------------------------------------------------
+2016-08-04 11:05:19,264 - Perf_stream - INFO - This system uses 8 bytes per DOUBLE PRECISION word.
+2016-08-04 11:05:19,264 - Perf_stream - INFO - -------------------------------------------------------------
+2016-08-04 11:05:19,264 - Perf_stream - INFO - Array size = 2000000, Offset = 0
+2016-08-04 11:05:19,264 - Perf_stream - INFO - Total memory required = 45.8 MB.
+2016-08-04 11:05:19,264 - Perf_stream - INFO - Each test is run 10 times, but only
+2016-08-04 11:05:19,264 - Perf_stream - INFO - the *best* time for each is used.
+2016-08-04 11:05:19,264 - Perf_stream - INFO - -------------------------------------------------------------
+2016-08-04 11:05:19,264 - Perf_stream - INFO - Number of Threads requested = 4
+2016-08-04 11:05:19,264 - Perf_stream - INFO - -------------------------------------------------------------
+2016-08-04 11:05:19,265 - Perf_stream - INFO - Printing one line per active thread....
+2016-08-04 11:05:19,265 - Perf_stream - INFO - Printing one line per active thread....
+2016-08-04 11:05:19,265 - Perf_stream - INFO - Printing one line per active thread....
+2016-08-04 11:05:19,265 - Perf_stream - INFO - Printing one line per active thread....
+2016-08-04 11:05:19,265 - Perf_stream - INFO - -------------------------------------------------------------
+2016-08-04 11:05:19,265 - Perf_stream - INFO - Your clock granularity/precision appears to be 1 microseconds.
+2016-08-04 11:05:19,265 - Perf_stream - INFO - Each test below will take on the order of 3278 microseconds.
+2016-08-04 11:05:19,265 - Perf_stream - INFO -    (= 3278 clock ticks)
+2016-08-04 11:05:19,265 - Perf_stream - INFO - Increase the size of the arrays if this shows that
+2016-08-04 11:05:19,265 - Perf_stream - INFO - you are not getting at least 20 clock ticks per test.
+2016-08-04 11:05:19,265 - Perf_stream - INFO - -------------------------------------------------------------
+2016-08-04 11:05:19,265 - Perf_stream - INFO - WARNING -- The above is only a rough guideline.
+2016-08-04 11:05:19,265 - Perf_stream - INFO - For best results, please be sure you know the
+2016-08-04 11:05:19,265 - Perf_stream - INFO - precision of your system timer.
+2016-08-04 11:05:19,265 - Perf_stream - INFO - -------------------------------------------------------------
+2016-08-04 11:05:19,266 - Perf_stream - INFO - Function      Rate (MB/s)   Avg time     Min time     Max time
+2016-08-04 11:05:19,266 - Perf_stream - INFO - Copy:        9618.5845       0.0035       0.0033       0.0038
+2016-08-04 11:05:19,266 - Perf_stream - INFO - Scale:       7122.1930       0.0047       0.0045       0.0049
+2016-08-04 11:05:19,266 - Perf_stream - INFO - Add:         7765.7316       0.0066       0.0062       0.0083
+2016-08-04 11:05:19,266 - Perf_stream - INFO - Triad:       7825.4982       0.0063       0.0061       0.0065
+2016-08-04 11:05:19,266 - Perf_stream - INFO - -------------------------------------------------------------
+2016-08-04 11:05:19,266 - Perf_stream - INFO - Solution Validates
+2016-08-04 11:05:19,266 - Perf_stream - INFO - -------------------------------------------------------------
+2016-08-04 11:05:19,266 - Perf_stream - INFO - ***************************************************
+2016-08-04 11:05:19,266 - Perf_stream - INFO - Test result is: COPY   SCALE   ADD    TRIAD
+2016-08-04 11:05:19,266 - Perf_stream - INFO - (4)threads_result: 9618.5845 7122.1930 7765.7316 7825.4982
+2016-08-04 11:05:19,266 - Perf_stream - INFO - ***************************************************
+2016-08-04 11:05:20,171 - Perf_stream - INFO - -------------------------------------------------------------
+2016-08-04 11:05:20,171 - Perf_stream - INFO - STREAM version $Revision: 5.9 $
+2016-08-04 11:05:20,172 - Perf_stream - INFO - -------------------------------------------------------------
+2016-08-04 11:05:20,172 - Perf_stream - INFO - This system uses 8 bytes per DOUBLE PRECISION word.
+2016-08-04 11:05:20,172 - Perf_stream - INFO - -------------------------------------------------------------
+2016-08-04 11:05:20,172 - Perf_stream - INFO - Array size = 2000000, Offset = 0
+2016-08-04 11:05:20,172 - Perf_stream - INFO - Total memory required = 45.8 MB.
+2016-08-04 11:05:20,172 - Perf_stream - INFO - Each test is run 10 times, but only
+2016-08-04 11:05:20,172 - Perf_stream - INFO - the *best* time for each is used.
+2016-08-04 11:05:20,172 - Perf_stream - INFO - -------------------------------------------------------------
+2016-08-04 11:05:20,172 - Perf_stream - INFO - Number of Threads requested = 4
+2016-08-04 11:05:20,172 - Perf_stream - INFO - -------------------------------------------------------------
+2016-08-04 11:05:20,172 - Perf_stream - INFO - Printing one line per active thread....
+2016-08-04 11:05:20,172 - Perf_stream - INFO - Printing one line per active thread....
+2016-08-04 11:05:20,173 - Perf_stream - INFO - Printing one line per active thread....
+2016-08-04 11:05:20,173 - Perf_stream - INFO - Printing one line per active thread....
+2016-08-04 11:05:20,173 - Perf_stream - INFO - -------------------------------------------------------------
+2016-08-04 11:05:20,173 - Perf_stream - INFO - Your clock granularity/precision appears to be 1 microseconds.
+2016-08-04 11:05:20,173 - Perf_stream - INFO - Each test below will take on the order of 3608 microseconds.
+2016-08-04 11:05:20,173 - Perf_stream - INFO -    (= 3608 clock ticks)
+2016-08-04 11:05:20,173 - Perf_stream - INFO - Increase the size of the arrays if this shows that
+2016-08-04 11:05:20,173 - Perf_stream - INFO - you are not getting at least 20 clock ticks per test.
+2016-08-04 11:05:20,173 - Perf_stream - INFO - -------------------------------------------------------------
+2016-08-04 11:05:20,173 - Perf_stream - INFO - WARNING -- The above is only a rough guideline.
+2016-08-04 11:05:20,173 - Perf_stream - INFO - For best results, please be sure you know the
+2016-08-04 11:05:20,173 - Perf_stream - INFO - precision of your system timer.
+2016-08-04 11:05:20,173 - Perf_stream - INFO - -------------------------------------------------------------
+2016-08-04 11:05:20,173 - Perf_stream - INFO - Function      Rate (MB/s)   Avg time     Min time     Max time
+2016-08-04 11:05:20,174 - Perf_stream - INFO - Copy:        9597.9497       0.0035       0.0033       0.0037
+2016-08-04 11:05:20,174 - Perf_stream - INFO - Scale:       7074.8895       0.0048       0.0045       0.0058
+2016-08-04 11:05:20,174 - Perf_stream - INFO - Add:         7730.8422       0.0065       0.0062       0.0066
+2016-08-04 11:05:20,174 - Perf_stream - INFO - Triad:       7650.6400       0.0064       0.0063       0.0065
+2016-08-04 11:05:20,174 - Perf_stream - INFO - -------------------------------------------------------------
+2016-08-04 11:05:20,174 - Perf_stream - INFO - Solution Validates
+2016-08-04 11:05:20,174 - Perf_stream - INFO - -------------------------------------------------------------
+2016-08-04 11:05:20,174 - Perf_stream - INFO - ***************************************************
+2016-08-04 11:05:20,174 - Perf_stream - INFO - Test result is: COPY   SCALE   ADD    TRIAD
+2016-08-04 11:05:20,174 - Perf_stream - INFO - (4)threads_result: 9597.9497 7074.8895 7730.8422 7650.6400
+2016-08-04 11:05:20,174 - Perf_stream - INFO - ***************************************************
+2016-08-04 11:05:21,278 - Perf_stream - INFO - -------------------------------------------------------------
+2016-08-04 11:05:21,278 - Perf_stream - INFO - STREAM version $Revision: 5.9 $
+2016-08-04 11:05:21,279 - Perf_stream - INFO - -------------------------------------------------------------
+2016-08-04 11:05:21,279 - Perf_stream - INFO - This system uses 8 bytes per DOUBLE PRECISION word.
+2016-08-04 11:05:21,279 - Perf_stream - INFO - -------------------------------------------------------------
+2016-08-04 11:05:21,279 - Perf_stream - INFO - Array size = 2000000, Offset = 0
+2016-08-04 11:05:21,279 - Perf_stream - INFO - Total memory required = 45.8 MB.
+2016-08-04 11:05:21,279 - Perf_stream - INFO - Each test is run 10 times, but only
+2016-08-04 11:05:21,279 - Perf_stream - INFO - the *best* time for each is used.
+2016-08-04 11:05:21,279 - Perf_stream - INFO - -------------------------------------------------------------
+2016-08-04 11:05:21,279 - Perf_stream - INFO - Number of Threads requested = 4
+2016-08-04 11:05:21,279 - Perf_stream - INFO - -------------------------------------------------------------
+2016-08-04 11:05:21,279 - Perf_stream - INFO - Printing one line per active thread....
+2016-08-04 11:05:21,279 - Perf_stream - INFO - Printing one line per active thread....
+2016-08-04 11:05:21,279 - Perf_stream - INFO - Printing one line per active thread....
+2016-08-04 11:05:21,280 - Perf_stream - INFO - Printing one line per active thread....
+2016-08-04 11:05:21,280 - Perf_stream - INFO - -------------------------------------------------------------
+2016-08-04 11:05:21,280 - Perf_stream - INFO - Your clock granularity/precision appears to be 1 microseconds.
+2016-08-04 11:05:21,280 - Perf_stream - INFO - Each test below will take on the order of 4609 microseconds.
+2016-08-04 11:05:21,280 - Perf_stream - INFO -    (= 4609 clock ticks)
+2016-08-04 11:05:21,280 - Perf_stream - INFO - Increase the size of the arrays if this shows that
+2016-08-04 11:05:21,280 - Perf_stream - INFO - you are not getting at least 20 clock ticks per test.
+2016-08-04 11:05:21,280 - Perf_stream - INFO - -------------------------------------------------------------
+2016-08-04 11:05:21,280 - Perf_stream - INFO - WARNING -- The above is only a rough guideline.
+2016-08-04 11:05:21,280 - Perf_stream - INFO - For best results, please be sure you know the
+2016-08-04 11:05:21,280 - Perf_stream - INFO - precision of your system timer.
+2016-08-04 11:05:21,280 - Perf_stream - INFO - -------------------------------------------------------------
+2016-08-04 11:05:21,280 - Perf_stream - INFO - Function      Rate (MB/s)   Avg time     Min time     Max time
+2016-08-04 11:05:21,280 - Perf_stream - INFO - Copy:        9179.7913       0.0050       0.0035       0.0077
+2016-08-04 11:05:21,281 - Perf_stream - INFO - Scale:       6817.2353       0.0064       0.0047       0.0089
+2016-08-04 11:05:21,281 - Perf_stream - INFO - Add:         7297.0856       0.0074       0.0066       0.0090
+2016-08-04 11:05:21,281 - Perf_stream - INFO - Triad:       7716.0276       0.0076       0.0062       0.0093
+2016-08-04 11:05:21,281 - Perf_stream - INFO - -------------------------------------------------------------
+2016-08-04 11:05:21,281 - Perf_stream - INFO - Solution Validates
+2016-08-04 11:05:21,281 - Perf_stream - INFO - -------------------------------------------------------------
+2016-08-04 11:05:21,281 - Perf_stream - INFO - ***************************************************
+2016-08-04 11:05:21,281 - Perf_stream - INFO - Test result is: COPY   SCALE   ADD    TRIAD
+2016-08-04 11:05:21,281 - Perf_stream - INFO - (4)threads_result: 9179.7913 6817.2353 7297.0856 7716.0276
+2016-08-04 11:05:21,282 - Perf_stream - INFO - ***************************************************
+2016-08-04 11:05:21,282 - Perf_stream - INFO - /home/isoft_lp/Github/Lpbs-i/tmp/Perf_stream/stream_test 16
+2016-08-04 11:05:22,131 - Perf_stream - INFO - -------------------------------------------------------------
+2016-08-04 11:05:22,131 - Perf_stream - INFO - STREAM version $Revision: 5.9 $
+2016-08-04 11:05:22,131 - Perf_stream - INFO - -------------------------------------------------------------
+2016-08-04 11:05:22,131 - Perf_stream - INFO - This system uses 8 bytes per DOUBLE PRECISION word.
+2016-08-04 11:05:22,131 - Perf_stream - INFO - -------------------------------------------------------------
+2016-08-04 11:05:22,131 - Perf_stream - INFO - Array size = 2000000, Offset = 0
+2016-08-04 11:05:22,131 - Perf_stream - INFO - Total memory required = 45.8 MB.
+2016-08-04 11:05:22,131 - Perf_stream - INFO - Each test is run 10 times, but only
+2016-08-04 11:05:22,131 - Perf_stream - INFO - the *best* time for each is used.
+2016-08-04 11:05:22,131 - Perf_stream - INFO - -------------------------------------------------------------
+2016-08-04 11:05:22,131 - Perf_stream - INFO - Number of Threads requested = 16
+2016-08-04 11:05:22,132 - Perf_stream - INFO - -------------------------------------------------------------
+2016-08-04 11:05:22,132 - Perf_stream - INFO - Printing one line per active thread....
+2016-08-04 11:05:22,132 - Perf_stream - INFO - Printing one line per active thread....
+2016-08-04 11:05:22,132 - Perf_stream - INFO - Printing one line per active thread....
+2016-08-04 11:05:22,132 - Perf_stream - INFO - Printing one line per active thread....
+2016-08-04 11:05:22,132 - Perf_stream - INFO - Printing one line per active thread....
+2016-08-04 11:05:22,132 - Perf_stream - INFO - Printing one line per active thread....
+2016-08-04 11:05:22,132 - Perf_stream - INFO - Printing one line per active thread....
+2016-08-04 11:05:22,132 - Perf_stream - INFO - Printing one line per active thread....
+2016-08-04 11:05:22,132 - Perf_stream - INFO - Printing one line per active thread....
+2016-08-04 11:05:22,132 - Perf_stream - INFO - Printing one line per active thread....
+2016-08-04 11:05:22,132 - Perf_stream - INFO - Printing one line per active thread....
+2016-08-04 11:05:22,132 - Perf_stream - INFO - Printing one line per active thread....
+2016-08-04 11:05:22,132 - Perf_stream - INFO - Printing one line per active thread....
+2016-08-04 11:05:22,133 - Perf_stream - INFO - Printing one line per active thread....
+2016-08-04 11:05:22,133 - Perf_stream - INFO - Printing one line per active thread....
+2016-08-04 11:05:22,133 - Perf_stream - INFO - Printing one line per active thread....
+2016-08-04 11:05:22,133 - Perf_stream - INFO - -------------------------------------------------------------
+2016-08-04 11:05:22,133 - Perf_stream - INFO - Your clock granularity/precision appears to be 1 microseconds.
+2016-08-04 11:05:22,133 - Perf_stream - INFO - Each test below will take on the order of 3370 microseconds.
+2016-08-04 11:05:22,133 - Perf_stream - INFO -    (= 3370 clock ticks)
+2016-08-04 11:05:22,133 - Perf_stream - INFO - Increase the size of the arrays if this shows that
+2016-08-04 11:05:22,133 - Perf_stream - INFO - you are not getting at least 20 clock ticks per test.
+2016-08-04 11:05:22,133 - Perf_stream - INFO - -------------------------------------------------------------
+2016-08-04 11:05:22,133 - Perf_stream - INFO - WARNING -- The above is only a rough guideline.
+2016-08-04 11:05:22,133 - Perf_stream - INFO - For best results, please be sure you know the
+2016-08-04 11:05:22,133 - Perf_stream - INFO - precision of your system timer.
+2016-08-04 11:05:22,133 - Perf_stream - INFO - -------------------------------------------------------------
+2016-08-04 11:05:22,134 - Perf_stream - INFO - Function      Rate (MB/s)   Avg time     Min time     Max time
+2016-08-04 11:05:22,134 - Perf_stream - INFO - Copy:        8918.7141       0.0040       0.0036       0.0053
+2016-08-04 11:05:22,134 - Perf_stream - INFO - Scale:       6748.3397       0.0052       0.0047       0.0057
+2016-08-04 11:05:22,134 - Perf_stream - INFO - Add:         7364.0803       0.0069       0.0065       0.0082
+2016-08-04 11:05:22,134 - Perf_stream - INFO - Triad:       7570.9458       0.0066       0.0063       0.0075
+2016-08-04 11:05:22,134 - Perf_stream - INFO - -------------------------------------------------------------
+2016-08-04 11:05:22,134 - Perf_stream - INFO - Solution Validates
+2016-08-04 11:05:22,134 - Perf_stream - INFO - -------------------------------------------------------------
+2016-08-04 11:05:22,134 - Perf_stream - INFO - ***************************************************
+2016-08-04 11:05:22,134 - Perf_stream - INFO - Test result is: COPY   SCALE   ADD    TRIAD
+2016-08-04 11:05:22,134 - Perf_stream - INFO - (16)threads_result: 8918.7141 6748.3397 7364.0803 7570.9458
+2016-08-04 11:05:22,134 - Perf_stream - INFO - ***************************************************
+2016-08-04 11:05:23,559 - Perf_stream - INFO - -------------------------------------------------------------
+2016-08-04 11:05:23,559 - Perf_stream - INFO - STREAM version $Revision: 5.9 $
+2016-08-04 11:05:23,559 - Perf_stream - INFO - -------------------------------------------------------------
+2016-08-04 11:05:23,559 - Perf_stream - INFO - This system uses 8 bytes per DOUBLE PRECISION word.
+2016-08-04 11:05:23,559 - Perf_stream - INFO - -------------------------------------------------------------
+2016-08-04 11:05:23,559 - Perf_stream - INFO - Array size = 2000000, Offset = 0
+2016-08-04 11:05:23,559 - Perf_stream - INFO - Total memory required = 45.8 MB.
+2016-08-04 11:05:23,559 - Perf_stream - INFO - Each test is run 10 times, but only
+2016-08-04 11:05:23,559 - Perf_stream - INFO - the *best* time for each is used.
+2016-08-04 11:05:23,560 - Perf_stream - INFO - -------------------------------------------------------------
+2016-08-04 11:05:23,560 - Perf_stream - INFO - Number of Threads requested = 16
+2016-08-04 11:05:23,560 - Perf_stream - INFO - -------------------------------------------------------------
+2016-08-04 11:05:23,560 - Perf_stream - INFO - Printing one line per active thread....
+2016-08-04 11:05:23,560 - Perf_stream - INFO - Printing one line per active thread....
+2016-08-04 11:05:23,560 - Perf_stream - INFO - Printing one line per active thread....
+2016-08-04 11:05:23,560 - Perf_stream - INFO - Printing one line per active thread....
+2016-08-04 11:05:23,560 - Perf_stream - INFO - Printing one line per active thread....
+2016-08-04 11:05:23,560 - Perf_stream - INFO - Printing one line per active thread....
+2016-08-04 11:05:23,560 - Perf_stream - INFO - Printing one line per active thread....
+2016-08-04 11:05:23,560 - Perf_stream - INFO - Printing one line per active thread....
+2016-08-04 11:05:23,560 - Perf_stream - INFO - Printing one line per active thread....
+2016-08-04 11:05:23,560 - Perf_stream - INFO - Printing one line per active thread....
+2016-08-04 11:05:23,561 - Perf_stream - INFO - Printing one line per active thread....
+2016-08-04 11:05:23,561 - Perf_stream - INFO - Printing one line per active thread....
+2016-08-04 11:05:23,561 - Perf_stream - INFO - Printing one line per active thread....
+2016-08-04 11:05:23,561 - Perf_stream - INFO - Printing one line per active thread....
+2016-08-04 11:05:23,561 - Perf_stream - INFO - Printing one line per active thread....
+2016-08-04 11:05:23,561 - Perf_stream - INFO - Printing one line per active thread....
+2016-08-04 11:05:23,561 - Perf_stream - INFO - -------------------------------------------------------------
+2016-08-04 11:05:23,561 - Perf_stream - INFO - Your clock granularity/precision appears to be 1 microseconds.
+2016-08-04 11:05:23,561 - Perf_stream - INFO - Each test below will take on the order of 3417 microseconds.
+2016-08-04 11:05:23,561 - Perf_stream - INFO -    (= 3417 clock ticks)
+2016-08-04 11:05:23,561 - Perf_stream - INFO - Increase the size of the arrays if this shows that
+2016-08-04 11:05:23,561 - Perf_stream - INFO - you are not getting at least 20 clock ticks per test.
+2016-08-04 11:05:23,561 - Perf_stream - INFO - -------------------------------------------------------------
+2016-08-04 11:05:23,561 - Perf_stream - INFO - WARNING -- The above is only a rough guideline.
+2016-08-04 11:05:23,562 - Perf_stream - INFO - For best results, please be sure you know the
+2016-08-04 11:05:23,562 - Perf_stream - INFO - precision of your system timer.
+2016-08-04 11:05:23,562 - Perf_stream - INFO - -------------------------------------------------------------
+2016-08-04 11:05:23,562 - Perf_stream - INFO - Function      Rate (MB/s)   Avg time     Min time     Max time
+2016-08-04 11:05:23,562 - Perf_stream - INFO - Copy:        9044.3213       0.0039       0.0035       0.0045
+2016-08-04 11:05:23,562 - Perf_stream - INFO - Scale:       6765.3474       0.0051       0.0047       0.0059
+2016-08-04 11:05:23,562 - Perf_stream - INFO - Add:         7430.3965       0.0069       0.0065       0.0084
+2016-08-04 11:05:23,562 - Perf_stream - INFO - Triad:       7513.0273       0.0070       0.0064       0.0096
+2016-08-04 11:05:23,562 - Perf_stream - INFO - -------------------------------------------------------------
+2016-08-04 11:05:23,562 - Perf_stream - INFO - Solution Validates
+2016-08-04 11:05:23,562 - Perf_stream - INFO - -------------------------------------------------------------
+2016-08-04 11:05:23,562 - Perf_stream - INFO - ***************************************************
+2016-08-04 11:05:23,562 - Perf_stream - INFO - Test result is: COPY   SCALE   ADD    TRIAD
+2016-08-04 11:05:23,562 - Perf_stream - INFO - (16)threads_result: 9044.3213 6765.3474 7430.3965 7513.0273
+2016-08-04 11:05:23,563 - Perf_stream - INFO - ***************************************************
+2016-08-04 11:05:24,588 - Perf_stream - INFO - -------------------------------------------------------------
+2016-08-04 11:05:24,588 - Perf_stream - INFO - STREAM version $Revision: 5.9 $
+2016-08-04 11:05:24,588 - Perf_stream - INFO - -------------------------------------------------------------
+2016-08-04 11:05:24,589 - Perf_stream - INFO - This system uses 8 bytes per DOUBLE PRECISION word.
+2016-08-04 11:05:24,589 - Perf_stream - INFO - -------------------------------------------------------------
+2016-08-04 11:05:24,589 - Perf_stream - INFO - Array size = 2000000, Offset = 0
+2016-08-04 11:05:24,589 - Perf_stream - INFO - Total memory required = 45.8 MB.
+2016-08-04 11:05:24,589 - Perf_stream - INFO - Each test is run 10 times, but only
+2016-08-04 11:05:24,589 - Perf_stream - INFO - the *best* time for each is used.
+2016-08-04 11:05:24,589 - Perf_stream - INFO - -------------------------------------------------------------
+2016-08-04 11:05:24,589 - Perf_stream - INFO - Number of Threads requested = 16
+2016-08-04 11:05:24,589 - Perf_stream - INFO - -------------------------------------------------------------
+2016-08-04 11:05:24,589 - Perf_stream - INFO - Printing one line per active thread....
+2016-08-04 11:05:24,590 - Perf_stream - INFO - Printing one line per active thread....
+2016-08-04 11:05:24,590 - Perf_stream - INFO - Printing one line per active thread....
+2016-08-04 11:05:24,590 - Perf_stream - INFO - Printing one line per active thread....
+2016-08-04 11:05:24,590 - Perf_stream - INFO - Printing one line per active thread....
+2016-08-04 11:05:24,590 - Perf_stream - INFO - Printing one line per active thread....
+2016-08-04 11:05:24,590 - Perf_stream - INFO - Printing one line per active thread....
+2016-08-04 11:05:24,590 - Perf_stream - INFO - Printing one line per active thread....
+2016-08-04 11:05:24,590 - Perf_stream - INFO - Printing one line per active thread....
+2016-08-04 11:05:24,590 - Perf_stream - INFO - Printing one line per active thread....
+2016-08-04 11:05:24,590 - Perf_stream - INFO - Printing one line per active thread....
+2016-08-04 11:05:24,590 - Perf_stream - INFO - Printing one line per active thread....
+2016-08-04 11:05:24,590 - Perf_stream - INFO - Printing one line per active thread....
+2016-08-04 11:05:24,590 - Perf_stream - INFO - Printing one line per active thread....
+2016-08-04 11:05:24,590 - Perf_stream - INFO - Printing one line per active thread....
+2016-08-04 11:05:24,591 - Perf_stream - INFO - Printing one line per active thread....
+2016-08-04 11:05:24,591 - Perf_stream - INFO - -------------------------------------------------------------
+2016-08-04 11:05:24,591 - Perf_stream - INFO - Your clock granularity/precision appears to be 1 microseconds.
+2016-08-04 11:05:24,591 - Perf_stream - INFO - Each test below will take on the order of 3488 microseconds.
+2016-08-04 11:05:24,591 - Perf_stream - INFO -    (= 3488 clock ticks)
+2016-08-04 11:05:24,591 - Perf_stream - INFO - Increase the size of the arrays if this shows that
+2016-08-04 11:05:24,591 - Perf_stream - INFO - you are not getting at least 20 clock ticks per test.
+2016-08-04 11:05:24,591 - Perf_stream - INFO - -------------------------------------------------------------
+2016-08-04 11:05:24,591 - Perf_stream - INFO - WARNING -- The above is only a rough guideline.
+2016-08-04 11:05:24,591 - Perf_stream - INFO - For best results, please be sure you know the
+2016-08-04 11:05:24,591 - Perf_stream - INFO - precision of your system timer.
+2016-08-04 11:05:24,591 - Perf_stream - INFO - -------------------------------------------------------------
+2016-08-04 11:05:24,591 - Perf_stream - INFO - Function      Rate (MB/s)   Avg time     Min time     Max time
+2016-08-04 11:05:24,591 - Perf_stream - INFO - Copy:        8986.1896       0.0037       0.0036       0.0038
+2016-08-04 11:05:24,592 - Perf_stream - INFO - Scale:       6680.4902       0.0049       0.0048       0.0050
+2016-08-04 11:05:24,592 - Perf_stream - INFO - Add:         7448.8157       0.0068       0.0064       0.0079
+2016-08-04 11:05:24,592 - Perf_stream - INFO - Triad:       7452.4002       0.0067       0.0064       0.0075
+2016-08-04 11:05:24,592 - Perf_stream - INFO - -------------------------------------------------------------
+2016-08-04 11:05:24,592 - Perf_stream - INFO - Solution Validates
+2016-08-04 11:05:24,592 - Perf_stream - INFO - -------------------------------------------------------------
+2016-08-04 11:05:24,592 - Perf_stream - INFO - ***************************************************
+2016-08-04 11:05:24,592 - Perf_stream - INFO - Test result is: COPY   SCALE   ADD    TRIAD
+2016-08-04 11:05:24,592 - Perf_stream - INFO - (16)threads_result: 8986.1896 6680.4902 7448.8157 7452.4002
+2016-08-04 11:05:24,592 - Perf_stream - INFO - ***************************************************
+2016-08-04 11:05:24,607 - Perf_stream - INFO - /home/isoft_lp/Github/Lpbs-i/resulttmp/performance
+2016-08-04 11:05:24,608 - Perf_stream - INFO - /home/isoft_lp/Github/Lpbs-i/finalresult/iSoft_Desktop_4.0

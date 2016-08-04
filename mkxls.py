@@ -65,10 +65,36 @@ sheet_lmbench_info = {
          bandwidths等指标", "对比说明：测试结果均为测试3次求平均值",
          "测试参数：以root用户执行测试，运行make result，之后继续运行两次\
          make rerun，最后执行make see"),
-    'oslist': ["isoft_desktop V4.0 loongson", "Deepin15_mips_20160520",
-               "Neokylin Desktop-7.0-loongson"],
+    'oslist': ["testos"],
     }
-
+sheet_stream_info = {
+    'sheetname': '内存',
+    'testinfo': ("内存性能测试","测试工具：stream",
+        "性能指标：Copy, Scale, Add, Triad", "对比说明：测试结果均为测试3次求平均值",
+         "测试参数：以root用户执行测试，分别执行stream 单线程　４线程　１６线程测试"),
+    'oslist': ["testos"],
+    }
+sheet_graphics_info = {
+    'sheetname': '图形显示',
+    'testinfo': ("图形显示性能测试", "测试工具：qtperf unixbench glmark",
+         "性能指标：2D 3D","对比说明:测试结果为测试３次的平均值",
+         "测试参数：qtperf默认，unixbench默认，glmark指定分辨率"),
+    'oslist': ["testos"],
+}
+sheet_system_info = {
+    'sheetname': '系统基准',
+    'testinfo': ("系统基准性能测试", "测试工具：unixbench",
+         "性能指标：1threads 4threads","对比说明:测试结果为测试３次的平均值",
+         "测试参数：1/4threads"),
+    'oslist': ["testos"],
+}
+sheet_browser_info = {
+    'sheetname': '浏览器',
+    'testinfo': ("浏览器性能测试", "测试工具：Browsertest",
+         "性能指标：css4/acid3/v8test/octane/html5/dromaeotest","对比说明:测试结果为测试３次的平均值",
+         "测试参数：默认"),
+    'oslist': ["testos"],
+}
 # format_dirt字典保存格式化信息
 # 结果图表title格式
 formtitle_format = {
@@ -321,8 +347,10 @@ class MkSinglesheet(object):
 # infolist=[sheet_speccpu_info, sheet_lmbench_info, sheet_syscpu_info]
 # datalist=[sheet_speccpu_data, sheet_lmbench_data, sheet_syscpu_data]
 totalinfo = {'speccpu': sheet_speccpu_info, 'Perf_cpu': sheet_syscpu_info,
-             "lmbench": sheet_lmbench_info, 'Perf_mem': sheet_sysmem_info,
-             "Perf_io": sheet_iozone_info, 'Perf_thread': sheet_pingpong_info}
+             "Perf_kernel": sheet_lmbench_info, 'Perf_mem': sheet_sysmem_info,
+             "Perf_io": sheet_iozone_info, 'Perf_thread': sheet_pingpong_info,
+             "Perf_stream": sheet_stream_info, "Perf_graphics": sheet_graphics_info,
+             "Perf_system": sheet_system_info, "Perf_browser": sheet_browser_info,}
 
 
 def mkxls(totaldata, itemlist, oslist):

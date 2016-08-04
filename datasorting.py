@@ -1,5 +1,8 @@
+# coding: utf-8
 import re
-
+import sys
+reload(sys)
+sys.setdefaultencoding('utf8')
 
 class ResultSorting(object):
 
@@ -50,10 +53,9 @@ class ResultSorting(object):
              re_list_total = map(lambda(a,b):a+b, zip(i, re_list_total))
         re_list_final=[]
         for i in re_list_total:
-            re_list_final.append(round(i / 2,2))
-            
+            re_list_final.append(round(i / times ,2))
         return re_list_final
 # useage
 a=ResultSorting()
-d = a.datasearch_lm("File_VM_r(.*?)\n", "finalresult/iSoft_Server_OS_4.0/Perf_kernel/result/result.out", 3)
+d = a.datasearch_lm("V8test result is 总成绩: (.*?)\n", "finalresult/iSoft_Server_OS_5.0/Perf_browser/result/result.out", 3)
 print d
