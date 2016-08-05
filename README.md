@@ -10,8 +10,11 @@
     * Perf_graphics
     * Perf_stream
 #### Table Style
-![Text](tmp/xls_sample.png)
+
+![Text](tmp/xls_smple.png)
+
 #### Html Style
-![Text](tmp/html_dample.png)
+![Text](tmp/html_smple.png
+
 
 
