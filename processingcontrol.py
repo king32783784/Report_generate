@@ -180,6 +180,7 @@ class Control_processing(object):
     def __init__(self, myargs):
         '''{'items': ['cpu'], 'type': ['xls'], 'osnames': ['iSoft_Desktop_4.0']}'''
         self.args = myargs
+        print self.args
 
     def _getxlsdata(self, oslist, itemlist):
         for testitem in itemlist:
@@ -247,11 +248,17 @@ class Control_processing(object):
         ''' 
         itemlist = self.args['items']
         oslist = self.args['osnames']
-        totaldata = self._getxlsdata(oslist, itemlist)
-        mkxls(totaldata, itemlist, oslist)
-        htmldata = self._gethtmldata(oslist, itemlist)
-        mkhtml(htmldata, itemlist, oslist)
-
+        for reporttype in self.args['type']:
+            if reporttype == "xls":
+                totaldata = self._getxlsdata(oslist, itemlist)
+                mkxls(totaldata, itemlist, oslist)
+            elif reporttype == "html":
+                htmldata = self._gethtmldata(oslist, itemlist)
+                mkhtml(htmldata, itemlist, oslist)
+            else:
+                print("Wrong report type, please check it")
+                exit()
+     
 #testcase
 #a=Control_processing()
 #a._mkxls()

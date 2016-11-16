@@ -4,6 +4,7 @@ import sys
 reload(sys)
 sys.setdefaultencoding('utf8')
 
+
 class ResultSorting(object):
 
     def readfile(self, resultfile):
